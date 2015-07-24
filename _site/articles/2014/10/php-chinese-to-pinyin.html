@@ -1,0 +1,426 @@
+<!--
+  ____ _   _____  _____/ /________  _____
+ / __ \ | / / _ \/ ___/ __/ ___/ / / / _ \
+/ /_/ / |/ /  __/ /  / /_/ /  / /_/ /  __/
+\____/|___/\___/_/   \__/_/   \__,_/\___/
+
+ --------------------------------------
+ * GitHub：https://github.com/overtrue
+ * weibo：http://weibo.com/44294631
+ --------------------------------------
+ -->
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" prefix="og: http://ogp.me/ns#" class="han-init">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>PHP汉字转拼音更准确的解决方案 &mdash; overtrue - 安正超博客</title>
+    <link rel="stylesheet" href="/assets/css/components/octicons.css">
+    <link rel="stylesheet" href="/assets/css/components/collection.css">
+    <link rel="stylesheet" href="/assets/css/components/repo-card.css">
+    <link rel="stylesheet" href="/assets/css/sections/repo-list.css"></head>
+    <link rel="stylesheet" href="/assets/css/sections/mini-repo-list.css"></head>
+    <link rel="stylesheet" href="/assets/css/components/boxed-group.css"></head>
+    <link rel="stylesheet" href="/assets/css/globals/common.css">
+    <link rel="stylesheet" href="/assets/css/globals/prism.css">
+    <link rel="stylesheet" href="/assets/css/globals/responsive.css">
+    
+
+    
+    <link rel="alternate" type="application/atom+xml" title="overtrue" href="/atom.xml">
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/apple-touch-icon-114x114-precomposed.png">
+    
+    <meta property="og:title" content="PHP汉字转拼音更准确的解决方案">
+      
+      
+      
+    <meta name="keywords" content="Laravel,Laravel教程,Laravel安装,Laravel视频,安正超,overtrue,Pinyin,汉字转拼音">
+    <meta name="og:keywords" content="Laravel,Laravel教程,Laravel安装,Laravel视频,安正超,overtrue,Pinyin,汉字转拼音">
+      
+    <meta name="description" content="到目前为止这可能是最准确的一个解决方案了，大GitHub上各种找，没有一个好用的，大部分都只是汉字转拼音,所以我造了这个轮子...">
+    <meta name="og:description" content="到目前为止这可能是最准确的一个解决方案了，大GitHub上各种找，没有一个好用的，大部分都只是汉字转拼音,所以我造了这个轮子...">
+      
+    
+    
+        
+    
+    <meta property="og:url" content="//articles/2014/10/php-chinese-to-pinyin.html">
+    <meta property="og:site_name" content="">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="zh_CN" />
+    
+    <meta property="article:published_time" content="2014-10-06">
+    
+    <script src="/assets/js/jquery.min.js"></script>
+</head>
+<body class="">
+    <header class="site-header">
+        <div class="container">
+            <h1><a href="/" title="overtrue"><span class="octicon octicon-mark-github"></span> overtrue</a></h1>
+            <nav class="site-header-nav" role="navigation">
+                
+                <a href="/" class=" site-header-nav-item" target="" title="Home">Home</a>
+                
+                <a href="/open-source" class=" site-header-nav-item" target="" title="Open-Source">Open-Source</a>
+                
+                <a href="https://github.com/overtrue" class=" site-header-nav-item" target="_blank" title="GitHub">GitHub</a>
+                
+                <a href="http://weibo.com/44294631" class=" site-header-nav-item" target="_blank" title="Weibo">Weibo</a>
+                
+                <a href="/bookmark" class=" site-header-nav-item" target="" title="Bookmark">Bookmark</a>
+                
+                <a href="/about" class=" site-header-nav-item" target="" title="About">About</a>
+                
+            </nav>
+        </div>
+    </header>
+    <!-- / header -->
+    <section class="collection-head small geopattern" data-pattern-id="PHP汉字转拼音更准确的解决方">
+    <div class="container">
+        <div class="collection-title">
+            <h1 class="collection-header">PHP汉字转拼音更准确的解决方案</h1>
+            <div class="collection-info">
+                <span class="meta-info">
+                    <span class="octicon octicon-calendar"></span> 2014/10/06
+                </span>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- / .banner -->
+ <section class="container content">
+    <div class="columns">
+        <div class="column three-fourths" >
+            <article class="article-content markdown-body">
+                <p>到目前为止这可能是最准确的一个解决方案了，大GitHub上各种找，没有一个好用的，大部分都只是汉字转拼音，所以包含多音字的结果基本都错误。当然也有基于词典的转换工具，不过还是解决不了词库不全造成的多音字问题（当然，完全解决是不太可能的，或者词库会无比的大）。比如<code>康熙来了</code> 大部分工具的试用结果是：kang xi lai liao.</p>
+
+<p>基于上面的原因，我造了下面这个轮子。特点如下:</p>
+
+<ul>
+  <li>基于<a href="http://cc-cedict.org/wiki/">CC-CEDICT</a>.词典，解决大部分词汇问题；</li>
+  <li>添加补充词典，解决CC-CEDICT不全或者不准确的问题；</li>
+  <li>添加词频表，根据使用频率再一步提高多音字的准确度；</li>
+</ul>
+
+<h1 id="pinyinhttpovertruemepinyin"><a href="http://overtrue.me/pinyin">Pinyin</a></h1>
+
+<p>主页：<a href="http://overtrue.me/pinyin">http://overtrue.me/pinyin</a></p>
+
+<p>基于CC-CEDICT词典的中文转拼音工具, 更准确的汉字转拼音解决方案。 <a href="http://cc-cedict.org/wiki/">CC-CEDICT</a>.</p>
+
+<pre><code class="language-php">use \Overtrue\Pinyin;
+
+echo Pinyin::pinyin('带着希望去旅行，比到达终点更美好');
+// dài zhe xī wàng qù lǔ xíng bǐ dào dá zhōng diǎn gèng měi hǎo
+
+//多音字
+// 了
+Pinyin::pinyin('了然'); // liǎo rán
+Pinyin::pinyin('来了'); // lái le
+
+// 还
+Pinyin::pinyin('还有'); // hái yǒu
+Pinyin::pinyin('交还'); // jiāo huán
+
+// 什
+Pinyin::pinyin('什么'); // shén me
+Pinyin::pinyin('什锦'); // shí jǐn
+
+// 便
+Pinyin::pinyin('便当'); // biàn dāng
+Pinyin::pinyin('便宜'); // pián yí
+
+// 剥
+Pinyin::pinyin('剥皮'); // bāo pí
+Pinyin::pinyin('剥皮器'); // bō pí qì
+
+// 不
+Pinyin::pinyin('赔不是'); // péi bú shi
+Pinyin::pinyin('跑了和尚，跑不了庙'); // pǎo le hé shàng , pǎo bù liǎo miào
+
+// 降
+Pinyin::pinyin('降温'); // jiàng wēn
+Pinyin::pinyin('投降'); // tóu xiáng
+
+// 都
+Pinyin::pinyin('首都'); // shǒu dū
+Pinyin::pinyin('都什么年代了'); // dōu shén me nián dài le
+
+// 乐
+Pinyin::pinyin('快乐'); // kuài lè
+Pinyin::pinyin('音乐'); // yīn yuè
+
+// 长
+Pinyin::pinyin('成长'); // chéng zhǎng
+Pinyin::pinyin('长江'); // cháng jiāng
+
+// 难
+Pinyin::pinyin('难民'); // nàn mín
+Pinyin::pinyin('难过'); // nán guò
+...
+
+</code></pre>
+
+<h1 id="section">安装</h1>
+<ol>
+  <li>使用 Composer 安装:</li>
+</ol>
+
+<pre><code class="language-shell">composer require overtrue/pinyin &gt;=1.4
+</code></pre>
+
+<p>或者在你的项目composer.json加入：</p>
+
+<pre><code class="language-javascript">{
+    "require": {
+        "overtrue/pinyin": "&gt;=1.4"
+    }
+}
+</code></pre>
+
+<ol>
+  <li>直接下载文件 <code>src/Overtrue/Pinyin.php</code> 引入到项目中。</li>
+</ol>
+
+<h1 id="section-1">使用</h1>
+
+<pre><code class="language-php">&lt;?php
+use \Overtrue\Pinyin;
+
+//获取拼音
+echo Pinyin::pinyin('带着希望去旅行，比到达终点更美好');
+//或者: Overtrue\pinyin($string);
+// dài zhe xī wàng qù lǔ xíng bǐ dào dá zhōng diǎn gèng měi hǎo
+
+//获取首字母
+echo Pinyin::letter('带着希望去旅行，比到达终点更美好');
+// D Z X W Q L X B D D Z D G M H
+
+</code></pre>
+
+<h2 id="section-2">设置</h2>
+
+<ul>
+  <li><code>delimiter</code> 分隔符，默认为一个空格 ‘ ‘；</li>
+  <li><code>traditional</code> 繁体</li>
+  <li><code>accent</code> 是否输出音调；</li>
+  <li><code>letter</code> 只输出首字母，或者直接使用<code>Pinyin::letter($string)</code>;</li>
+  <li>
+    <p><code>only_chinese</code> 只保留$string中中文部分。</p>
+  </li>
+  <li>
+    <p>全局设置：*  <code>Pinyin::set('delimiter', '-');</code></p>
+  </li>
+  <li>临时设置：*  <code>Pinyin::pinyin($word, $settings)</code> 在调用的方法后传参</li>
+</ul>
+
+<p>example:</p>
+
+<pre><code class="language-php">
+Pinyin::set('delimiter', '-');//全局
+echo Pinyin::pinyin('带着希望去旅行，比到达终点更美好');
+
+// dài-zhe-xī-wàng-qù-lǔ-xíng-bǐ-dào-dá-zhōng-diǎn-gèng-měi-hǎo
+</code></pre>
+<pre><code class="language-php">
+$setting = [
+            'delimiter' =&gt; '-',
+            'accent' =&gt; false,
+           ];
+
+echo Pinyin::pinyin('带着希望去旅行，比到达终点更美好', $setting);//这里的setting只是临时修改，并非全局设置
+
+// dai-zhe-xi-wang-qu-lu-xing-bi-dao-da-zhong-dian-geng-mei-hao
+</code></pre>
+
+<pre><code class="language-php">Pinyin::set('accent', false);
+echo Pinyin::pinyin('带着希望去旅行，比到达终点更美好');
+
+// dai zhe xi wang qu lu xing bi dao da zhong dian geng mei hao
+</code></pre>
+
+<h1 id="contribution">Contribution</h1>
+<p>欢迎提意见及完善补充词库 <code>src/Overtrue/data/additional.php</code>! <img class="emoji" title=":kiss:" alt=":kiss:" src="https://assets.github.com/images/icons/emoji/unicode/1f48b.png" height="20" width="20" align="absmiddle" /></p>
+
+<h1 id="section-3">参考</h1>
+<ul>
+  <li><a href="http://cc-cedict.org/wiki/">CC-CEDICT</a></li>
+  <li><a href="http://mmc.sinica.edu.tw/intro_c_01.html">現代漢語語音語料庫</a></li>
+  <li><a href="http://www.zdic.net/">汉典</a></li>
+</ul>
+
+<h1 id="license">License</h1>
+
+<p>MIT</p>
+
+            </article>
+            <div class="share">
+                <div class="sns-share">
+    <i data-id="sina">
+        <svg><use xlink:href="/assets/images/sns.svg#icon-iconfont-sina" transform="translate(0 0)"></use></svg>
+    </i>
+    <i data-id="qzone">
+        <svg><use xlink:href="/assets/images/sns.svg#icon-iconfont-qzone" transform="translate(0 0)"></use></svg>
+    </i>
+    <i data-id="qq">
+        <svg><use xlink:href="/assets/images/sns.svg#icon-iconfont-qq" transform="translate(0 0)"></use></svg>
+    </i>
+    <i data-id="renren">
+        <svg><use xlink:href="/assets/images/sns.svg#icon-iconfont-renren" transform="translate(0 0)"></use></svg>
+    </i>
+    <i data-id="douban">
+        <svg><use xlink:href="/assets/images/sns.svg#icon-iconfont-douban" transform="translate(0 0)"></use></svg>
+    </i>
+</div>
+            </div>
+            <div class="comment">
+                <div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'overtrueme'; // required: replace example with your forum shortname
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+            </div>
+        </div>
+        <div class="column one-fourth">
+            <h3>Popular Repositories</h3>
+
+
+    
+
+
+            <div class="boxed-group flush" role="navigation">
+    <h3>Repositories contribute to</h3>
+    <ul class="boxed-group-inner mini-repo-list">
+        
+        <li class="public source ">
+            <a href="https://github.com/laravel/framework" target="_blank" title="laravel/framework" class="mini-repo-list-item css-truncate">
+                <span class="repo-icon octicon octicon-repo"></span>
+                <span class="repo-and-owner css-truncate-target">
+                    laravel/framework
+                </span>
+            </a>
+        </li>
+        
+        <li class="public source ">
+            <a href="https://github.com/tymondesigns/jwt-auth" target="_blank" title="tymondesigns/jwt-auth" class="mini-repo-list-item css-truncate">
+                <span class="repo-icon octicon octicon-repo"></span>
+                <span class="repo-and-owner css-truncate-target">
+                    tymondesigns/jwt-auth
+                </span>
+            </a>
+        </li>
+        
+        <li class="public source ">
+            <a href="https://github.com/caouecs/Laravel-lang" target="_blank" title="caouecs/Laravel-lang" class="mini-repo-list-item css-truncate">
+                <span class="repo-icon octicon octicon-repo"></span>
+                <span class="repo-and-owner css-truncate-target">
+                    caouecs/Laravel-lang
+                </span>
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+        </div>
+    </div>
+</section>
+<!-- /section.content -->
+    <footer class="container">
+        <div class="site-footer" role="contentinfo">
+            <div class="copyright left mobile-block">
+                    © 2015
+                    <span title="overtrue.me">overtrue.me</span>
+                    <a href="javascript:window.scrollTo(0,0)" class="right mobile-visible">TOP</a>
+            </div>
+
+            <ul class="site-footer-links right mobile-hidden">
+                <li>
+                    <a href="javascript:window.scrollTo(0,0)" >TOP</a>
+                </li>
+            </ul>
+            <a href="https://github.com/kugouming/kugouming.github.io" target="_blank" aria-label="view source code">
+                <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+            </a>
+            <ul class="site-footer-links mobile-hidden">
+                
+                <li>
+                    <a href="/" title="Home" target="">Home</a>
+                </li>
+                
+                <li>
+                    <a href="/open-source" title="Open-Source" target="">Open-Source</a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/overtrue" title="GitHub" target="_blank">GitHub</a>
+                </li>
+                
+                <li>
+                    <a href="http://weibo.com/44294631" title="Weibo" target="_blank">Weibo</a>
+                </li>
+                
+                <li>
+                    <a href="/bookmark" title="Bookmark" target="">Bookmark</a>
+                </li>
+                
+                <li>
+                    <a href="/about" title="About" target="">About</a>
+                </li>
+                
+            </ul>
+
+        </div>
+    </footer>
+    <!-- / footer -->
+    <script src="/assets/js/sns.js"></script>
+    <script src="/assets/js/geopattern.js"></script>
+    <script src="/assets/js/prism.js"></script>
+    <script>
+      jQuery(document).ready(function($) {
+        // geopattern
+        $('.geopattern').each(function(){
+          $(this).geopattern($(this).data('pattern-id'));
+        });
+
+        // share
+        SNS.init({});
+        $('.sns-share i').click(function(){
+            SNS.share($(this).data('id'));
+        });
+
+       // hljs.initHighlightingOnLoad();
+      });
+    </script>
+    <div style="display:none">
+      <script>
+        (function () {
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-55452630-1', 'auto');
+          ga('send', 'pageview');
+
+          var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+          document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F3894395ec060e3e4d0d9397bb5c7dff9' type='text/javascript'%3E%3C/script%3E"));
+        })();
+      </script>
+    </div>
+</body>
+</html>

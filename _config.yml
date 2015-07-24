@@ -1,20 +1,20 @@
-title: overtrue - 安正超博客
-name: overtrue
-email: anzhengchao@gmail.com
-description: 安正超，网名overtrue，PHP工程师，从事web相关的开发工作。开源爱好者，GitHub:https://github.com/overtrue。
-keywords: Laravel,Laravel教程,Laravel安装,Laravel视频,安正超,overtrue,Pinyin,汉字转拼音
+title: kugouming - 酷狗明点滴人生
+name: okugouming
+email: mark@fback.com
+description: 王明，网名kugouming，PHP工程师，从事web相关的开发工作。开源爱好者，GitHub:https://github.com/kugouming。
+keywords: ""
 skill_keywords: [PHP, Javascript, HTML+CSS, Linux, Laravel, Git, Mac, RESTful, Stackoverflow, Sublime Text, OmniGaffale, OminiPlan]
 
 timezone:    PRC
 encoding: "utf-8"
 
-url: http://overtrue.me
+url: ""
 baseurl:  "/"
-domain:    overtrue.me
+domain:    ""
 permalink:     /articles/:year/:month/:title.html
 paginate_path: 'page:num'
 paginate:   10
-source_code: https://github.com/overtrue/overtrue.github.io
+source_code: https://github.com/kugouming/kugouming.github.io
 
 # Build settings
 markdown:    kramdown
@@ -40,7 +40,7 @@ gems:
   - jekyll-html-pipeline
 
 disqus:
-  id: overtrueme
+  id: kugouming
 
 google:
     analytics_id: UA-55452630-1
@@ -56,12 +56,12 @@ navs:
     label: Open-Source
 
   -
-    href: https://github.com/overtrue
+    href: https://github.com/kugouming
     label: GitHub
     target: _blank
 
   -
-    href: http://weibo.com/44294631
+    href: http://weibo.com/2212486361
     label: Weibo
     target: _blank
 
@@ -73,5 +73,5 @@ navs:
     href: /about
     label: About
 
-popular_repos: ['pinyin', 'wechat', 'writor', 'laravel-wechat', 'laravel-lang', 'laravel-pinyin', 'latest-laravel', 'latest-lumen']
-contribute_repos: ['laravel/framework', 'tymondesigns/jwt-auth', 'caouecs/Laravel-lang']
+popular_repos: "" # ['pinyin', 'wechat', 'writor', 'laravel-wechat', 'laravel-lang', 'laravel-pinyin', 'latest-laravel', 'latest-lumen']
+contribute_repos: "" #['laravel/framework', 'tymondesigns/jwt-auth', 'caouecs/Laravel-lang']

@@ -1,0 +1,1332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>overtrue - 安正超博客</title>
+    <description>安正超，网名overtrue，PHP工程师，从事web相关的开发工作。开源爱好者，GitHub:https://github.com/overtrue。</description>
+    <link>//</link>
+    <atom:link href="//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 24 Jul 2015 17:41:19 +0800</pubDate>
+    <lastBuildDate>Fri, 24 Jul 2015 17:41:19 +0800</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>让你的 Laravel 应用与官方保持同步</title>
+        <description>&lt;h2 id=&quot;section&quot;&gt;解决什么问题？&lt;/h2&gt;
+
+&lt;p&gt;我们在用着 4.2，过了一段时间作者发布了 5.0，项目可能还没开发完，然后你又像我一样是一个不升级不舒服斯基，那么用升到最新版是你接下来要忙碌的事情。因为你不知道 4.2 ~ 5.0 变化了多少。所以你不可能手动一个个加上或者删除、修改。有的人可能是备份，然后用新版建立一个项目：&lt;code&gt;composer create-project laravel/laravel&lt;/code&gt; ，然后把原来自己的代码考过来，然而，变化不一定只是文件新增或者删除啊，可能是原来文件里改了一行，你却没法知道。所以这就头疼了。那么下面我就分享一个超简单的办法来解决这个问题：&lt;/p&gt;
+
+&lt;p&gt;首先我们使用的是 &lt;code&gt;git&lt;/code&gt;，如果你不熟悉它的话，起码你这时候应该去补补基本命令了。&lt;/p&gt;
+
+&lt;p&gt;这里假设我们的项目叫做 &lt;code&gt;blog&lt;/code&gt;, 然后我们第一步要做的事情是添加官方&lt;code&gt;git&lt;/code&gt;源:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;cd blog # 切到项目根目录
+git remote add laravel https://github.com/laravel/laravel # 添加一个源
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这里解释一下：&lt;/p&gt;
+
+&lt;p&gt;因为我们的项目基本都已经有一个源&lt;code&gt;origin&lt;/code&gt;，就是我们项目用于上传到公司 &lt;code&gt;gitlab&lt;/code&gt; 或者 &lt;code&gt;bitbucket&lt;/code&gt; 这样的网站用于项目代码管理的地方，所以我们不能破坏它。然后我们添加了一个叫做 &lt;code&gt;laravel&lt;/code&gt;，这样就会有两个源了，意味着我们就可以从两个源同步代码。&lt;/p&gt;
+
+&lt;h2 id=&quot;larvel-&quot;&gt;拉取 Larvel 的新版代码&lt;/h2&gt;
+
+&lt;h4 id=&quot;laravel-&quot;&gt;拉取指定的 Laravel 分支&lt;/h4&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;注意：在我们拉取 Laravel 源的代码前，请确认你的修改都已经保存并 &lt;code&gt;commit&lt;/code&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;code&gt;shell
+  git pull laravel master
+ &lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;这里我们从 &lt;code&gt;laravel&lt;/code&gt; 的源拉取 &lt;code&gt;master&lt;/code&gt; 分支，当然你也可以拉取其它分支的代码。&lt;/p&gt;
+
+&lt;h4 id=&quot;section-1&quot;&gt;合并冲突&lt;/h4&gt;
+
+&lt;p&gt;拉取完代码，这时候通常是会冲突的，因为你的代码与官方的代码不一样了，冲突部分就是不相同的地方，那么你根据合并结果找到&lt;code&gt;CONFLICT (content): Merge conflict in xxxx.xxx&lt;/code&gt; 部分的文件打开，找到冲突的地方合并就好了。&lt;/p&gt;
+
+&lt;p&gt;解决完冲突你的代码结构就与官方一致了，而且这种合并方式不会让你落下任何一个不同的地方。&lt;/p&gt;
+
+&lt;p&gt;当然以上的方法适用于任何 &lt;code&gt;git&lt;/code&gt; 管理的项目。比如工作中，你 &lt;code&gt;fork&lt;/code&gt; 了主项目，要经常同步主项目的更新时就用这个方法最简单了。&lt;/p&gt;
+</description>
+        <pubDate>Tue, 09 Jun 2015 00:00:00 +0800</pubDate>
+        <link>//articles/2015/06/sync-your-laravel-project.html</link>
+        <guid isPermaLink="true">//articles/2015/06/sync-your-laravel-project.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>PHP代码规范与质量检查工具PHPCS,PHPMD的安装与配置</title>
+        <description>&lt;h2 id=&quot;phpcs&quot;&gt;PHPCS&lt;/h2&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;安装&lt;/h3&gt;
+
+&lt;p&gt;有以下方式安装 PHPCS:&lt;/p&gt;
+
+&lt;h5 id=&quot;composer&quot;&gt;使用 &lt;code&gt;composer&lt;/code&gt;:&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;composer global require &quot;squizlabs/php_codesniffer=*&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;注意，你可能需要将 &lt;code&gt;~/.composer/vendor/bin/&lt;/code&gt; 添加到 PATH 环境变量中，否则会报命令找不到。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h5 id=&quot;pear&quot;&gt;使用 PEAR:&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;pear install PHP_CodeSniffer
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&quot;section-1&quot;&gt;下载安装：&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
+php phpcs.phar -h
+curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcbf.phar
+php phpcbf.phar -h
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后移动到命令目录：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;mv phpcs.phar /usr/bin/phpcs
+mv phpcbf.phar /usr/bin/phpcbf
+// 也许上面需要 sudo
+chmod +x /usr/bin/phpcs
+chmod +x /usr/bin/phpcbf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这里的 &lt;code&gt;phpcbf&lt;/code&gt; 是代码修复工具。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;使用&lt;/h3&gt;
+
+&lt;h5 id=&quot;section-3&quot;&gt;查看帮助：&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;phpcs --help
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&quot;section-4&quot;&gt;添加标准：&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;phpcs --config-set installed_paths PATH_TO_SEARCH_STANDARDS
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;注意：假设标准为 &lt;code&gt;Weibo&lt;/code&gt;, 目录为:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/Users/overtrue/code_standards/Weibo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;其中&lt;code&gt;Weibo&lt;/code&gt; 里才是 &lt;code&gt;ruleset.xml&lt;/code&gt;，那么对应上面的 &lt;code&gt;PATH_TO_SEARCH_STANDARDS&lt;/code&gt; 应该为：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;phpcs --config-set installed_paths /Users/overtrue/code_standards
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&quot;section-5&quot;&gt;查看已经安装的标准：&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;phpcs -i
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&quot;section-6&quot;&gt;查看配置：&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;phpcs --config-show
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&quot;section-7&quot;&gt;检查代码规范：&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;phpcs ./codes/Example.php
+// or
+phpcs ./codes/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;指定标准：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;phpcs ./codes/Example.php --standard=PSR2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;报告格式：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;phpcs --report=summary /path/to/code
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;可用的格式有（默认为: &lt;code&gt;full&lt;/code&gt;）：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;full, xml, checkstyle, csv
+json, emacs, source, summary, diff
+svnblame, gitblame, hgblame or notifysend
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&quot;section-8&quot;&gt;修复代码&lt;/h5&gt;
+
+&lt;p&gt;第一种：使用 diff 形式打补丁：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;phpcs --report-diff=/path/to/changes.diff /path/to/code
+patch -p0 -ui /path/to/changes.diff
+# patching file /path/to/code/file.php
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;第二种：使用 PHP Code Beautifier 和 Fixer：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;phpcbf /path/to/code
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;以上命令会自动修复原文件，如果不想直接覆盖原文件，可以使用 &lt;code&gt;--suffix&lt;/code&gt; 指定修复后的代码后缀：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;phpcs /path/to/code --suffix=.fixed
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;更多 PHPCS 的使用请参考：https://github.com/squizlabs/PHP_CodeSniffer/wiki&lt;/p&gt;
+
+&lt;h2 id=&quot;phpmd&quot;&gt;PHPMD&lt;/h2&gt;
+
+&lt;h3 id=&quot;section-9&quot;&gt;安装&lt;/h3&gt;
+
+&lt;p&gt;同样有以下安装方式：&lt;/p&gt;
+
+&lt;h5 id=&quot;phar-&quot;&gt;下载 &lt;code&gt;phar&lt;/code&gt; 文件安装：&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;wget -c http://static.phpmd.org/php/latest/phpmd.phar
+mv phpmd.phar /usr/bin/phpmd
+chmod +x /usr/bin/phpmd
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&quot;composer-&quot;&gt;使用 &lt;code&gt;Composer&lt;/code&gt; 安装：&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;composer global require phpmd/phpmd
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-10&quot;&gt;使用&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;检查代码质量：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;# phpmd 代码路径 报告格式
+phpmd /path/to/source text
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;或者指定要检查的规则：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# phpmd 代码路径 报告格式 规则列表
+phpmd /path/to/source text codesize,unusedcode,naming
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;或者使用xml指定检查规则：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# phpmd 代码路径 报告格式 规则xml文件
+phpmd /path/to/source text /phpmd_ruleset.xml
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;报告格式有：
+    &lt;ul&gt;
+      &lt;li&gt;xml, 以 XML 格式输出；&lt;/li&gt;
+      &lt;li&gt;text, 简单的文本格式；&lt;/li&gt;
+      &lt;li&gt;html, 输出到单个的html；&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;这里有一个phpmd规则可参考：https://github.com/overtrue/phpmd-rulesets&lt;/p&gt;
+
+&lt;p&gt;更多关于 PHPMD 的使用请参考：http://phpmd.org/documentation/index.html&lt;/p&gt;
+</description>
+        <pubDate>Mon, 18 May 2015 00:00:00 +0800</pubDate>
+        <link>//articles/2015/05/install-phpcs-and-phpmd.html</link>
+        <guid isPermaLink="true">//articles/2015/05/install-phpcs-and-phpmd.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>centos 编译安装最新版 Git</title>
+        <description>&lt;h2 id=&quot;section&quot;&gt;安装依赖包&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;yum -y install zlib-devel curl-devel openssl-devel perl cpio expat-devel gettext-devel openssl zlib autoconf tk perl-ExtUtils-MakeMaker
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;git-&quot;&gt;获取最新版 Git 源码包&lt;/h2&gt;
+
+&lt;p&gt;从 https://github.com/git/git/releases 下载最新版的 zip 包或者 tar.gz 并解压：&lt;/p&gt;
+
+&lt;p&gt;以 tar.gz 格式为例（在网页的 tar.gz 上右键复制下载链接即可）：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;wget https://github.com/git/git/archive/v2.4.0.tar.gz
+tar zxvf v2.4.0.tar.gz
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;会得到一个 &lt;code&gt;git-2.4.0&lt;/code&gt; 的目录（版本号与下载的一致），然后进入这个目录：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;cd git-2.4.0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;编译安装&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;autoconf
+./configure
+make
+make install
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;以上4步请一步步来，以免出现错误不好找原因。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;然后修改 &lt;code&gt;/etc/ld.so.conf&lt;/code&gt; 文件，在最后加入一行：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;/usr/local/lib
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;保存并关闭。&lt;/p&gt;
+
+&lt;p&gt;这就安装好了，看看版本：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;git --version
+# git version 2.4.0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;错误处理&lt;/h2&gt;
+
+&lt;p&gt;如果安装后报以下错误：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;bash: /usr/bin/git: 没有那个文件或目录
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;那么请编辑 &lt;code&gt;/etc/profile&lt;/code&gt; 在最后加入一行：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;export PATH=$PATH:/usr/local/bin
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后重新开窗口就好了，或者执行命令 &lt;code&gt;source /etc/profile&lt;/code&gt; 后就好了。&lt;/p&gt;
+</description>
+        <pubDate>Fri, 08 May 2015 00:00:00 +0800</pubDate>
+        <link>//articles/2015/05/install-latest-git-on-centos.html</link>
+        <guid isPermaLink="true">//articles/2015/05/install-latest-git-on-centos.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>sudo -Hu 执行时找不到命令的问题解决</title>
+        <description>&lt;p&gt;虽然在 &lt;code&gt;/etc/profile&lt;/code&gt; 中加了全局 &lt;code&gt;PATH&lt;/code&gt;，但是在以 &lt;code&gt;sudo -Hu [username] [command]&lt;/code&gt; 执行的时候报命令不存在，原因是 &lt;code&gt;/etc/sudoers&lt;/code&gt; 中还有一个 &lt;code&gt;secure_path&lt;/code&gt; 没修改：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;visudo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;查找 &lt;code&gt;secure_path&lt;/code&gt;，加入你要添加的目录，比如 &lt;code&gt;/usr/local/bin&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;Defaults    secure_path = /sbin:/bin:/usr/sbin:/usr/bin
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;改为：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;Defaults    secure_path = /sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;即可。&lt;/p&gt;
+</description>
+        <pubDate>Fri, 08 May 2015 00:00:00 +0800</pubDate>
+        <link>//articles/2015/05/cannot-find-command-sudo-hu.html</link>
+        <guid isPermaLink="true">//articles/2015/05/cannot-find-command-sudo-hu.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>处理 Laravel 5 默认事件</title>
+        <description>&lt;p&gt;Laravel 提供了很多默认事件，登录登出、数据库连接与查询、应用启动前后、缓存等等很多默认事件，本篇以用户登录事件来演示如何处理 Larvel 5 的默认事件。&lt;/p&gt;
+
+&lt;p&gt;我们的目的：&lt;strong&gt;处理用户登录事件，在用户登录的时候给用户添加最后登录时间(&lt;code&gt;last_login_at&lt;/code&gt;)，以及最后登录的IP(&lt;code&gt;last_ip&lt;/code&gt;)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;用户的登录事件在 Laravel 5 里的事件名称是 &lt;code&gt;auth.login&lt;/code&gt;。&lt;/p&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;第一步：创建事件处理器&lt;/h3&gt;
+
+&lt;p&gt;Laravel 5 里直接使用命令即可创建一个事件处理器:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;php artisan handler:event AuthLoginEventHandler
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;AuthLoginEventHandler&lt;/code&gt; 是我们定义的名称，你可以随意命名(合理的)，它会创建 &lt;code&gt;app/Handlers/Events/AuthLoginEventHandler.php&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php namespace App\Handlers\Events;
+
+use Illuminate\Contracts\Queue\ShouldBeQueued;
+use Illuminate\Queue\InteractsWithQueue;
+
+class AuthLoginEventHandler {
+
+    /**
+     * Create the event handler.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        //
+    }
+
+    /**
+     * Handle the event.
+     *
+     * @param  Events  $event
+     * @return void
+     */
+    public function handle(Event $event)
+    {
+        //
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;第二步：注册监听&lt;/h3&gt;
+
+&lt;p&gt;打开 &lt;code&gt;app/Providers/EventServiceProvider.php&lt;/code&gt;，将我们的监听添加上:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;protected $listen = [
+    &#39;auth.login&#39; =&amp;gt; [
+        &#39;App\Handlers\Events\AuthLoginEventHandler&#39;,
+    ],
+];
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;第三步：添加逻辑代码&lt;/h3&gt;
+
+&lt;p&gt;我们的需求是：在用户登录的时候给用户添加最后登录时间(&lt;code&gt;last_login_at&lt;/code&gt;)，以及最后登录的IP(&lt;code&gt;last_ip&lt;/code&gt;)。&lt;br /&gt;
+&amp;gt; 注意：这两个字段是我自己创建的&lt;br /&gt;
+当然，这里只是举例，你可以在这里完成所有你想要的需求。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;注意：框架默认的事件触发时的参数都可能不同，具体请查看框架源码或者参阅相关文档。&lt;br /&gt;
+小窍门：使用 关键字 &lt;code&gt;fire(&#39;&lt;/code&gt; 在框架目录中搜索，可以得到大部分的框架事件的调用处。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;这里 &lt;code&gt;auth.login&lt;/code&gt; 事件框架会传递两个参数：&lt;code&gt;用户实例&lt;/code&gt;, &lt;code&gt;是否记住登录&lt;/code&gt;，所以我们修改我们刚刚创建的 &lt;code&gt;AuthLoginEventHandler.php&lt;/code&gt; 中的 &lt;code&gt;handle&lt;/code&gt; 方法：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;    /**
+     * 处理用户登录
+     *
+     * @param User    $user     用户
+     * @param boolean $remember 是否记住登录
+     *
+     * @return void
+     */
+    public function handle(User $user, $remember)
+    {
+        $user-&amp;gt;last_login_at = Carbon::now();
+        $user-&amp;gt;last_ip = $this-&amp;gt;request-&amp;gt;ip();
+
+        //TODO:其它动作，比如增加积分等等。
+
+        $user-&amp;gt;save();
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;可以看到上面我们用到了 &lt;code&gt;Illuminate\Http\Request&lt;/code&gt; 对象，所以我们还需要添加一个属性 &lt;code&gt;protected $request&lt;/code&gt;，然后从构造方法 &lt;code&gt;__construct&lt;/code&gt; 让框架注入进来（由框架完成注入）：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;    ...
+
+    /**
+     * Request 对象
+     *
+     * @var Illuminate\Http\Request
+     */
+    protected $request;
+
+    /**
+     * Create the event handler.
+     *
+     * @return void
+     */
+    public function __construct(Request $request)
+    {
+        $this-&amp;gt;request = $request;
+    }
+
+    ...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;我们所有用到的类请记得引入。最后完整的 &lt;code&gt;AuthLoginEventHandler.php&lt;/code&gt; 如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php namespace App\Handlers\Events;
+
+use Illuminate\Contracts\Queue\ShouldBeQueued;
+use Illuminate\Queue\InteractsWithQueue;
+use Illuminate\Http\Request;
+use App\Models\User;
+use Carbon\Carbon;
+
+class AuthLoginEventHandler {
+
+    /**
+     * Request 对象
+     *
+     * @var Illuminate\Http\Request
+     */
+    protected $request;
+
+    /**
+     * Create the event handler.
+     *
+     * @return void
+     */
+    public function __construct(Request $request)
+    {
+        $this-&amp;gt;request = $request;
+    }
+
+    /**
+     * 处理用户登录
+     *
+     * @param User    $user     用户
+     * @param boolean $remember 是否记住登录
+     *
+     * @return void
+     */
+    public function handle(User $user, $remember)
+    {
+        $user-&amp;gt;last_login_at = Carbon::now();
+        $user-&amp;gt;last_ip = $this-&amp;gt;request-&amp;gt;ip();
+
+        //TODO:其它动作，比如增加积分等等。
+
+        $user-&amp;gt;save();
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后在用户登录的时候就会自动给用户字段 &lt;code&gt;last_login_at&lt;/code&gt; 和 &lt;code&gt;last_ip&lt;/code&gt; 补充内容了。是不是很方便呢？&lt;/p&gt;
+</description>
+        <pubDate>Fri, 17 Apr 2015 00:00:00 +0800</pubDate>
+        <link>//articles/2015/04/laravel-login-event-handler.html</link>
+        <guid isPermaLink="true">//articles/2015/04/laravel-login-event-handler.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Laravel 获取当前控制器名称或方法</title>
+        <description>&lt;p&gt;我们有时候需要获取当前 Laravel 项目的控制器或者方法名，框架默认是不会提供单独的方法的，框架只提供了如下的方法：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;\Route::current()-&amp;gt;getActionName();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;返回的结果是：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;App\Http\Controllers\WelcomeController@index
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;可是这不是我们想要的，我们只想获取控制器名或者方法名，那么，你可以自定义下面三个函数来实现：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;/**
+ * 获取当前控制器名
+ *
+ * @return string
+ */
+public function getCurrentControllerName()
+{
+    return getCurrentAction()[&#39;controller&#39;];
+}
+
+/**
+ * 获取当前方法名
+ *
+ * @return string
+ */
+public function getCurrentMethodName()
+{
+    return getCurrentAction()[&#39;method&#39;];
+}
+
+/**
+ * 获取当前控制器与方法
+ *
+ * @return array
+ */
+public function getCurrentAction()
+{
+    $action = \Route::current()-&amp;gt;getActionName();
+    list($class, $method) = explode(&#39;@&#39;, $action);
+
+    return [&#39;controller&#39; =&amp;gt; $class, &#39;method&#39; =&amp;gt; $method];
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;另外推荐近期完成的两个 Laravel 拓展包：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/overtrue/laravel-lang&quot;&gt;overtrue/laravel-lang&lt;/a&gt; 基于 &lt;a href=&quot;https://github.com/caouecs/Laravel4-lang&quot;&gt;Laravel4-lang&lt;/a&gt; 的 44 语种语言文件&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/overtrue/laravel-pinyin&quot;&gt;overtrue/laravel-pinyin&lt;/a&gt; Laravel 中文转拼音， 基于 &lt;a href=&quot;https://github.com/overtrue/pinyin&quot;&gt;overtrue/pinyin&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 19 Mar 2015 00:00:00 +0800</pubDate>
+        <link>//articles/2015/03/get-current-controller-of-laravel.html</link>
+        <guid isPermaLink="true">//articles/2015/03/get-current-controller-of-laravel.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>使用PHP脚本远程部署git项目</title>
+        <description>&lt;p&gt;2015第一篇文章，没啥技术含量，权当作个笔记。&lt;/p&gt;
+
+&lt;p&gt;我们通常在一些git托管网站托管我们的代码，除了大家耳熟能详的&lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;, 还有国外的&lt;a href=&quot;https://bitbucket.org/&quot;&gt;Bitbucket&lt;/a&gt;等，国内的&lt;a href=&quot;http://git.oschina.net/&quot;&gt;开源中国&lt;/a&gt;、&lt;a href=&quot;https://coding.net/&quot;&gt;Coding&lt;/a&gt;等都是不错的选择。&lt;/p&gt;
+
+&lt;p&gt;今天以Coding上私有库的部署为例来讲解如何使用Coding的hook服务来自动部署到生产环境的服务器。&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;准备工作&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;在Coding.net上创建一个私有库&lt;/li&gt;
+  &lt;li&gt;安装了web服务与git服务的服务器&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;在服务器上&lt;/h2&gt;
+
+&lt;p&gt;1.创建web服务器用户目录，这里以apache用户为例，不同的环境请根据自己环境自行修改：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt; sudo mkdir /var/www/.ssh
+ sudo chown -R apache:apache /var/www/.ssh/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;2.生成公钥&lt;/p&gt;
+
+&lt;p&gt;公钥有两个：1. git用户公钥，2. 部署公钥：&lt;/p&gt;
+
+&lt;p&gt;3.用户公钥（用于git clone时认证权限）&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt; ssh-keygen -t rsa -C &quot;anzhengchao@gmail.com&quot;
+ # 然后一直回车就行
+ # 生成的文件通常是 /root/.ssh/id_rsa，如果非root用户请查看提示上的路径
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;4.部署公钥&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt; sudo -Hu apache ssh-keygen -t rsa # 请选择 &quot;no passphrase&quot;，一直回车下去
+ sudo cat /var/www/.ssh/id_rsa.pub # 查看生成的密钥内容，复制全部
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;5.准备钩子文件&lt;/p&gt;
+
+&lt;p&gt;在你的www目录建立一个目录&lt;code&gt;hook&lt;/code&gt;, 里面放上一个php文件&lt;code&gt;index.php&lt;/code&gt;，内容如下：&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/overtrue/0bf1cd704bf804de2e2c.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;在此目录下建立一个目录&lt;code&gt;repos&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt; mkdir repos
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;修改目录权限：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt; chown -R apache:apache /www/hook # 这里请改成你创建的hook目录
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;确保你的hook文件可以访问：http://example.com/hook/index.php，钩子准备完成。&lt;/p&gt;
+
+&lt;p&gt;4.修改git配置&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt; git config --global user.name &quot;overtrue&quot; 
+ git config --global user.email &quot;anzhengchao@gmail.com&quot; # 邮箱请与conding上一致
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;在代码托管网站&lt;/h2&gt;
+
+&lt;p&gt;1.添加用户公钥&lt;/p&gt;
+
+&lt;p&gt;复制上面的&lt;code&gt;/root/.ssh/id_rsa.pub&lt;/code&gt;的内容到个人设置页&lt;code&gt;https://coding.net/user/setting/keys&lt;/code&gt;添加即可&lt;/p&gt;
+
+&lt;p&gt;2.复制&lt;code&gt;/var/www/.ssh/id_rsa.pub&lt;/code&gt;的内容并添加到Coding.net公钥:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;选择项目 &amp;gt; 设置 &amp;gt; 部署公钥 &amp;gt; 新建 &amp;gt; 粘贴到下面框并确认&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;3.添加hook&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;选择项目 &amp;gt; 设置 &amp;gt; WebHook &amp;gt; 新建hook &amp;gt; 粘贴你的hook/index.php所在的网址。比如:http://example.com/hook/index.php, 令牌可选，但是建议写上。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;稍过几秒刷新页面查看hook状态，显示为绿色勾就OK了。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;初始化&lt;/h2&gt;
+
+&lt;p&gt;1.我们需要先在服务器上clone一次，以后都可以实现自动部署了：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;  sudo chown -R apache:apache /www/hook/repos
+  sudo -Hu apache git clone git@coding.net:you/repo.git /www/hook/repos/  --depth=1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;**！！注意，这里初始化clone必须要用www用户**
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;2.往Coding.net提交一次代码测试：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;  git commit -am &quot;test hook&quot; --allow-empty
+  git push 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;OK，稍微一几秒，正常的话你在代码里配置的目标目录里就会有你的项目文件了。&lt;/p&gt;
+
+&lt;p&gt;有问题请随时反馈：https://gist.github.com/overtrue/0bf1cd704bf804de2e2c&lt;/p&gt;
+</description>
+        <pubDate>Mon, 19 Jan 2015 00:00:00 +0800</pubDate>
+        <link>//articles/2015/01/how-to-deploy-project-with-git-hook.html</link>
+        <guid isPermaLink="true">//articles/2015/01/how-to-deploy-project-with-git-hook.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Laravel拓展jenssegers/laravel-mongodb与MySQL关联查询字段类型不一致问题解决方案</title>
+        <description>&lt;p&gt;当我们在存储mongo数据的时候，整型字段存储的值为&lt;code&gt;NumberLong&lt;/code&gt;格式，那么如果这个id来自于MySQL，在使用MySQL模型与MongoDB关联查询时就会踩到这个坑，从jenssegers/laravel-mongodb生成的SQL可以看到类似这样的结果：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sql&quot;&gt;...{&quot;object_id&quot;:{&quot;$in&quot;:[&quot;13&quot;, &quot;15&quot;]}}...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;可是我们的期望是：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sql&quot;&gt;...{&quot;object_id&quot;:{&quot;$in&quot;:[13, 15]}}...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这里的13、15是MySQL里的一条记录，在mongo里的值为&lt;code&gt;NumberLong(13)&lt;/code&gt;， 所以查询结果永远为空。&lt;br /&gt;
+找遍了源码，没有一个更好的解决方法，后来只能使用Eloquent模型提供的&lt;a href=&quot;http://v4.golaravel.com/docs/4.2/eloquent#accessors-and-mutators&quot;&gt;&lt;strong&gt;属性修改器&lt;/strong&gt;&lt;/a&gt;来实现：&lt;/p&gt;
+
+&lt;p&gt;在&lt;strong&gt;MySQL的模型里&lt;/strong&gt;对相应字段使用修改器(这里以id为例)：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;/**
+ * 避免与mongo关联时id转为字符的问题
+ *
+ * @param string $id
+ *
+ * @return int
+ */
+public function getIdAttribute($id)
+{
+    return intval($id);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;方法名：&lt;code&gt;get属性名大驼峰Attribute&lt;/code&gt;, ex: &lt;code&gt;object_id&lt;/code&gt; -&amp;gt; &lt;code&gt;getObjectIdAttribute&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;框架源码参考：&lt;a href=&quot;https://github.com/laravel/framework/blob/4.2/src/Illuminate/Database/Eloquent/Model.php#L2409-L2419&quot;&gt;getAttribute&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 25 Dec 2014 00:00:00 +0800</pubDate>
+        <link>//articles/2014/12/laravel-mongodb-field-type-bug.html</link>
+        <guid isPermaLink="true">//articles/2014/12/laravel-mongodb-field-type-bug.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>在Laravel外使用Eloquent（二）- 分页问题</title>
+        <description>&lt;p&gt;在上一篇&lt;a href=&quot;/2014/10/30/using-eloquent-outside-laravel.html&quot;&gt;《在Laravel外使用Eloquent（一）》&lt;/a&gt; 中我们演示了如何引入Eloquent以及基本使用，但是如果细心的朋友肯定会发现，当你在使用paginate(15)来分页的时候是会报错的。因为我们没有依赖laravel的pagination模块。但是引入那个模块同时它内部依赖了symfony的http-foundation模块，意味着为了一个分页功能我们要装好多东西。于是我就实现了一个比较简单的分页类：&lt;/p&gt;
+
+&lt;p&gt;代码见：&lt;a href=&quot;https://github.com/overtrue/rester&quot;&gt;https://github.com/overtrue/rester&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+
+namespace Rester;
+
+/**
+ * Paginator.php
+ *
+ * (c) 2014 overtrue &amp;lt;anzhengchao@gmail.com&amp;gt;
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @author overtrue &amp;lt;anzhengchao@gmail.com&amp;gt;
+ * @github https://github.com/overtrue
+ * @url    http://overtrue.me
+ * @date   2014-10-23T20:05:33
+ */
+
+use Closure;
+use Countable;
+use ArrayAccess;
+use Serializable;
+use ArrayIterator;
+use JsonSerializable;
+use IteratorAggregate;
+
+class Paginator implements
+    ArrayAccess,
+    Countable,
+    IteratorAggregate,
+    Serializable,
+    JsonSerializable
+{
+    protected $pager;
+    protected $pageSize;
+    protected $total;
+    protected $items;
+
+    /**
+     * Constructor
+     *
+     * @param \Slim\Http\Request $request
+     * @param string             $pager
+     */
+    public function __construct($pager = &#39;page&#39;)
+    {
+        $this-&amp;gt;pager = $pager;
+    }
+
+    /**
+     * Make a pagination
+     *
+     * @param array   $items
+     * @param integer $total
+     * @param integer $pageSize
+     *
+     * @return array
+     */
+    public function make($items, $total, $pageSize = 10)
+    {
+        $this-&amp;gt;total    = abs($total);
+        $this-&amp;gt;pageSize = $pageSize;
+        $this-&amp;gt;items = $items;
+
+        return $this;
+    }
+
+    /**
+     * Return current page
+     *
+     * @return integer
+     */
+    public function getCurrentPage($total = null)
+    {
+        $page = abs(app()-&amp;gt;request-&amp;gt;get(&#39;page&#39;, 1));
+
+        if ($total) {
+            $this-&amp;gt;total = $total;
+        }
+
+        $page &amp;gt;= 1 || $page = 1;
+
+        if ($this-&amp;gt;items) {
+            $totalPage = $this-&amp;gt;getTotalPage();
+            $page &amp;lt;= $totalPage || $page = $totalPage;
+        }
+
+        return $page;
+    }
+
+    /**
+     * Return total pages
+     *
+     * @return integer
+     */
+    public function getTotalPage()
+    {
+        $this-&amp;gt;pageSize &amp;gt; 0 || $this-&amp;gt;pageSize = 10;
+
+        $totalPage = ceil($this-&amp;gt;total / $this-&amp;gt;pageSize);
+
+        $totalPage &amp;gt;= 1 || $totalPage = 1;
+
+        return $totalPage;
+    }
+
+    public function links()
+    {
+        $html = &#39;&amp;lt;ul class=&quot;pagination&quot;&amp;gt;&#39;;
+
+        $totalPage   = $this-&amp;gt;getTotalPage();
+        $currentPage = $this-&amp;gt;getCurrentPage();
+
+        if ($totalPage &amp;lt; 10) {
+            for ($i = 1; $i &amp;lt;= $totalPage; $i++) {
+                $active = $i == $currentPage ? &#39;class=&quot;active&quot;&#39;:&#39;&#39;;
+                $html .= &quot;&amp;lt;li $active&amp;gt;&amp;lt;a href=&quot;.$this-&amp;gt;getLink($i).&quot;&amp;gt;$i&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&quot;;
+            }
+        } else {
+
+            if ($currentPage &amp;gt; 3) {
+                $html .= &quot;&amp;lt;li&amp;gt;&amp;lt;a href=&quot;.$this-&amp;gt;getLink(1).&quot;&amp;gt;&amp;amp;laquo;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&quot;;
+                $start = $currentPage - 2;
+            } else {
+                $start = 1;
+            }
+
+            for ($i = $start; $i &amp;lt;= $currentPage; $i++) {
+                $active = $i == $currentPage ? &#39;class=&quot;active&quot;&#39;:&#39;&#39;;
+                $html .= &quot;&amp;lt;li $active&amp;gt;&amp;lt;a href=&quot;.$this-&amp;gt;getLink($i).&quot;&amp;gt;$i&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&quot;;
+            }
+
+            for ($i = $currentPage + 1; $i &amp;lt;= $currentPage + 3; $i++) {
+                $active = $i == $currentPage ? &#39;class=&quot;active&quot;&#39;:&#39;&#39;;
+                $html .= &quot;&amp;lt;li $active&amp;gt;&amp;lt;a href=&quot;.$this-&amp;gt;getLink($i).&quot;&amp;gt;$i&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&quot;;
+            }
+
+            if ($totalPage - $currentPage &amp;gt;= 5) {
+                $html .= &quot;&amp;lt;li&amp;gt;&amp;lt;a href=&#39;javascript:void(0)&#39;&amp;gt;...&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&quot;;
+                $html .= &quot;&amp;lt;li&amp;gt;&amp;lt;a href=&quot;.$this-&amp;gt;getLink($totalPage).&quot;&amp;gt;$totalPage&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&quot;;
+            }
+        }
+
+        return $html .= &#39;&amp;lt;/ul&amp;gt;&#39;;
+    }
+
+    /**
+     * getLink
+     *
+     * @param integer $page
+     *
+     * @return string
+     */
+    public function getLink($page)
+    {
+        static $query;
+
+        if (is_null($query)) {
+            $query = app()-&amp;gt;request-&amp;gt;get();
+        }
+
+        $query[&#39;page&#39;] = $page;
+
+        return &quot;?&quot; . http_build_query($query);
+    }
+
+     /** {@inhertDoc} */
+    public function jsonSerialize()
+    {
+        return $this-&amp;gt;items;
+    }
+
+    /** {@inhertDoc} */
+    public function serialize()
+    {
+        return serialize($this-&amp;gt;items);
+    }
+
+    /** {@inhertDoc} */
+    public function unserialize($data)
+    {
+        return $this-&amp;gt;items = unserialize($data);
+    }
+
+    /** {@inhertDoc} **/
+    public function getIterator()
+    {
+        return new ArrayIterator($this-&amp;gt;items);
+    }
+
+    /** {@inhertDoc} */
+    public function count($mode = COUNT_NORMAL)
+    {
+        return count($this-&amp;gt;items, $mode);
+    }
+
+    /**
+     * Get a data by key
+     *
+     * @param string $key
+     *
+     * @return mixed
+     */
+    public function __get($key) {
+        return $this[$key];
+    }
+
+    /**
+     * Assigns a value to the specified data
+     *
+     * @param string $key
+     * @param mixed  $value
+     *
+     * @return void
+     */
+    public function __set($key, $value)
+    {
+        $this-&amp;gt;items[$key] = $value;
+    }
+
+    /**
+     * Whether or not an data exists by key
+     *
+     * @param string $key
+     *
+     * @return bool
+     */
+    public function __isset($key)
+    {
+        return isset($this-&amp;gt;items[$key]);
+    }
+
+    /**
+     * Unsets an data by key
+     *
+     * @param string $key
+     */
+    public function __unset($key)
+    {
+        unset($this-&amp;gt;items[$key]);
+    }
+
+    /**
+     * Assigns a value to the specified offset
+     *
+     * @param string $offset
+     * @param mixed  $value
+     *
+     * @return void
+     */
+    public function offsetSet($offset, $value)
+    {
+        $this-&amp;gt;items[$offset] = $value;
+    }
+
+    /**
+     * Whether or not an offset exists
+     *
+     * @param string $offset
+     *
+     * @access public
+     *
+     * @return bool
+     */
+    public function offsetExists($offset)
+    {
+        return isset($this-&amp;gt;items[$offset]);
+    }
+
+    /**
+     * Unsets an offset
+     *
+     * @param string $offset
+     *
+     * @return array
+     */
+    public function offsetUnset($offset)
+    {
+        if ($this-&amp;gt;offsetExists($offset)) {
+            unset($this-&amp;gt;items[$offset]);
+        }
+    }
+
+    /**
+     * Returns the value at specified offset
+     *
+     * @param string $offset
+     *
+     * @return mixed
+     */
+    public function offsetGet($offset)
+    {
+        return $this-&amp;gt;offsetExists($offset) ? array_get($this-&amp;gt;items, $offset) : null;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后在我们初始化eloquent的方装载这个分页类到eloquent中就好：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;//...
+use Rester\Paginator;
+
+// 注册分页类
+Capsule::setPaginator(function() use ($app, $config) {
+    return new Paginator($app-&amp;gt;request, $config-&amp;gt;get(&#39;pager&#39;, &#39;page&#39;));
+});
+
+//...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;完整的eloquent初始化步骤请参考：&lt;/p&gt;
+
+&lt;p&gt;https://github.com/overtrue/rester/blob/master/start/eloquent.php&lt;/p&gt;
+
+&lt;p&gt;然后我们就可以正常使用分页功能了：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;$users = User::paginate(15);
+$users = User::where(&#39;status&#39;, 1)-&amp;gt;paginate(15);
+...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;因为上面的分页类实现了常用的&lt;a href=&quot;http://php.net/manual/zh/reserved.interfaces.php&quot;&gt;预定义接口&lt;/a&gt;, 所以你可以很方便的使用分页结果：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;// 遍历
+foreach ($users as $user) {
+    // do sth.
+}
+
+// json encode
+$json = json_encode($users);
+
+// count
+$count = count($users);
+
+//...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;另外还考虑到了大家不一定全用它写接口用，所以分页类同样实现了Laravel里的生成分页链接的方法：&lt;code&gt;$users-&amp;gt;links()&lt;/code&gt;, 它会生成bootstrap格式的分页列表：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;ul class=&quot;pagination&quot;&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href=&quot;#&quot;&amp;gt;&amp;amp;laquo;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href=&quot;#&quot;&amp;gt;1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href=&quot;#&quot;&amp;gt;2&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href=&quot;#&quot;&amp;gt;3&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href=&quot;#&quot;&amp;gt;4&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href=&quot;#&quot;&amp;gt;5&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href=&quot;#&quot;&amp;gt;&amp;amp;raquo;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;demo:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;div class=&quot;container&quot;&amp;gt;
+    &amp;lt;?php foreach ($users as $user): ?&amp;gt;
+        &amp;lt;?php echo $user-&amp;gt;name; ?&amp;gt;
+    &amp;lt;?php endforeach; ?&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;?php echo $users-&amp;gt;links(); ?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;OK,那么现在你就可以很方便的在你的项目里无忧的使用Eloquent啦。&lt;/p&gt;
+</description>
+        <pubDate>Tue, 25 Nov 2014 00:00:00 +0800</pubDate>
+        <link>//articles/2014/11/using-eloquent-outsite-laravel-2.html</link>
+        <guid isPermaLink="true">//articles/2014/11/using-eloquent-outsite-laravel-2.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>在Laravel外使用Eloquent（一）</title>
+        <description>&lt;p&gt;不得不承认Laravel的Eloquent是一个很棒的ORM，其实Laravel框架的设计本身结构使用的是subtree实现(外层使用的&lt;a href=&quot;https://github.com/dflydev/git-subsplit&quot;&gt;git-subsplit&lt;/a&gt;) , 也就是说Eloquent是独立的模块，我们也可以在自己的项目里通过composer来使用Eloquent，本文就详细讲解如何在自己的项目集成Eloquent。&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;安装&lt;/h2&gt;
+
+&lt;p&gt;首先我们得有&lt;code&gt;composer&lt;/code&gt;，安装方法请详见：&lt;a href=&quot;https://getcomposer.org/doc/00-intro.md&quot;&gt;https://getcomposer.org/doc/00-intro.md &lt;/a&gt;&lt;br /&gt;
+可能没有翻墙的情况下使用composer会比较慢，那么这里同样有福利：&lt;a href=&quot;http://pkg.phpcomposer.com/&quot;&gt;http://pkg.phpcomposer.com/&lt;/a&gt; 。&lt;/p&gt;
+
+&lt;p&gt;我们这里建议一个项目demo, 然后我们在demo目录下执行：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;composer require illuminate/database:~4.2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;那么你应该会看到：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;Using version ~4.2 for illuminate/database
+./composer.json has been created
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+  - Installing nesbot/carbon (1.13.0)
+    Loading from cache
+
+  - Installing illuminate/support (v4.2.9)
+    Downloading: 100%
+    Downloading: 100%
+    Downloading: 100%
+
+    Failed, trying the next URL
+    Downloading: 100%
+
+  - Installing illuminate/container (v4.2.9)
+    Downloading: 100%
+
+  - Installing illuminate/events (v4.2.9)
+    Downloading: 100%
+
+  - Installing illuminate/database (v4.2.9)
+    Downloading: 100%
+
+Writing lock file
+Generating autoload files
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这样就表示Eloquent已经安装好了。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;配置&lt;/h2&gt;
+
+&lt;p&gt;下面我们来配置Eloquent。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;首先我们创建一个入口文件，如果你的项目已经有内容，那么同理在你的项目入口文件加入即可：&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;demo/start.php:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+
+// 载入composer的autoload文件
+include __DIR__ . &#39;/vendor/autoload.php&#39;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;然后我们加入数据库配置：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;$database = [
+    &#39;driver&#39;    =&amp;gt; &#39;mysql&#39;,
+    &#39;host&#39;      =&amp;gt; &#39;localhost&#39;,
+    &#39;database&#39;  =&amp;gt; &#39;demo&#39;,
+    &#39;username&#39;  =&amp;gt; &#39;root&#39;,
+    &#39;password&#39;  =&amp;gt; &#39;&#39;,
+    &#39;charset&#39;   =&amp;gt; &#39;utf8&#39;,
+    &#39;collation&#39; =&amp;gt; &#39;utf8_unicode_ci&#39;,
+    &#39;prefix&#39;    =&amp;gt; &#39;&#39;,
+];
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;上面我们的数据库配置，库名&lt;code&gt;demo&lt;/code&gt;,用户名&lt;code&gt;root&lt;/code&gt;,密码为空,这个&lt;code&gt;demo&lt;/code&gt;是我在mysql里建立好的空数据库。&lt;/p&gt;
+
+&lt;p&gt;然后我们加入Eloquent初始化代码：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;use Illuminate\Container\Container;
+use Illuminate\Database\Capsule\Manager as Capsule;
+
+$capsule = new Capsule;
+
+// 创建链接
+$capsule-&amp;gt;addConnection($database);
+
+// 设置全局静态可访问
+$capsule-&amp;gt;setAsGlobal();
+
+// 启动Eloquent
+$capsule-&amp;gt;bootEloquent();
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;那么Eloquent就配置完成了。&lt;/p&gt;
+
+&lt;p&gt;最终的文件&lt;code&gt;demo/start.php&lt;/code&gt;应该是这样：&lt;/p&gt;
+
+&lt;p&gt;demo/start.php:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+
+// 载入composer的autoload文件
+include __DIR__ . &#39;/vendor/autoload.php&#39;;
+
+$database = [
+    &#39;driver&#39;    =&amp;gt; &#39;mysql&#39;,
+    &#39;host&#39;      =&amp;gt; &#39;localhost&#39;,
+    &#39;database&#39;  =&amp;gt; &#39;demo&#39;,
+    &#39;username&#39;  =&amp;gt; &#39;root&#39;,
+    &#39;password&#39;  =&amp;gt; &#39;&#39;,
+    &#39;charset&#39;   =&amp;gt; &#39;utf8&#39;,
+    &#39;collation&#39; =&amp;gt; &#39;utf8_unicode_ci&#39;,
+    &#39;prefix&#39;    =&amp;gt; &#39;&#39;,
+];
+
+use Illuminate\Container\Container;
+use Illuminate\Database\Capsule\Manager as Capsule;//如果你不喜欢这个名称，as DB;就好 
+
+$capsule = new Capsule;
+
+// 创建链接
+$capsule-&amp;gt;addConnection($database);
+
+// 设置全局静态可访问
+$capsule-&amp;gt;setAsGlobal();
+
+// 启动Eloquent
+$capsule-&amp;gt;bootEloquent();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;那么现在只要你需要使用到Eloquent的地方载入这个文件即可， 下面我们来简单介绍一下使用。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;建表&lt;/h2&gt;
+
+&lt;p&gt;配置完成了，我们再来使用Eloquent的结构生成器创建数据库的表：&lt;/p&gt;
+
+&lt;p&gt;demo/table.php&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+
+//包含Eloquent的初始化文件
+include __DIR__ . &#39;/start.php&#39;;
+
+use Illuminate\Database\Capsule\Manager as Capsule;
+
+Capsule::schema()-&amp;gt;create(&#39;users&#39;, function($table)
+{
+    $table-&amp;gt;increments(&#39;id&#39;);
+    $table-&amp;gt;string(&#39;username&#39;, 40);
+    $table-&amp;gt;string(&#39;email&#39;)-&amp;gt;unique();
+    $table-&amp;gt;timestamps();
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后我们运行table.php，两种方式：浏览器打开，或者命令行运行：&lt;br /&gt;
+&lt;code&gt;shell
+php table.php
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;然后我们的查看MySQL数据库&lt;code&gt;domo&lt;/code&gt;里就会有一个&lt;code&gt;users&lt;/code&gt;表了:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/attachments/images/db-demo.png&quot; alt=&quot;demo-db&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;写入数据&lt;/h2&gt;
+
+&lt;p&gt;表建立好了，然后我们插入数据，我们同样创建一个文件 &lt;code&gt;demo/insert.php&lt;/code&gt;来做实验：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+
+//包含Eloquent的初始化文件
+include __DIR__ . &#39;/start.php&#39;;
+
+use Illuminate\Database\Capsule\Manager as Capsule;
+
+Capsule::table(&#39;users&#39;)-&amp;gt;insert(array(
+        array(&#39;username&#39; =&amp;gt; &#39;Hello&#39;,  &#39;email&#39; =&amp;gt; &#39;hello@world.com&#39;),
+        array(&#39;username&#39; =&amp;gt; &#39;Carlos&#39;,  &#39;email&#39; =&amp;gt; &#39;anzhengchao@gmail.com&#39;),
+        array(&#39;username&#39; =&amp;gt; &#39;Overtrue&#39;,  &#39;email&#39; =&amp;gt; &#39;i@overtrue.me&#39;),
+    ));
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;我们写入了3条数据。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-4&quot;&gt;使用模型&lt;/h2&gt;
+
+&lt;p&gt;只要你的模型继承Eloquent的Model类，就没问题了：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;
+use  Illuminate\Database\Eloquent\Model  as Eloquent; 
+
+class User extends  Eloquent 
+{
+	protected $table = &#39;users&#39;;
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;那么你就可以很方便的像在Laravel框架里一样使用Eloquent了：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;// 查询id为2的
+$users = User::find(2);
+
+// 查询全部
+$users = User::all();
+
+// 创建数据
+$user = new User;
+$user-&amp;gt;username = &#39;someone&#39;;
+$user-&amp;gt;email = &#39;some@overtrue.me&#39;;
+$user-&amp;gt;save();
+
+// ... 更多
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;OK，这基本上就搞定了，当然，你用分页的时候会出问题，我们下一节再讲。&lt;/p&gt;
+
+&lt;p&gt;为了给大家一个完整的示例，我这里使用&lt;a href=&quot;https://github.com/codeguy/slim&quot;&gt;Slim&lt;/a&gt;结合Eloquent做了一个实例：&lt;a href=&quot;https://github.com/overtrue/rester&quot;&gt;overtrue/rester&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/2014/11/25/using-eloquent-outside-laravel-2.html&quot;&gt;《在Laravel外使用Eloquent（二）- 分页问题》&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;更多关于Eloquent的使用请参考: &lt;a href=&quot;http://v4.golaravel.com/docs/4.1/eloquent&quot;&gt;http://v4.golaravel.com/docs/4.1/eloquent&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;section-5&quot;&gt;有用的链接&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://laravel.com&quot;&gt;Laravel官网&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://golaravel.com&quot;&gt;Laravel中文网&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 30 Oct 2014 00:00:00 +0800</pubDate>
+        <link>//articles/2014/10/using-eloquent-outside-laravel.html</link>
+        <guid isPermaLink="true">//articles/2014/10/using-eloquent-outside-laravel.html</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
