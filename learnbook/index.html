@@ -15,7 +15,7 @@
     <script src="/assets/js/config.min.js"></script>
     <script>
         // OnLine 模式禁止控制台查看
-        const IS_RELEASE = false
+        const IS_RELEASE = true
         // const IS_RELEASE = false
 
         // 视频播放组件全局变量
@@ -51,8 +51,8 @@
             },
             plugins: [
                 EditOnGithubPlugin.create(
-                    'https://github.com/kugouming/kugouming.github.io/blob/master:',
-                    'https://github.com/kugouming/kugouming.github.io/blob/master:',
+                    'https://github.com/kugouming/kugouming.github.io/blob/master/',
+                    'https://github.com/kugouming/kugouming.github.io/blob/master/',
                     function(file) {
                         return '编辑'
                     }
