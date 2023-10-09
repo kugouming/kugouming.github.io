@@ -1,0 +1,22 @@
+<!-- ./_sidebar.md -->
+- [<< <font color="#0056fd">返回主页</font>](/)
+  
+- **数据密集型应用设计** 
+    - [序言](./others/ddia/preface.md)
+    - [第一部分：数据系统的基石](./others/ddia/part-i.md)
+        - [第一章：可靠性、可伸缩性、可维护性](./others/ddia/ch1.md)
+        - [第二章：数据模型与查询语言](./others/ddia/ch2.md)
+        - [第三章：存储与检索](./others/ddia/ch3.md)
+        - [第四章：编码与演化](./others/ddia/ch4.md)
+    - [第二部分：分布式数据](./others/ddia/part-ii.md)
+        - [第五章：复制](./others/ddia/ch5.md)
+        - [第六章：分区](./others/ddia/ch6.md)
+        - [第七章：事务](./others/ddia/ch7.md)
+        - [第八章：分布式系统的麻烦](./others/ddia/ch8.md)
+        - [第九章：一致性与共识](./others/ddia/ch9.md)
+    - [第三部分：衍生数据](./others/ddia/part-iii.md)
+        - [第十章：批处理](./others/ddia/ch10.md)
+        - [第十一章：流处理](./others/ddia/ch11.md)
+        - [第十二章：数据系统的未来](./others/ddia/ch12.md)
+    - [术语表](./others/ddia/glossary.md)
+    - [后记](./others/ddia/colophon.md)
