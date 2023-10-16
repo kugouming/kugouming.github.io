@@ -7,6 +7,7 @@
     - [Go Test 从入门到躺平](./books/Go-Test-from-beginner-to-lying-flat.md)
     - [LeetCode Cookbook](./books/leetcode-cookbook-go.md)
     - [中文 Python 笔记](./books/notes-python/)
+    - [搜索引擎技术](./books/search-engine-book.md)
 
 - **技术分享**
     - [重构：改善既有代码的设计](./books/go-design-code-for-better.md)
