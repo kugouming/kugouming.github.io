@@ -18,6 +18,11 @@
         const IS_RELEASE = true
         // const IS_RELEASE = false
 
+        // 离线模式
+        if (typeof navigator.serviceWorker !== 'undefined') {
+            navigator.serviceWorker.register('sw.js')
+        }
+
         try{
             // 视频播放组件全局变量
             let videoPlayer = {
