@@ -1,0 +1,7 @@
+{
+  "deleteOption": ".trash",
+  "logsModal": true,
+  "excludedFolders": "/工作笔记,/运维脚本,/项目记录",
+  "ribbonIcon": true,
+  "excludeSubfolders": true
+}

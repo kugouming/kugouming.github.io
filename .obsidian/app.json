@@ -1,0 +1,12 @@
+{
+  "legacyEditor": false,
+  "attachmentFolderPath": "./_assets",
+  "showUnsupportedFiles": true,
+  "trashOption": "system",
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "current",
+  "newLinkFormat": "relative",
+  "focusNewTab": true,
+  "vimMode": false,
+  "useMarkdownLinks": true
+}

@@ -1,0 +1,11 @@
+{
+  "rootFolderPath": "./Webdav",
+  "webdavConfig": {
+    "address": "http://wm.bcc-szwg.baidu.com:8099",
+    "username": "kugouming",
+    "password": "work123@",
+    "authType": "basic",
+    "manualRecursive": false,
+    "remoteBaseDir": "Webdav"
+  }
+}

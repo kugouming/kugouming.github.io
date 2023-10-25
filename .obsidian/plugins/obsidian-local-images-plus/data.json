@@ -1,0 +1,18 @@
+{
+  "processCreated": true,
+  "intClip": true,
+  "useCaptions": true,
+  "pathInTags": "onlyRelative",
+  "downUnknown": false,
+  "saveAttE": "obsFolder",
+  "realTimeUpdate": true,
+  "filesizeLimit": 0,
+  "tryCount": 2,
+  "realTimeUpdateInterval": 5,
+  "addNameOfFile": false,
+  "showNotifications": true,
+  "include": ".*\\.md",
+  "mediaRootDir": "_resources/${notename}",
+  "useWikilinks": false,
+  "disAddCom": false
+}
