@@ -3,13 +3,12 @@
 
 - **Go 基础**
     - [01. Defer 语句中的细节](./stack/golang/basic/Details-in-the-Defer-statement.md)
-    - [02. Go Protobuf 简明教程](./stack/golang/protobuf/quick-go-protobuf.md)
 
 - **Go 标准库**
     - [01. template 用法详解](./stack/golang/stdlib/Detailed-usage-of-template.md)
     - [02. 深入剖析 template](./stack/golang/stdlib/In-depth-analysis-of-template.md)
 
-- **Go编程模式**
+- **Go 编程模式**
     - [01. 切片、接口、时间和性能](./stack/golang/program-mode/slice-interface-time-and-performance.md)
     - [02. 错误处理](./stack/golang/program-mode/error-handling.md)
     - [03. Functional Options](./stack/golang/program-mode/functional-options.md)
@@ -20,9 +19,13 @@
     - [08. Pipeline](./stack/golang/program-mode/pipeline.md)
     - [09. Kubernetes Visitor模式](./stack/golang/program-mode/kubernetes-visitor-mode.md)
 
-- **IO相关**
+- **IO 相关**
     - [01. 如何选择IO库](./stack/golang/io/how-to-select-io-library.md)
     - [02. 常用文件操作示例](./stack/golang/io/working-files-go.md)
+
+- **Proto 专题**
+    - [01. Go Protobuf 简明教程](./stack/golang/protobuf/quick-go-protobuf.md)
+    - [02. Go 加载 Proto 动态解析 PB](./stack/golang/protobuf/loads-proto-and-dynamically-parses-pb.md)
 
 - **中间件相关**
     - [01. Go语言中间件](./stack/golang/middleware/middleware-basic.md)
