@@ -3,6 +3,7 @@
 
 - **Go 基础**
     - [01. Defer 语句中的细节](./stack/golang/basic/Details-in-the-Defer-statement.md)
+    - [02. Go Protobuf 简明教程](./stack/golang/protobuf/quick-go-protobuf.md)
 
 - **Go 标准库**
     - [01. template 用法详解](./stack/golang/stdlib/Detailed-usage-of-template.md)

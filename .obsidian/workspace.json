@@ -11,8 +11,13 @@
             "id": "a510f5ab62c93a39",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "learnbook/stack/golang/protobuf/quick-go-protobuf.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           },
           {
@@ -93,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 358.5
+    "width": 225.5
   },
   "right": {
     "id": "565929c3bf4912da",
@@ -109,6 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "learnbook/stack/golang/protobuf/quick-go-protobuf.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,6 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "learnbook/stack/golang/protobuf/quick-go-protobuf.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +153,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "learnbook/stack/golang/protobuf/quick-go-protobuf.md"
+              }
             }
           }
         ]
@@ -168,8 +177,10 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "c60ce6a1e141977d",
+  "active": "a510f5ab62c93a39",
   "lastOpenFiles": [
+    "learnbook/stack/golang/program-mode/delegation-and-reversal-control.md",
+    "learnbook/stack/golang/protobuf/quick-go-protobuf.md",
     "learnbook/leetcode/content/ChapterTwo/_index.md",
     "learnbook/stack/golang/protobuf",
     "learnbook/leetcode/leetcode/0001.Two-Sum/README.md"
