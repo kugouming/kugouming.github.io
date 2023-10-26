@@ -8,7 +8,7 @@ Protobuf 在 `.proto` 定义需要处理的结构化数据，可以通过 `pr
 
 ## 2. 安装
 
-### 2.1 `protoc` 工具
+### 2.1 protoc 工具
 
 从 [Protobuf Releases](https://github.com/protocolbuffers/protobuf/releases) 下载最先版本的发布包安装。Linux 可以按照如下步骤操作（以3.11.2为例）。
 
@@ -41,7 +41,7 @@ $ protoc --version
 libprotoc 3.11.2
 ```
 
-### 2.2 `protoc-gen-go` 插件
+### 2.2 protoc-gen-go 插件
 
 我们需要在 Golang 中使用 protobuf，还需要安装 `protoc-gen-go`，这个工具用来将 `.proto` 文件转换为 Golang 代码。
 
@@ -61,7 +61,7 @@ ls $GOPATH/bin|grep protoc-gen-go
 
 **注：** <font color="red">该插件安装完之后无法通过</font> `protoc` <font color="red">命令的帮助信息查看，直接使用即可!!!</font>
 
-### 2.3 `protoc-gen-go` 说明
+### 2.3 protoc-gen-go 说明
 为了生成 Go 代码，必须为每个`.proto`文件（包括正在生成的文件间接依赖的文件`.proto` ）提供 Go 包的导入路径。有两种方式指定Go导入路径：
 
 - 通过在文件中声明它`.proto`，或者
@@ -109,7 +109,7 @@ message Student {
 }
 ```
 
->! 生成 grpc 使用命令：`protoc --go_out=plugins=grpc:. *.proto`
+?> 生成 grpc 使用命令：`protoc --go_out=plugins=grpc:. *.proto`
 
 生成 `*.pb.go` 文件：
 
