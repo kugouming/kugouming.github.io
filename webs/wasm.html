@@ -28,12 +28,13 @@ license that can be found in the LICENSE file.
 
 		const go = new Go();
 		let mod, inst;
-		WebAssembly.instantiateStreaming(fetch("https://iskill.site/webs/main.wasm"), go.importObject).then((result) => {
+		WebAssembly.instantiateStreaming(fetch("/webs/json.wasm"), go.importObject).then((result) => {
 			mod = result.module;
 			inst = result.instance;
 			document.getElementById("runButton").disabled = false;
 		}).catch((err) => {
-			console.error(err);
+			console.error(1111,err);
+
 		});
 
 		async function run() {
