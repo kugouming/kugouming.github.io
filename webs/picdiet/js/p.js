@@ -61722,10 +61722,7 @@ if (!WebAssembly.instantiateStreaming) {
 const go = new Go();
 let mod, inst, bytes;
 WebAssembly.instantiateStreaming(fetch("js/js.wasm", {
-    cache: 'no-cache',
-    headers: {
-        "Content-Type": "application/wasm",
-    }
+    cache: 'no-cache'
 }), go.importObject).then(async (result) => {
     mod = result.module;
     inst = result.instance;
