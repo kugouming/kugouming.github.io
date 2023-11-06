@@ -417,8 +417,7 @@ visibility: hidden;
     overflow: hidden;
     text-align: center;
     line-height: 38px;
-    width: 190px;
-    float: left;
+    width: 140px;
 }
 .tips_btn:hover{
     background: #ff93b7;
@@ -430,11 +429,11 @@ visibility: hidden;
     cursor: default;
 }
 .tips_outer{
-	display: inline-block;
-    padding: 0 15px;
-    float: left;
+	display: inline-grid;
+    /* padding: 9 15px; */
     line-height: 38px;
-    width: 745px;
+    height: 38px;
+    width: 809px;
 }
 #tips_outer_val{
 	width: 100%;
