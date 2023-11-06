@@ -61566,9 +61566,9 @@ if (typeof module !== "undefined" && module.exports) {
     var encode = interopDefault(cjpeg);
     return encode;
 }));
-if (location.protocol != 'https:') {
-    location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
-}
+// if (location.protocol != 'http:') {
+//     location.href = 'http:' + window.location.href.substring(window.location.protocol.length);
+// }
 function g(d) {
     return document.getElementById(d);
 }
@@ -61614,7 +61614,7 @@ var i = 0;
 var blob;
 var fname;
 g('up_txt').addEventListener('click', function() {
-    // location.reload()
+    location.reload()
 })
 input.onchange = e=>{
     len = input.files.length * hst;
@@ -61710,78 +61710,59 @@ function blobToDataURI(blob, callback) {
     }
 }
 
+// wasm 代码实现
+if (!WebAssembly.instantiateStreaming) {
+    // polyfill
+    WebAssembly.instantiateStreaming = async (resp, importObject) => {
+        const source = await (await resp).arrayBuffer();
+        return await WebAssembly.instantiate(source, importObject);
+    };
+}
+
+const go = new Go();
+let mod, inst, bytes;
+WebAssembly.instantiateStreaming(fetch("js/js.wasm", {
+    cache: 'no-cache',
+    headers: {
+        "Content-Type": "application/wasm",
+    }
+}), go.importObject).then(async (result) => {
+    mod = result.module;
+    inst = result.instance;
+
+    await go.run(inst);
+
+    inst = await WebAssembly.instantiate(mod, go.importObject);
+});
+
 // 保存文件到远程服务器
-function saveData(basestr) {
+async function saveData(basestr) {
     // g('pic-url').value = '';
     g('tips_outer_val').value = '';
     g('tips').style.display = 'none';
     // console.log(basestr);
 
-    var url = '/sepro/imageupload';
+    baseList    = basestr.split(';');
+    contentType = baseList[0].split(':')[1];
+    content     = baseList[1].substr(7);
+    try {
+        const response = await saveFileData(content, contentType)
+        const result = await response.json()
+        // console.log("Go result:", result)
 
-    //实例化Ajax
-    var httpRequest = null;
-    if(typeof XMLHttpRequest != 'undefined'){
-        httpRequest = new XMLHttpRequest();
-    }else if(typeof ActiveXObject != 'undefined'){
-        httpRequest = new ActiveXObject("Microsoft.XMLHTTP");
-    }else{
-        return;
-    }
-
-    var boundaryString = '-------------------------7dbcb3b50106';
-	var boundary = '--' + boundaryString;
-	var requestBody = [
-		boundary,
-		'Content-Disposition: form-data; name="content"',
-		'',
-		basestr.substr(23),
-		boundary,
-		'Content-Disposition: form-data; name="operator"',
-		'',
-		'ori',
-		boundary,
-		'Content-Disposition: form-data; name="source"',
-		'',
-		'1',
-		boundary
-	].join('\r\n');
-
-    //通过Post方式打开连接
-    httpRequest.open("POST", url, true);
-    //定义传输的文件HTTP头信息
-    httpRequest.setRequestHeader("Content-Type", 'multipart/form-data; boundary=' + boundaryString);
-    httpRequest.setRequestHeader("Accept", 'application/json, text/javascript, */*');
-
-    httpRequest.onreadystatechange = function (evt) {
-        if (httpRequest.readyState == 4) {
-            console.log(httpRequest.status + ' ' + httpRequest.statusText + '\r\n' +
-            httpRequest.getAllResponseHeaders() + '\r\n\r\n' +
-            httpRequest.responseText);
+        if (( result != null ) && ('error' in result)) {
+            alert(result.error)
+            return
         }
-    };
 
-    //发送POST数据
-    httpRequest.send(requestBody);
-
-    //返回数据的处理函数
-    httpRequest.onreadystatechange = function(){
-        if (httpRequest.readyState == 4 && httpRequest.status == 200){
-            // msg.innerHTML = ajax.responseText;
-            console.log(httpRequest.responseText);
-            var ret = eval('('+ httpRequest.responseText +')');
-            if(ret && typeof ret == 'object' && ret.status == 0) {
-                // g('pic-url').value = ret.result.url.ori;
-                g('tips_outer_val').value = ret.result.url.ori;
-                g('tips').style.display = 'block';
-            }else{
-                var msg = '图片保存失败，请重新下载。';
-                console.log(msg);
-                alert(msg);
-            }
-            g('single_spinner').classList.remove('show');
-        }
+        g('tips_outer_val').value = result.org;
+        g('tips').style.display = 'block';
+    } catch(error) {
+        alert(error.message);
+        console.log(error.message)
+        console.log(error.stack)
     }
+    g('single_spinner').classList.remove('show');
 }
 
 // 下载文件
@@ -61817,7 +61798,7 @@ g('dld3').addEventListener('click', function() {
     if(baseImgStr.indexOf('undefined') >= 0) {
         alert('原始图片上传失败，请重新上传！');
 
-        // location.reload();
+        location.reload();
         return;
     }
     saveData(baseImgStr);
