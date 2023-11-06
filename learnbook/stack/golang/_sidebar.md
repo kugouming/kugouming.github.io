@@ -20,6 +20,9 @@
     - [08. Pipeline](./stack/golang/program-mode/pipeline.md)
     - [09. Kubernetes Visitor模式](./stack/golang/program-mode/kubernetes-visitor-mode.md)
 
+- **Wasm 相关**
+    - [01. Go、WebAssembly、HTTP 请求和 Promise](./stack/golang/wasm/go-webassembly-http-requests-and-promises.md)
+
 - **IO 相关**
     - [01. 如何选择IO库](./stack/golang/io/how-to-select-io-library.md)
     - [02. 常用文件操作示例](./stack/golang/io/working-files-go.md)
@@ -33,7 +36,7 @@
     - [02. Go中间件实现](./stack/golang/middleware/implementation-of-golang-middleware.md)
     - [03. Go中间件实现详解](./stack/golang/middleware/detailed-implementation-of-golang-middleware.md)
 
-- **Go技术栈**
+- **Go 技术栈**
     - [如何使用 dlv 调试 Go 代码](./stack/golang/how-to-use-dlv.md)
     - [Golang 保姆级 Debug 教程](./stack/golang/go-delve.md)
     - [查看coredump:delve调试工具](./stack/golang/debug/dlv-coredump.md)
