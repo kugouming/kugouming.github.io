@@ -7,6 +7,28 @@
     <meta name="keywords" content="图片压缩，jpg压缩, 在线图片压缩，减少图片体积，HTML5, 免费">
     <meta name="description" content="Picdiet是一款用JavaScript编写而成的图片压缩神器，所有压缩过程都在浏览器中进行，完全免费">
     <link rel="stylesheet" href="./css/global.css">
+    <script>
+        const IS_RELEASE = true;
+        function fuckyou() {
+            window.close();
+            window.open("about:blank");
+        }
+        function blockConsole() {
+            if ((window.outerHeight - window.innerHeight) > 200)
+                fuckyou();
+            if ((window.outerWidth - window.innerWidth) > 200)
+                fuckyou();
+        }
+
+        window.onload = function() {
+            if (IS_RELEASE) {
+                blockConsole()
+                window.onresize = function(){
+                    blockConsole()
+                }
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
