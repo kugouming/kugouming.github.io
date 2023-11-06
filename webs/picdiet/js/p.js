@@ -61614,7 +61614,7 @@ var i = 0;
 var blob;
 var fname;
 g('up_txt').addEventListener('click', function() {
-    location.reload()
+    // location.reload()
 })
 input.onchange = e=>{
     len = input.files.length * hst;
@@ -61795,7 +61795,7 @@ g('dld3').addEventListener('click', function() {
     if(baseImgStr.indexOf('undefined') >= 0) {
         alert('原始图片上传失败，请重新上传！');
 
-        location.reload();
+        // location.reload();
         return;
     }
     saveData(baseImgStr);
