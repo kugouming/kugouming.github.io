@@ -61566,8 +61566,8 @@ if (typeof module !== "undefined" && module.exports) {
     var encode = interopDefault(cjpeg);
     return encode;
 }));
-if (location.protocol != 'http:') {
-    location.href = 'http:' + window.location.href.substring(window.location.protocol.length);
+if (location.protocol != 'https:') {
+    location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
 }
 function g(d) {
     return document.getElementById(d);
@@ -61614,7 +61614,7 @@ var i = 0;
 var blob;
 var fname;
 g('up_txt').addEventListener('click', function() {
-    location.reload()
+    // location.reload()
 })
 input.onchange = e=>{
     len = input.files.length * hst;
@@ -61817,7 +61817,7 @@ g('dld3').addEventListener('click', function() {
     if(baseImgStr.indexOf('undefined') >= 0) {
         alert('原始图片上传失败，请重新上传！');
 
-        location.reload();
+        // location.reload();
         return;
     }
     saveData(baseImgStr);
