@@ -61614,7 +61614,7 @@ var i = 0;
 var blob;
 var fname;
 g('up_txt').addEventListener('click', function() {
-    // location.reload()
+    location.reload()
 })
 input.onchange = e=>{
     len = input.files.length * hst;
@@ -61710,27 +61710,27 @@ function blobToDataURI(blob, callback) {
     }
 }
 
-// wasm 代码实现
-if (!WebAssembly.instantiateStreaming) {
-    // polyfill
-    WebAssembly.instantiateStreaming = async (resp, importObject) => {
-        const source = await (await resp).arrayBuffer();
-        return await WebAssembly.instantiate(source, importObject);
-    };
-}
+// // wasm 代码实现
+// if (!WebAssembly.instantiateStreaming) {
+//     // polyfill
+//     WebAssembly.instantiateStreaming = async (resp, importObject) => {
+//         const source = await (await resp).arrayBuffer();
+//         return await WebAssembly.instantiate(source, importObject);
+//     };
+// }
 
-const go = new Go();
-let mod, inst, bytes;
-WebAssembly.instantiateStreaming(fetch("js/js.wasm", {
-    cache: 'no-cache',
-}), go.importObject).then(async (result) => {
-    mod = result.module;
-    inst = result.instance;
+// const go = new Go();
+// let mod, inst, bytes;
+// WebAssembly.instantiateStreaming(fetch("js/js.wasm", {
+//     cache: 'no-cache',
+// }), go.importObject).then(async (result) => {
+//     mod = result.module;
+//     inst = result.instance;
 
-    await go.run(inst);
+//     await go.run(inst);
 
-    inst = await WebAssembly.instantiate(mod, go.importObject);
-});
+//     inst = await WebAssembly.instantiate(mod, go.importObject);
+// });
 
 // 保存文件到远程服务器
 async function saveData(basestr) {
@@ -61795,7 +61795,7 @@ g('dld3').addEventListener('click', function() {
     if(baseImgStr.indexOf('undefined') >= 0) {
         alert('原始图片上传失败，请重新上传！');
 
-        // location.reload();
+        location.reload();
         return;
     }
     saveData(baseImgStr);
