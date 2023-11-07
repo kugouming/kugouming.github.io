@@ -61752,7 +61752,7 @@ async function saveData(basestr) {
             return
         }
 
-        g('tips_outer_val').value = result.org;
+        g('tips_outer_val').value = result.cdn;
         g('tips').style.display = 'block';
     } catch(error) {
         alert(error.message);
