@@ -67,8 +67,9 @@
     - [滑动窗口设计实现](./stack/golang/code/Rolling-window-design.md)
 
 - **单测相关**
-    - [go test 命令完全攻略](./stack/golang/test/go-test-command.md)
-    - [如何写出优雅的单测](./stack/golang/test/how-to-write-elegant-single-test.md)
+    - [01. go test 命令完全攻略](./stack/golang/test/go-test-command.md)
+    - [02. 如何写出优雅的单测](./stack/golang/test/how-to-write-elegant-single-test.md)
+    - [03. Monkey 在 Go 中的应用](./stack/golang/test/monkey-patching-in-go.md)
 
 
 - **GraphQL 相关**

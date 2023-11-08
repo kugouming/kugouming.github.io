@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md",
+                "file": "learnbook/stack/golang/test/monkey-patching-in-go.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md",
+                "file": "learnbook/stack/golang/test/monkey-patching-in-go.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md",
+                "file": "learnbook/stack/golang/test/monkey-patching-in-go.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md"
+                "file": "learnbook/stack/golang/test/monkey-patching-in-go.md"
               }
             }
           }
@@ -179,6 +179,18 @@
   },
   "active": "a510f5ab62c93a39",
   "lastOpenFiles": [
+    "learnbook/_navbar.md.bak",
+    "learnbook/_navbar.md",
+    "learnbook/_nabar.md",
+    "_nabar.md",
+    "learnbook/stack/golang/_sidebar.md",
+    "learnbook/stack/golang/test/monkey-patching-in-go.md",
+    "learnbook/stack/golang/test/go-test-command.md",
+    "learnbook/stack/golang/test/_assets/e6cb430b3564721377bbe0e49067e061_MD5.png",
+    "learnbook/stack/golang/test/_assets/30f34037160c9bbf00dd22dbde14460f_MD5.png",
+    "learnbook/stack/golang/test/_assets/4c67671424d04a6ecb7da1cd4457c204_MD5.png",
+    "learnbook/stack/golang/test/_assets/Pasted image 20231108215503.png",
+    "learnbook/stack/golang/test/_assets",
     "stack/golang/wasm/go-webassembly-http-requests-and-promises.md",
     "stack/golang/wasm",
     "stack/golang",
@@ -191,16 +203,11 @@
     "learnbook/stack/javascript/_assets/f04bde122101378b8cce1f0667315ed5_MD5.png",
     "learnbook/stack/javascript/_assets/e054d46af6b66621449e3bfee908acee_MD5.png",
     "learnbook/stack/javascript/_assets/Pasted image 20231103010550.png",
-    "learnbook/stack/javascript/_assets/Pasted image 20231103010424.png",
-    "learnbook/stack/javascript/_assets/Pasted image 20231103010254.png",
-    "learnbook/stack/javascript/_assets/Pasted image 20231103010232.png",
-    "learnbook/stack/javascript/_assets/78151827f8acfcb5f9cf6397bafd4fd5_MD5.png",
     "learnbook/stack/javascript/_sidebar.md",
     "learnbook/stack/javascript/_assets",
     "learnbook/stack/javascript/README.md",
     "learnbook/stack/javascript/Promise-basic-usage-async-await-usage.md",
     "learnbook/stack/javascript",
-    "learnbook/stack/golang/_sidebar.md",
     "learnbook/stack/golang/protobuf/quick-go-protobuf.md",
     "learnbook/stack/golang/program-mode/delegation-and-reversal-control.md",
     "learnbook/leetcode/content/ChapterTwo/_index.md",
