@@ -1,3 +1,92 @@
+
+// 自定义插件
+// 文档：https://docsify.js.org/#/zh-cn/write-a-plugin
+// 插件模板如下
+!function() {
+    window.$docsify = window.$docsify || {},
+    window.$docsify.plugins = [function(hook, vm) {
+        hook.init(function() {
+            // 初始化完成后调用，只调用一次，没有参数。
+         });
+   
+         hook.beforeEach(function(content) {
+           // 每次开始解析 Markdown 内容时调用
+           // ...
+           return content;
+         });
+   
+         hook.afterEach(function(html, next) {
+           // 解析成 html 后调用。
+           // beforeEach 和 afterEach 支持处理异步逻辑
+           // ...
+           // 异步处理完成后调用 next(html) 返回结果
+           next(html);
+         });
+   
+         hook.doneEach(function() {
+           // 每次路由切换时数据全部加载完成后调用，没有参数。
+           // ...
+         });
+   
+         hook.mounted(function() {
+           // 初始化并第一次加载完成数据后调用，只触发一次，没有参数。
+         });
+   
+         hook.ready(function() {
+           // 初始化并第一次加载完成数据后调用，没有参数。
+         });
+    }].concat(window.$docsify.plugins || [])
+}()
+
+
+// 自定义插件，未验证
+!function() {
+    window.$docsify = window.$docsify || {},
+    window.$docsify.plugins = [
+        // 返回按钮
+        function(hook, vm) {
+            hook.doneEach(function() {
+                let container = document.querySelector('section.content');
+                let childFirst = document.getElementById('main');
+                let childInsert = document.createElement('div');
+                childInsert.style = "float: right;position: absolute;right: 0;top: 0;background: #f6f7fb;width: 100%;clear: both;padding: 6px 20px;text-align: right;text-underline-position: under;";
+                // bca-disable-next-line
+                childInsert.innerHTML = "<a href='../#/' style='text-decoration: none;color: #87878a;font-weight:600;'>返回首页</a>";
+                container.insertBefore(childInsert, childFirst);
+            });
+        },
+        // 畅言评论组件注册
+        function (hook, vm) {
+            hook.doneEach(function() {
+                let childAppend = document.createElement('div');
+                childAppend.id = 'SOHUCS'
+                childAppend.style='font-size: 16px;max-width: 80%;margin: 0 auto;'
+                container.appendChild(childAppend);
+                showpinglun();
+            });
+        },
+        // 视频播放（ts文件）
+        function (hook, vm) {
+            hook.doneEach(function() {
+                // 播放能力检测
+                try{
+                    // 视频播放组件全局变量
+                    let videoPlayer = {
+                        mime: "",
+                        segments: [],
+                        mediaSource: new MediaSource(),
+                        transmuxer: new muxjs.mp4.Transmuxer(),
+                    }
+                } catch (error) {
+                    console.error(error);
+                }
+
+                playvideo()
+            });
+        },
+    ].concat(window.$docsify.plugins || [])
+}()
+
 var docPlugins = [
     // Github 编辑组件
     EditOnGithubPlugin.create(
@@ -7,56 +96,10 @@ var docPlugins = [
             return '编辑'
         }
     ),
-    // 返回按钮
-    function (hook, vm) {
-        // 每个页面加载完成都需要执行此区域，为每页新增返回文档首页按钮
-        hook.doneEach(function() {
-            let container = document.querySelector('section.content');
-            let childFirst = document.getElementById('main');
-            let childInsert = document.createElement('div');
-            childInsert.style = "float: right;position: absolute;right: 0;top: 0;background: #f6f7fb;width: 100%;clear: both;padding: 6px 20px;text-align: right;text-underline-position: under;";
-            // bca-disable-next-line
-            childInsert.innerHTML = "<a href='../#/' style='text-decoration: none;color: #87878a;font-weight:600;'>返回首页</a>";
-            container.insertBefore(childInsert, childFirst);
-        });
-    },
-
-    // 畅言评论组件注册
-    function (hook, vm) {
-        hook.doneEach(function() {
-            let childAppend = document.createElement('div');
-            childAppend.id = 'SOHUCS'
-            childAppend.style='font-size: 16px;max-width: 80%;margin: 0 auto;'
-            container.appendChild(childAppend);
-            showpinglun();
-        });
-    },
-
-    // 视频播放（ts文件）
-    function (hook, vm) {
-        hook.doneEach(function() {
-            playvideo()
-        });
-    },
-
-    // 
 ]
 
 
 /******************************** 视频播放 start ********************************/
-// 播放能力检测
-try{
-    // 视频播放组件全局变量
-    let videoPlayer = {
-        mime: "",
-        segments: [],
-        mediaSource: new MediaSource(),
-        transmuxer: new muxjs.mp4.Transmuxer(),
-    }
-} catch (error) {
-    // alert(error)
-    console.error(error);
-}
 
 // 视频播放（ts文件）
 function playvideo() {
