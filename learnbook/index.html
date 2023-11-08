@@ -15,42 +15,45 @@
     <script src="/assets/js/docsify.min.js"></script>
     <script src="/assets/js/config.min.js"></script>
     <script>
-        // 离线模式
-        if (typeof navigator.serviceWorker !== 'undefined') {
-            navigator.serviceWorker.register('sw.js')
-        }
-
         window.__COVERPAGEFLAG__ = false;
-        window.$docsify = {
-            onlyCover:false,
-            loadSidebar: true,
-            loadNavbar: '',
-            subMaxLevel: 3,
-            namespace: 'default',
-            auto2top: true,
-            name: '程序员自修',
-            logo:'',
-            coverpage: false,
-            // 谷歌统计
-            ga: 'G-QXN791PPBJ',
-            // 搜索插件 - https://docsify.js.org/#/zh-cn/plugins?id=%e5%85%a8%e6%96%87%e6%90%9c%e7%b4%a2-search
-            search: 'auto',
-            search: {
-                maxAge: 86400000,
-                paths: 'auto',
-                placeholder: '搜索',
-                noData: '找不到结果',
-                depth: 5,
-            },
-            scrollToTop: {
-                auto: true,
-                text: 'Top',
-                right: 15,
-                bottom: 15,
-                offset: 500
-            },
-            plugins: docPlugins,
-        };
+
+        window.addEventListener('load', function() {
+            // 离线模式
+            if (typeof navigator.serviceWorker !== 'undefined') {
+                navigator.serviceWorker.register('sw.js')
+            }
+
+            window.$docsify = {
+                onlyCover:false,
+                loadSidebar: true,
+                loadNavbar: '',
+                subMaxLevel: 3,
+                namespace: 'default',
+                auto2top: true,
+                name: '程序员自修',
+                logo:'',
+                coverpage: false,
+                // 谷歌统计
+                ga: 'G-QXN791PPBJ',
+                // 搜索插件 - https://docsify.js.org/#/zh-cn/plugins?id=%e5%85%a8%e6%96%87%e6%90%9c%e7%b4%a2-search
+                search: 'auto',
+                search: {
+                    maxAge: 86400000,
+                    paths: 'auto',
+                    placeholder: '搜索',
+                    noData: '找不到结果',
+                    depth: 5,
+                },
+                scrollToTop: {
+                    auto: true,
+                    text: 'Top',
+                    right: 15,
+                    bottom: 15,
+                    offset: 500
+                },
+                plugins: docPlugins,
+            };
+        })
     </script>
 </body>
 </html>
