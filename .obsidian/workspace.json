@@ -13,7 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/golang/test/monkey-patching-in-go.md",
+                "file": "learnbook/stack/golang/practice/tcp-reverse-proxy.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c75dfdae00d250aa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "learnbook/stack/golang/_sidebar.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -48,7 +61,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -98,7 +112,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 325.5
+    "width": 287.5
   },
   "right": {
     "id": "565929c3bf4912da",
@@ -114,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/stack/golang/test/monkey-patching-in-go.md",
+                "file": "learnbook/stack/golang/_sidebar.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/stack/golang/test/monkey-patching-in-go.md",
+                "file": "learnbook/stack/golang/_sidebar.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,16 +168,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/stack/golang/test/monkey-patching-in-go.md"
+                "file": "learnbook/stack/golang/_sidebar.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -177,32 +191,36 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "a510f5ab62c93a39",
+  "active": "c75dfdae00d250aa",
   "lastOpenFiles": [
+    "stack/golang/features/the-context.withcancel-understanding-of-cancellation-mechanism.md",
+    "stack/golang/features",
+    "stack/golang",
+    "stack",
+    "learnbook/stack/golang/practice/tcp-reverse-proxy.md",
+    "learnbook/stack/golang/_sidebar.md",
+    "learnbook/stack/golang/practice/_assets/7c0fec3ac66f14e99de33d6079325da8_MD5.gif",
+    "learnbook/stack/golang/practice/_assets/d9c8e4e97112c086fb7573239e25d034_MD5.webp",
+    "learnbook/stack/golang/practice/_assets/e69f06d0c42044360ecea75b857b10dd_MD5.gif",
+    "learnbook/stack/golang/practice/_assets/cf69b9c821c819edcde31f982fa1d122_MD5.webp",
+    "learnbook/stack/golang/practice/_assets/f022c1f6feecb92adba6adbc5e8d4cc1_MD5.gif",
+    "learnbook/stack/golang/practice/_assets/2097811a2fcb80cc65458f814c5fad99_MD5.webp",
+    "learnbook/stack/golang/practice/_assets/536515f866e715fb61c791e907a0b6cc_MD5.webp",
+    "learnbook/stack/golang/practice/_assets/4ab6c217f0c42bf753f86f7f22664e34_MD5.webp",
+    "learnbook/stack/golang/practice/_assets/c24f78a5ac5b1c6ed5d26efcfd35cb12_MD5.webp",
+    "learnbook/stack/golang/practice/_assets/08d990a92f22fb122047af8f261f0ea0_MD5.webp",
+    "learnbook/stack/golang/practice/_assets",
+    "learnbook/stack/golang/test/monkey-patching-in-go.md",
     "learnbook/_navbar.md.bak",
     "learnbook/_navbar.md",
     "learnbook/_nabar.md",
     "_nabar.md",
-    "learnbook/stack/golang/_sidebar.md",
-    "learnbook/stack/golang/test/monkey-patching-in-go.md",
     "learnbook/stack/golang/test/go-test-command.md",
-    "learnbook/stack/golang/test/_assets/e6cb430b3564721377bbe0e49067e061_MD5.png",
-    "learnbook/stack/golang/test/_assets/30f34037160c9bbf00dd22dbde14460f_MD5.png",
-    "learnbook/stack/golang/test/_assets/4c67671424d04a6ecb7da1cd4457c204_MD5.png",
-    "learnbook/stack/golang/test/_assets/Pasted image 20231108215503.png",
     "learnbook/stack/golang/test/_assets",
     "stack/golang/wasm/go-webassembly-http-requests-and-promises.md",
     "stack/golang/wasm",
-    "stack/golang",
-    "stack",
     "learnbook/stack/golang/wasm/go-webassembly-http-requests-and-promises.md",
     "learnbook/stack/golang/wasm",
-    "learnbook/stack/javascript/_assets/fe43ddc8b709f995dcdd8672e44e1286_MD5.png",
-    "learnbook/stack/javascript/_assets/fa84663aa1fa1977ccbbfa6558d35104_MD5.png",
-    "learnbook/stack/javascript/_assets/f23ee944c79767442668a889e99eae4b_MD5.png",
-    "learnbook/stack/javascript/_assets/f04bde122101378b8cce1f0667315ed5_MD5.png",
-    "learnbook/stack/javascript/_assets/e054d46af6b66621449e3bfee908acee_MD5.png",
-    "learnbook/stack/javascript/_assets/Pasted image 20231103010550.png",
     "learnbook/stack/javascript/_sidebar.md",
     "learnbook/stack/javascript/_assets",
     "learnbook/stack/javascript/README.md",
@@ -211,7 +229,6 @@
     "learnbook/stack/golang/protobuf/quick-go-protobuf.md",
     "learnbook/stack/golang/program-mode/delegation-and-reversal-control.md",
     "learnbook/leetcode/content/ChapterTwo/_index.md",
-    "learnbook/stack/golang/protobuf",
     "learnbook/leetcode/leetcode/0001.Two-Sum/README.md"
   ]
 }
