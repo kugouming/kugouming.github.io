@@ -17,43 +17,41 @@
     }
 
     window.onload = function() {
-        if (!IS_RELEASE) {
-            return true
-        }
-
-        blockConsole()
-        window.onresize = function(){
+        if (IS_RELEASE) {
             blockConsole()
-        }
-
-        // 禁止右键
-        document.oncontextmenu = function () { return false; };
-        
-        // 禁止选择
-        // document.onselectstart = function () { return false; };
-        
-        // 屏蔽键盘事件
-        document.onkeydown = function () {
-            var e = window.event || arguments [0];
-            // F12
-            if(e.keyCode == 123){
-                return false;
-            // Ctrl+Shift+I
-            }else if((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)){
-                return false;
-            // Ctrl+Shift+U
-            }else if((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 85)){
-                return false;
-            // Shift+F10
-            }else if((e.shiftKey) && (e.keyCode == 121)){
-                return false;
-            // Ctrl+U
-            }else if((e.ctrlKey) && (e.keyCode == 85)){
-                return false;
-            // Cmd+Alt+U
-            }else if((e.metaKey) && (e.altKey) && (e.keyCode == 85)) {
-                return false;
+            window.onresize = function(){
+                blockConsole()
             }
-        };
+
+            // 禁止右键
+            document.oncontextmenu = function () { return false; };
+            
+            // 禁止选择
+            // document.onselectstart = function () { return false; };
+            
+            // 屏蔽键盘事件
+            document.onkeydown = function () {
+                var e = window.event || arguments [0];
+                // F12
+                if(e.keyCode == 123){
+                    return false;
+                // Ctrl+Shift+I
+                }else if((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)){
+                    return false;
+                // Ctrl+Shift+U
+                }else if((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 85)){
+                    return false;
+                // Shift+F10
+                }else if((e.shiftKey) && (e.keyCode == 121)){
+                    return false;
+                // Ctrl+U
+                }else if((e.ctrlKey) && (e.keyCode == 85)){
+                    return false;
+                // Cmd+Alt+U
+                }else if((e.metaKey) && (e.altKey) && (e.keyCode == 85)) {
+                    return false;
+                }
+            };
+        }
     }
 }()
