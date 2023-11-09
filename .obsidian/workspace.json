@@ -61,8 +61,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -128,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md",
+                "file": "learnbook/stack/golang/practice/tcp-reverse-proxy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md",
+                "file": "learnbook/stack/golang/practice/tcp-reverse-proxy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +167,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md"
+                "file": "learnbook/stack/golang/practice/tcp-reverse-proxy.md"
               }
             }
           }
@@ -191,14 +190,14 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "c75dfdae00d250aa",
+  "active": "a510f5ab62c93a39",
   "lastOpenFiles": [
+    "learnbook/stack/golang/_sidebar.md",
     "stack/golang/features/the-context.withcancel-understanding-of-cancellation-mechanism.md",
     "stack/golang/features",
     "stack/golang",
     "stack",
     "learnbook/stack/golang/practice/tcp-reverse-proxy.md",
-    "learnbook/stack/golang/_sidebar.md",
     "learnbook/stack/golang/practice/_assets/7c0fec3ac66f14e99de33d6079325da8_MD5.gif",
     "learnbook/stack/golang/practice/_assets/d9c8e4e97112c086fb7573239e25d034_MD5.webp",
     "learnbook/stack/golang/practice/_assets/e69f06d0c42044360ecea75b857b10dd_MD5.gif",
