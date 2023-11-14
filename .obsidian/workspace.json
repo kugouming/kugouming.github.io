@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/golang/practice/tcp-reverse-proxy.md",
+                "file": "learnbook/stack/golang/_sidebar.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -127,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/stack/golang/practice/tcp-reverse-proxy.md",
+                "file": "learnbook/stack/golang/_sidebar.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/stack/golang/practice/tcp-reverse-proxy.md",
+                "file": "learnbook/stack/golang/_sidebar.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -167,7 +167,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/stack/golang/practice/tcp-reverse-proxy.md"
+                "file": "learnbook/stack/golang/_sidebar.md"
               }
             }
           }
@@ -192,12 +192,17 @@
   },
   "active": "a510f5ab62c93a39",
   "lastOpenFiles": [
+    "learnbook/stack/golang/optimize/golang-efficiently-handles-text.md",
     "learnbook/stack/golang/_sidebar.md",
+    "learnbook/stack/golang/optimize/_assets/f8d1a6a622ee40aea91b15998ac1fa2d_MD5.png",
+    "learnbook/stack/golang/optimize/_assets",
+    "learnbook/stack/golang/optimize/performance-optimization-of-Golang.md",
+    "learnbook/stack/golang/optimize",
+    "learnbook/stack/golang/practice/tcp-reverse-proxy.md",
     "stack/golang/features/the-context.withcancel-understanding-of-cancellation-mechanism.md",
     "stack/golang/features",
     "stack/golang",
     "stack",
-    "learnbook/stack/golang/practice/tcp-reverse-proxy.md",
     "learnbook/stack/golang/practice/_assets/7c0fec3ac66f14e99de33d6079325da8_MD5.gif",
     "learnbook/stack/golang/practice/_assets/d9c8e4e97112c086fb7573239e25d034_MD5.webp",
     "learnbook/stack/golang/practice/_assets/e69f06d0c42044360ecea75b857b10dd_MD5.gif",
@@ -207,7 +212,6 @@
     "learnbook/stack/golang/practice/_assets/536515f866e715fb61c791e907a0b6cc_MD5.webp",
     "learnbook/stack/golang/practice/_assets/4ab6c217f0c42bf753f86f7f22664e34_MD5.webp",
     "learnbook/stack/golang/practice/_assets/c24f78a5ac5b1c6ed5d26efcfd35cb12_MD5.webp",
-    "learnbook/stack/golang/practice/_assets/08d990a92f22fb122047af8f261f0ea0_MD5.webp",
     "learnbook/stack/golang/practice/_assets",
     "learnbook/stack/golang/test/monkey-patching-in-go.md",
     "learnbook/_navbar.md.bak",
@@ -221,10 +225,8 @@
     "learnbook/stack/golang/wasm/go-webassembly-http-requests-and-promises.md",
     "learnbook/stack/golang/wasm",
     "learnbook/stack/javascript/_sidebar.md",
-    "learnbook/stack/javascript/_assets",
     "learnbook/stack/javascript/README.md",
     "learnbook/stack/javascript/Promise-basic-usage-async-await-usage.md",
-    "learnbook/stack/javascript",
     "learnbook/stack/golang/protobuf/quick-go-protobuf.md",
     "learnbook/stack/golang/program-mode/delegation-and-reversal-control.md",
     "learnbook/leetcode/content/ChapterTwo/_index.md",

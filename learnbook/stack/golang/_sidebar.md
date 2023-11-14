@@ -78,8 +78,10 @@
     - [02. 使用 gqlgen 编写 GraphQL 后端](./stack/golang/graphql/Writing-a-GraphQL-backen-using-gqlgen.md)
 
 
-- **开发建议**
-
+- **性能优化**
+    - [01. Go 的性能优化](./stack/golang/optimize/performance-optimization-of-Golang.md)
+    - [02. Go 高效处理文本](./stack/golang/optimize/golang-efficiently-handles-text.md)
 
 - **Go 学习手册**
-    - [PHP到Go速转手册](./stack/golang/php2go.md)
+    - [01. [外]编程实战](https://learnku.com/docs/gobyexample/2020/hello-world/6252)
+    - [0x. PHP到Go速转手册](./stack/golang/php2go.md)
