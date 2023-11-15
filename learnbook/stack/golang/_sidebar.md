@@ -9,7 +9,7 @@
      - [01. 如何使用 dlv 调试 Go 代码](./stack/golang/how-to-use-dlv.md)
      - [02. Golang 保姆级 Debug 教程](./stack/golang/go-delve.md)
      - [03. 查看 CoreDump](./stack/golang/debug/dlv-coredump.md)
-     - [04. Golang 远程调试](./stack/golang/debug/dlv-coredump.md)
+     - [04. Golang 远程调试](./stack/golang/debug/go-delve-remote.md)
      - [05. VsCode 调试技巧](./stack/golang/debug/vscode-debugging-skills.md)
 
 - **Go 标准库**

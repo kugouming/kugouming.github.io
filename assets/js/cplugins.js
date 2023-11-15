@@ -24,9 +24,30 @@
     })
 }()
 
+// 右上角增加返回首页按钮
+// 该插件实现方式会影响返回顶部的组件，暂时也无需使用该插件，故先注释掉
+/*
+!function() {
+    window.$docsify = window.$docsify || {},
+    window.$docsify.plugins = [
+        function(hook, vm) {
+            hook.doneEach(function() {
+                let container = document.querySelector('section.content');
+                let childFirst = document.getElementById('main');
+                let childInsert = document.createElement('div');
+                childInsert.style = "float: right;position: absolute;right: 0;top: 0;background: #f6f7fb;width: 100%;clear: both;padding: 6px 20px;text-align: right;text-underline-position: under;";
+                childInsert.innerHTML = "<a href='../#/' style='text-decoration: none;color: #87878a;font-weight:600;'>返回首页</a>";
+                container.insertBefore(childInsert, childFirst);
+            });
+        }
+    ]
+}()
+*/
+
 // 自定义插件
 // 文档：https://docsify.js.org/#/zh-cn/write-a-plugin
 // 插件模板如下
+/*
 !function() {
     window.$docsify = window.$docsify || {},
     window.$docsify.plugins = [function(hook, vm) {
@@ -62,3 +83,4 @@
          });
     }].concat(window.$docsify.plugins || [])
 }()
+*/
