@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md",
+                "file": "learnbook/stack/golang/debug/go-delve-remote.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -127,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md",
+                "file": "learnbook/stack/golang/debug/go-delve-remote.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md",
+                "file": "learnbook/stack/golang/debug/go-delve-remote.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -167,7 +167,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md"
+                "file": "learnbook/stack/golang/debug/go-delve-remote.md"
               }
             }
           }
@@ -192,8 +192,8 @@
   },
   "active": "a510f5ab62c93a39",
   "lastOpenFiles": [
-    "learnbook/stack/golang/go-delve.md",
     "learnbook/stack/golang/_sidebar.md",
+    "learnbook/stack/golang/go-delve.md",
     "learnbook/stack/golang/debug/go-delve-remote.md",
     "learnbook/stack/golang/debug/dlv-coredump.md",
     "learnbook/stack/golang/optimize/golang-efficiently-handles-text.md",

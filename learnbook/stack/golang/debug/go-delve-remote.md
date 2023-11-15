@@ -89,3 +89,34 @@ Type 'help' for list of commands.
 
 Would you like to kill the headless instance? [Y/n] Y
 ```
+
+## VSCode 调试
+
+```json
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "dlv romte debug",
+            "type": "go",
+            "request": "attach",
+            "mode": "remote",
+            "remotePath": "/data/workspace/auto_check_build_DevUGS/DevUGS/backend/src/haidao/backend/",
+            "port": 6931,
+            "host": "172.24.12.145"
+        }
+    ]
+}
+```
+
+**参数说明：**
+- `remotePath` : 是编译时的工作目录（不是现在调试本地代码目录、也不是调试的进程所在目录）
+- `port`:  dlv 监听端口
+- `host`:  dlv 监听所在主机
+
+**其他说明：**
+- go 编译加编译选项： `-gcflags "all=-N -l"`
+- VSCode 设置断点正常，即为成功
