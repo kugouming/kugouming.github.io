@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md",
+                "file": "learnbook/stack/golang/debug/go-delve-remote.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -192,8 +192,11 @@
   },
   "active": "a510f5ab62c93a39",
   "lastOpenFiles": [
-    "learnbook/stack/golang/optimize/golang-efficiently-handles-text.md",
+    "learnbook/stack/golang/go-delve.md",
     "learnbook/stack/golang/_sidebar.md",
+    "learnbook/stack/golang/debug/go-delve-remote.md",
+    "learnbook/stack/golang/debug/dlv-coredump.md",
+    "learnbook/stack/golang/optimize/golang-efficiently-handles-text.md",
     "learnbook/stack/golang/optimize/_assets/f8d1a6a622ee40aea91b15998ac1fa2d_MD5.png",
     "learnbook/stack/golang/optimize/_assets",
     "learnbook/stack/golang/optimize/performance-optimization-of-Golang.md",

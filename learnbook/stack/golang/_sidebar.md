@@ -5,6 +5,13 @@
     - [01. Defer 语句中的细节](./stack/golang/basic/Details-in-the-Defer-statement.md)
     - [02. 编译时参数传递](./stack/golang/basic/compile-time-parameter-passing.md)
 
+- **Go 调试**
+     - [01. 如何使用 dlv 调试 Go 代码](./stack/golang/how-to-use-dlv.md)
+     - [02. Golang 保姆级 Debug 教程](./stack/golang/go-delve.md)
+     - [03. 查看 CoreDump](./stack/golang/debug/dlv-coredump.md)
+     - [04. Golang 远程调试](./stack/golang/debug/dlv-coredump.md)
+     - [05. VsCode 调试技巧](./stack/golang/debug/vscode-debugging-skills.md)
+
 - **Go 标准库**
     - [01. template 用法详解](./stack/golang/stdlib/Detailed-usage-of-template.md)
     - [02. 深入剖析 template](./stack/golang/stdlib/In-depth-analysis-of-template.md)
@@ -37,14 +44,10 @@
     - [03. Go中间件实现详解](./stack/golang/middleware/detailed-implementation-of-golang-middleware.md)
 
 - **Go 技术栈**
-    - [01. 如何使用 dlv 调试 Go 代码](./stack/golang/how-to-use-dlv.md)
-    - [02. Golang 保姆级 Debug 教程](./stack/golang/go-delve.md)
-    - [03. 查看coredump:delve调试工具](./stack/golang/debug/dlv-coredump.md)
-    - [04. VsCode 调试技巧](./stack/golang/debug/vscode-debugging-skills.md)
-    - [05. 解析 JSON 中不确定类型的字段](./stack/golang/how-to-uncertain-data-type.md)
-    - [06. 当 Go 遇上了 Lua](./stack/golang/lua/golang-and-lua.md)
-    - [07. 使用Gopher-lua遇到的疑难杂症与优化](./stack/golang/lua/difficulties-and-optimization-encountered-in-using-gopher-lua.md)
-    - [08. Go 调用 .so 文件](./stack/golang/howto/Call-the-so-file.md)
+    - [01. 解析 JSON 中不确定类型的字段](./stack/golang/how-to-uncertain-data-type.md)
+    - [02. 当 Go 遇上了 Lua](./stack/golang/lua/golang-and-lua.md)
+    - [03. 使用Gopher-lua遇到的疑难杂症与优化](./stack/golang/lua/difficulties-and-optimization-encountered-in-using-gopher-lua.md)
+    - [04. Go 调用 .so 文件](./stack/golang/howto/Call-the-so-file.md)
 
 - **语言特性**
     - [01. context.WithCancel()取消机制的理解](./stack/golang/features/the-context.withcancel-understanding-of-cancellation-mechanism.md)
