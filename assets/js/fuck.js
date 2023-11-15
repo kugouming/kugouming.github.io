@@ -1,5 +1,6 @@
 !function() {
     // 禁止控制台查看
+    const IS_RELEASE = true;
 
     // 禁止查看控制台
     function fuckyou() {

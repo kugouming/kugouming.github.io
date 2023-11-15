@@ -11,7 +11,7 @@
         document.getElementsByTagName('head')[0].appendChild(styleElement);
         var newStyle = `
             .read_pro {position: fixed;top: 0;left: 0;width: 100%;height: 3px;background-color: rgb(238 238 238 / 54%);}
-            .read_pro_inner {content: '';position: absolute;left: 0;height: 100%;background-color: rgb(0 36 254 / 45%);}
+            .read_pro_inner {content: '';position: absolute;left: 0;height: 100%;background-color: rgb(0 36 254 / 48%);}
         `;
         styleElement.appendChild(document.createTextNode(newStyle));
 
