@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/golang/debug/go-delve-remote.md",
+                "file": "learnbook/stack/golang/practice/Changing-only-one-parameter-reduces-Golang-GC-time-to-1-30.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -127,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/stack/golang/debug/go-delve-remote.md",
+                "file": "learnbook/stack/golang/practice/Changing-only-one-parameter-reduces-Golang-GC-time-to-1-30.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/stack/golang/debug/go-delve-remote.md",
+                "file": "learnbook/stack/golang/practice/Changing-only-one-parameter-reduces-Golang-GC-time-to-1-30.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -167,7 +167,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/stack/golang/debug/go-delve-remote.md"
+                "file": "learnbook/stack/golang/practice/Changing-only-one-parameter-reduces-Golang-GC-time-to-1-30.md"
               }
             }
           }
@@ -192,29 +192,32 @@
   },
   "active": "a510f5ab62c93a39",
   "lastOpenFiles": [
+    "learnbook/stack/golang/practice/_assets/e5a91ac7250847f18b5082a3eacc50c5_MD5.png",
+    "learnbook/stack/golang/practice/_assets/ea2f8ec1a07f693a386708a64692a977_MD5.png",
+    "learnbook/stack/golang/practice/_assets/1d59dab698c24526820a79c95a19b437_MD5.png",
+    "learnbook/stack/golang/practice/_assets/c3362ccdcef2bcb77652b3dc31a1c5f0_MD5.png",
+    "learnbook/stack/golang/practice/_assets/d45f10de8e3db2af32043789ebde01fe_MD5.png",
+    "learnbook/stack/golang/practice/_assets/5d52c15ae736fb9d2611250ead393558_MD5.png",
+    "learnbook/stack/golang/practice/_assets/ba56728069d082e4cf00b4269268b26e_MD5.png",
+    "learnbook/stack/golang/practice/_assets/568cf5accf4cea8a855c681926201e2a_MD5.png",
+    "learnbook/stack/golang/practice/_assets/3c1862ef4099c56e44bbec217c646288_MD5.png",
+    "learnbook/stack/golang/practice/_assets/35da37334dcb3d3dc6140648a66ba25a_MD5.png",
+    "learnbook/stack/golang/practice/_assets/376465c58c1685d516b0c86a1445b4df_MD5.png",
     "learnbook/stack/golang/_sidebar.md",
-    "learnbook/stack/golang/go-delve.md",
+    "learnbook/stack/golang/practice/Changing-only-one-parameter-reduces-Golang-GC-time-to-1-30.md",
+    "learnbook/stack/golang/code/tcp-reverse-proxy.md",
+    "learnbook/stack/golang/code/Go-language-advanced-network-programming.md",
     "learnbook/stack/golang/debug/go-delve-remote.md",
+    "learnbook/stack/golang/go-delve.md",
     "learnbook/stack/golang/debug/dlv-coredump.md",
     "learnbook/stack/golang/optimize/golang-efficiently-handles-text.md",
-    "learnbook/stack/golang/optimize/_assets/f8d1a6a622ee40aea91b15998ac1fa2d_MD5.png",
     "learnbook/stack/golang/optimize/_assets",
     "learnbook/stack/golang/optimize/performance-optimization-of-Golang.md",
     "learnbook/stack/golang/optimize",
-    "learnbook/stack/golang/practice/tcp-reverse-proxy.md",
     "stack/golang/features/the-context.withcancel-understanding-of-cancellation-mechanism.md",
     "stack/golang/features",
     "stack/golang",
     "stack",
-    "learnbook/stack/golang/practice/_assets/7c0fec3ac66f14e99de33d6079325da8_MD5.gif",
-    "learnbook/stack/golang/practice/_assets/d9c8e4e97112c086fb7573239e25d034_MD5.webp",
-    "learnbook/stack/golang/practice/_assets/e69f06d0c42044360ecea75b857b10dd_MD5.gif",
-    "learnbook/stack/golang/practice/_assets/cf69b9c821c819edcde31f982fa1d122_MD5.webp",
-    "learnbook/stack/golang/practice/_assets/f022c1f6feecb92adba6adbc5e8d4cc1_MD5.gif",
-    "learnbook/stack/golang/practice/_assets/2097811a2fcb80cc65458f814c5fad99_MD5.webp",
-    "learnbook/stack/golang/practice/_assets/536515f866e715fb61c791e907a0b6cc_MD5.webp",
-    "learnbook/stack/golang/practice/_assets/4ab6c217f0c42bf753f86f7f22664e34_MD5.webp",
-    "learnbook/stack/golang/practice/_assets/c24f78a5ac5b1c6ed5d26efcfd35cb12_MD5.webp",
     "learnbook/stack/golang/practice/_assets",
     "learnbook/stack/golang/test/monkey-patching-in-go.md",
     "learnbook/_navbar.md.bak",
