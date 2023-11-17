@@ -11,6 +11,8 @@
      - [03. 查看 CoreDump](./stack/golang/debug/dlv-coredump.md)
      - [04. Golang 远程调试](./stack/golang/debug/go-delve-remote.md)
      - [05. VsCode 调试技巧](./stack/golang/debug/vscode-debugging-skills.md)
+     - [06. Go 性能剖析 PProf](./stack/golang/debug/Go-performance-profiling-PProf.md)
+     - [07. Go 跟踪剖析 trace](./stack/golang/debug/Go-performance-profiling-trace.md)
 
 - **Go 标准库**
     - [01. template 用法详解](./stack/golang/stdlib/Detailed-usage-of-template.md)
