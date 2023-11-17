@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/golang/practice/Changing-only-one-parameter-reduces-Golang-GC-time-to-1-30.md",
+                "file": "learnbook/stack/golang/_sidebar.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -127,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/stack/golang/practice/Changing-only-one-parameter-reduces-Golang-GC-time-to-1-30.md",
+                "file": "learnbook/stack/golang/_sidebar.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/stack/golang/practice/Changing-only-one-parameter-reduces-Golang-GC-time-to-1-30.md",
+                "file": "learnbook/stack/golang/_sidebar.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -167,7 +167,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/stack/golang/practice/Changing-only-one-parameter-reduces-Golang-GC-time-to-1-30.md"
+                "file": "learnbook/stack/golang/_sidebar.md"
               }
             }
           }
@@ -192,6 +192,9 @@
   },
   "active": "a510f5ab62c93a39",
   "lastOpenFiles": [
+    "learnbook/stack/golang/practice/Go-programming-best-practices.md",
+    "learnbook/stack/golang/_sidebar.md",
+    "learnbook/stack/golang/practice/Changing-only-one-parameter-reduces-Golang-GC-time-to-1-30.md",
     "learnbook/stack/golang/practice/_assets/e5a91ac7250847f18b5082a3eacc50c5_MD5.png",
     "learnbook/stack/golang/practice/_assets/ea2f8ec1a07f693a386708a64692a977_MD5.png",
     "learnbook/stack/golang/practice/_assets/1d59dab698c24526820a79c95a19b437_MD5.png",
@@ -202,9 +205,6 @@
     "learnbook/stack/golang/practice/_assets/568cf5accf4cea8a855c681926201e2a_MD5.png",
     "learnbook/stack/golang/practice/_assets/3c1862ef4099c56e44bbec217c646288_MD5.png",
     "learnbook/stack/golang/practice/_assets/35da37334dcb3d3dc6140648a66ba25a_MD5.png",
-    "learnbook/stack/golang/practice/_assets/376465c58c1685d516b0c86a1445b4df_MD5.png",
-    "learnbook/stack/golang/_sidebar.md",
-    "learnbook/stack/golang/practice/Changing-only-one-parameter-reduces-Golang-GC-time-to-1-30.md",
     "learnbook/stack/golang/code/tcp-reverse-proxy.md",
     "learnbook/stack/golang/code/Go-language-advanced-network-programming.md",
     "learnbook/stack/golang/debug/go-delve-remote.md",
