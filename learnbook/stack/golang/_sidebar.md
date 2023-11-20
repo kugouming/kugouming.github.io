@@ -20,6 +20,7 @@
 - **Go 标准库**
     - [01. template 用法详解](./stack/golang/stdlib/Detailed-usage-of-template.md)
     - [02. 深入剖析 template](./stack/golang/stdlib/In-depth-analysis-of-template.md)
+    - [03. 高级并发用法-sync.Pool](./stack/golang/stdlib/Advanced-concurrency-usage-sync.pool.md)
 
 - **Go 编程模式**
     - [01. 切片、接口、时间和性能](./stack/golang/program-mode/slice-interface-time-and-performance.md)
@@ -31,6 +32,7 @@
     - [07. 修饰器](./stack/golang/program-mode/modifier.md)
     - [08. Pipeline](./stack/golang/program-mode/pipeline.md)
     - [09. Kubernetes Visitor模式](./stack/golang/program-mode/kubernetes-visitor-mode.md)
+    - [10. 如何真正写好Golang代码](./stack/golang/program-mode/How-to-really-write-Golang-code-well.md)
 
 - **Wasm 相关**
     - [01. Go、WebAssembly、HTTP 请求和 Promise](./stack/golang/wasm/go-webassembly-http-requests-and-promises.md)
