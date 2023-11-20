@@ -13,6 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "learnbook/stack/golang/debug/godebug-sched.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "38b34dabf430becd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "learnbook/stack/golang/_sidebar.md",
                 "mode": "source",
                 "backlinks": false,
@@ -61,7 +74,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -190,11 +204,16 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "a510f5ab62c93a39",
+  "active": "38b34dabf430becd",
   "lastOpenFiles": [
+    "learnbook/stack/golang/debug/gops.md",
+    "learnbook/stack/golang/debug/godebug-gc.md",
+    "learnbook/stack/golang/_sidebar.md",
+    "learnbook/stack/golang/debug/godebug-sched.md",
+    "learnbook/stack/golang/debug/_assets/771c18d7f261db88d5c1cd9a65f7c9f6_MD5.png",
+    "learnbook/stack/golang/debug/_assets/5071c6d453ae48899d377ba6599f8393_MD5.png",
     "learnbook/stack/golang/debug/Go-performance-profiling-trace.md",
     "learnbook/stack/golang/debug/Go-performance-profiling-PProf.md",
-    "learnbook/stack/golang/_sidebar.md",
     "learnbook/stack/golang/debug/Go-performance-profiling-PProf-org.md",
     "learnbook/stack/golang/debug/dlv-coredump.md",
     "learnbook/stack/golang/debug/_assets/f0e45def99a1cd43fa99f73d0589b0df_MD5.jpg",
@@ -205,8 +224,6 @@
     "learnbook/stack/golang/debug/_assets/34a35bed95bfb4f9e46beca13844f20d_MD5.jpg",
     "learnbook/stack/golang/debug/_assets/d01cf1df5db3422acca6ccb93cf1c33f_MD5.jpg",
     "learnbook/stack/golang/debug/_assets/e9baf5801ae86c43046464dd9def63ad_MD5.jpg",
-    "learnbook/stack/golang/debug/_assets/cfa497a0b1a8c1529252bd451b4b940c_MD5.jpg",
-    "learnbook/stack/golang/debug/_assets/99e63707a1bd7f5d842522941bb24893_MD5.jpg",
     "learnbook/stack/golang/debug/_assets",
     "learnbook/stack/golang/practice/Go-programming-best-practices.md",
     "learnbook/stack/golang/practice/Changing-only-one-parameter-reduces-Golang-GC-time-to-1-30.md",
@@ -234,8 +251,6 @@
     "stack/golang/wasm",
     "learnbook/stack/golang/wasm/go-webassembly-http-requests-and-promises.md",
     "learnbook/stack/javascript/_sidebar.md",
-    "learnbook/stack/javascript/README.md",
-    "learnbook/stack/javascript/Promise-basic-usage-async-await-usage.md",
-    "learnbook/stack/golang/protobuf/quick-go-protobuf.md"
+    "learnbook/stack/javascript/README.md"
   ]
 }

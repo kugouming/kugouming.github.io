@@ -13,6 +13,9 @@
      - [05. VsCode 调试技巧](./stack/golang/debug/vscode-debugging-skills.md)
      - [06. Go 性能剖析 PProf](./stack/golang/debug/Go-performance-profiling-PProf.md)
      - [07. Go 跟踪剖析 trace](./stack/golang/debug/Go-performance-profiling-trace.md)
+     - [08. 用 GODEBUG 看调度跟踪](./stack/golang/debug/godebug-sched.md)
+     - [09. 用 GODEBUG 看 GC](./stack/golang/debug/godebug-gc.md)
+     - [10. 进程诊断工具 gops](./stack/golang/debug/gops.md)
 
 - **Go 标准库**
     - [01. template 用法详解](./stack/golang/stdlib/Detailed-usage-of-template.md)
@@ -92,4 +95,5 @@
 
 - **Go 学习手册**
     - [01. [外]编程实战](https://learnku.com/docs/gobyexample/2020/hello-world/6252)
+    - [02. [外]Go性能大杀器](https://golang2.eddycjy.com/posts/ch6/01-pprof-1/)
     - [0x. PHP到Go速转手册](./stack/golang/php2go.md)
