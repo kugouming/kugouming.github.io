@@ -26,7 +26,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md",
+                "file": "learnbook/stack/sql/_sidebar.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a0ec0e05ad317eec",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "learnbook/stack/sql/basic/explain-the-command-in-detail.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -100,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md",
+                "file": "learnbook/stack/sql/_sidebar.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md",
+                "file": "learnbook/stack/sql/_sidebar.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md"
+                "file": "learnbook/stack/sql/_sidebar.md"
               }
             }
           }
@@ -165,8 +178,11 @@
   },
   "active": "3117e9bff2cf40c7",
   "lastOpenFiles": [
-    "learnbook/stack/golang/basic/7-knowledge-points-you-must-master-about-Defer.md",
     "learnbook/stack/golang/_sidebar.md",
+    "learnbook/stack/sql/basic/explain-the-command-in-detail.md",
+    "learnbook/stack/sql/_sidebar.md",
+    "learnbook/stack/sql/basic",
+    "learnbook/stack/golang/basic/7-knowledge-points-you-must-master-about-Defer.md",
     "learnbook/stack/golang/basic/_assets/8b9b9b65487c33c75937a4a244b295d1_MD5.jpg",
     "learnbook/stack/golang/basic/_assets/dd328a6b7dd83f11ef37895f3646a6ca_MD5.jpg",
     "learnbook/stack/golang/basic/_assets/3c8c3db9dd1d706c0bd0b8e326c4a30a_MD5.png",
@@ -205,10 +221,8 @@
     "stack",
     "learnbook/stack/golang/practice/_assets",
     "learnbook/stack/golang/test/monkey-patching-in-go.md",
-    "learnbook/_navbar.md.bak",
     "learnbook/_navbar.md",
     "learnbook/_nabar.md",
-    "_nabar.md",
-    "learnbook/stack/golang/test/go-test-command.md"
+    "_nabar.md"
   ]
 }
