@@ -13,20 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/golang/basic/7-knowledge-points-you-must-master-about-Defer.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3117e9bff2cf40c7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "learnbook/stack/sql/_sidebar.md",
+                "file": "learnbook/stack/sql/basic/explain-the-command-in-detail.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -46,8 +33,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -113,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/stack/sql/_sidebar.md",
+                "file": "learnbook/stack/sql/basic/explain-the-command-in-detail.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/stack/sql/_sidebar.md",
+                "file": "learnbook/stack/sql/basic/explain-the-command-in-detail.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/stack/sql/_sidebar.md"
+                "file": "learnbook/stack/sql/basic/explain-the-command-in-detail.md"
               }
             }
           }
@@ -176,13 +162,28 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "3117e9bff2cf40c7",
+  "active": "a510f5ab62c93a39",
   "lastOpenFiles": [
+    "learnbook/stack/golang/basic/7-knowledge-points-you-must-master-about-Defer.md",
+    "learnbook/algorithm/nagle-algorithm.md",
+    "learnbook/algorithm/fucking-algorithm/_sidebar.md",
+    "learnbook/algorithm/fucking-algorithm/动态规划系列/编辑距离.md",
+    "learnbook/algorithm/fucking-algorithm/动态规划系列/背包问题.md",
+    "learnbook/algorithm/fucking-algorithm/高频面试系列/二分查找判定子序列.md",
+    "learnbook/algorithm/fucking-algorithm/高频面试系列/打印素数.md",
+    "learnbook/algorithm/fucking-algorithm/技术/redis入侵.md",
+    "learnbook/algorithm/fucking-algorithm/技术/linuxshell.md",
+    "learnbook/algorithm/fucking-algorithm/技术/linux进程.md",
+    "learnbook/algorithm/fucking-algorithm/技术/刷题技巧.md",
+    "learnbook/algorithm/fucking-algorithm/技术/密码技术.md",
+    "learnbook/algorithm/fucking-algorithm/数据结构系列/单调栈.md",
+    "learnbook/algorithm/fucking-algorithm/数据结构系列/单调队列.md",
+    "learnbook/algorithm/fucking-algorithm/算法思维系列/常用的位操作.md",
+    "learnbook/_sidebar.md",
+    "learnbook/stack/sql/_sidebar.md",
     "learnbook/stack/golang/_sidebar.md",
     "learnbook/stack/sql/basic/explain-the-command-in-detail.md",
-    "learnbook/stack/sql/_sidebar.md",
     "learnbook/stack/sql/basic",
-    "learnbook/stack/golang/basic/7-knowledge-points-you-must-master-about-Defer.md",
     "learnbook/stack/golang/basic/_assets/8b9b9b65487c33c75937a4a244b295d1_MD5.jpg",
     "learnbook/stack/golang/basic/_assets/dd328a6b7dd83f11ef37895f3646a6ca_MD5.jpg",
     "learnbook/stack/golang/basic/_assets/3c8c3db9dd1d706c0bd0b8e326c4a30a_MD5.png",
@@ -202,27 +203,12 @@
     "learnbook/stack/golang/debug/godebug-gc.md",
     "learnbook/stack/golang/debug/_assets/771c18d7f261db88d5c1cd9a65f7c9f6_MD5.png",
     "learnbook/stack/golang/debug/Go-performance-profiling-trace.md",
-    "learnbook/stack/golang/debug/Go-performance-profiling-PProf.md",
-    "learnbook/stack/golang/debug/Go-performance-profiling-PProf-org.md",
-    "learnbook/stack/golang/debug/dlv-coredump.md",
     "learnbook/stack/golang/debug/_assets",
-    "learnbook/stack/golang/practice/Go-programming-best-practices.md",
-    "learnbook/stack/golang/practice/Changing-only-one-parameter-reduces-Golang-GC-time-to-1-30.md",
-    "learnbook/stack/golang/code/tcp-reverse-proxy.md",
-    "learnbook/stack/golang/code/Go-language-advanced-network-programming.md",
-    "learnbook/stack/golang/go-delve.md",
-    "learnbook/stack/golang/optimize/golang-efficiently-handles-text.md",
     "learnbook/stack/golang/optimize/_assets",
-    "learnbook/stack/golang/optimize/performance-optimization-of-Golang.md",
     "learnbook/stack/golang/optimize",
-    "stack/golang/features/the-context.withcancel-understanding-of-cancellation-mechanism.md",
     "stack/golang/features",
     "stack/golang",
     "stack",
-    "learnbook/stack/golang/practice/_assets",
-    "learnbook/stack/golang/test/monkey-patching-in-go.md",
-    "learnbook/_navbar.md",
-    "learnbook/_nabar.md",
-    "_nabar.md"
+    "learnbook/stack/golang/practice/_assets"
   ]
 }
