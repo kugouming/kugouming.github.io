@@ -64,6 +64,7 @@
     - [04. 用 Go 实现一个完整的数学表达式计算引擎](./stack/golang/features/Implement-a-complete-mathematical-expression-calculation-engine.md)
 
 - **垃圾回收**
+    - [Go 程序内存泄露快速定位](./stack/golang/garbage/Quickly-locate-memory-leak-problems.md)
     - [Go 中的垃圾回收：第一部分 - 语义](./stack/golang/garbage/garbage-collection-in-go-part1-semantics.md)
     - [Go 中的垃圾回收：第二部分 - GC 跟踪](./stack/golang/garbage/garbage-collection-in-go-part2-gctraces.md)
     - [Go 中的垃圾回收：第三部分 - GC 起搏](./stack/golang/garbage/garbage-collection-in-go-part3-gcpacing.md)

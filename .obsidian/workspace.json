@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/golang/garbage/garbage-collection-in-go-part2-gctraces.md",
+                "file": "learnbook/stack/golang/garbage/Quickly-locate-memory-leak-problems.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -46,7 +46,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -112,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/stack/golang/garbage/garbage-collection-in-go-part2-gctraces.md",
+                "file": "learnbook/stack/golang/_sidebar.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/stack/golang/garbage/garbage-collection-in-go-part2-gctraces.md",
+                "file": "learnbook/stack/golang/_sidebar.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/stack/golang/garbage/garbage-collection-in-go-part2-gctraces.md"
+                "file": "learnbook/stack/golang/_sidebar.md"
               }
             }
           }
@@ -175,22 +176,25 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "9b90c7ce9ec057a0",
+  "active": "e3404966007ecb53",
   "lastOpenFiles": [
-    "learnbook/stack/golang/garbage/garbage-collection-in-go-part1-semantics.md",
-    "learnbook/stack/golang/garbage/garbage-collection-in-go-part2-gctraces.md",
-    "learnbook/stack/golang/garbage/garbage-collection-in-go-part3-gcpacing.md",
+    "stack/golang/garbage/Quickly-locate-memory-leak-problems.md",
+    "stack/golang/garbage",
+    "learnbook/stack/golang/garbage/Quickly-locate-memory-leak-problems.md",
     "learnbook/stack/golang/_sidebar.md",
+    "learnbook/stack/golang/garbage/_assets/b854882fb85291bf764a667a3e4bb748_MD5.png",
+    "learnbook/stack/golang/garbage/_assets/c25654b34967f0f66b69201dfdfbcaca_MD5.png",
+    "learnbook/stack/golang/garbage/_assets/c089206df84932ad92cc16f3c07774b4_MD5.png",
+    "learnbook/stack/golang/garbage/_assets/30cd0549ed6562b16c65012ffe280e11_MD5.png",
+    "learnbook/stack/golang/garbage/_assets/f14199ca5b0d8ba005c5832255e7920e_MD5.png",
+    "learnbook/stack/golang/garbage/_assets/4d3d4794cd01940f4199ee2a03bd8b75_MD5.png",
+    "learnbook/stack/golang/garbage/_assets/132c3ee0016561196ae678655b0e7b53_MD5.png",
+    "learnbook/stack/golang/garbage/_assets/93136ee6b9f289934ed06a0983009d21_MD5.png",
+    "learnbook/stack/golang/garbage/garbage-collection-in-go-part2-gctraces.md",
+    "learnbook/stack/golang/garbage/garbage-collection-in-go-part1-semantics.md",
+    "learnbook/stack/golang/garbage/garbage-collection-in-go-part3-gcpacing.md",
     "learnbook/stack/golang/_assets/1c1b78cb9e737dfd87f4cfd5aecde82d_MD5.png",
     "learnbook/stack/golang/_assets/1f6b5c05460bfe358e66f965df7eaf23_MD5.png",
-    "learnbook/stack/golang/_assets/fc600275b81a1f415048c941deba6b59_MD5.png",
-    "learnbook/stack/golang/_assets/7c6ef0aaa55bdda7b7dd358767f2fd12_MD5.png",
-    "learnbook/stack/golang/_assets/f315a01d49fc3e28401cd52f6531677b_MD5.png",
-    "learnbook/stack/golang/_assets/d7c8de197e94292e586a6a556c7bbe6d_MD5.png",
-    "learnbook/stack/golang/_assets/3eb972956e39b0f1bc479c69717247b3_MD5.png",
-    "learnbook/stack/golang/_assets/a2fe60f494f37cc8b01bec5acb8a7eb2_MD5.png",
-    "learnbook/stack/golang/_assets/3262b32355e46bd7f9410fe04e6e526d_MD5.png",
-    "learnbook/stack/golang/_assets/7024f2ffcf499af712529545a19d8e20_MD5.png",
     "learnbook/stack/golang/_assets",
     "learnbook/stack/golang/garbage/_assets",
     "learnbook/stack/golang/garbage",
@@ -216,11 +220,9 @@
     "learnbook/stack/golang/basic/_assets",
     "learnbook/stack/golang/debug/go-delve-remote.md",
     "learnbook/stack/golang/program-mode/How-to-really-write-Golang-code-well.md",
-    "learnbook/stack/golang/debug/godebug-sched.md",
     "learnbook/stack/golang/program-mode/_assets",
     "learnbook/stack/golang/debug/_assets",
     "learnbook/stack/golang/optimize/_assets",
-    "learnbook/stack/golang/optimize",
-    "stack/golang/features"
+    "learnbook/stack/golang/optimize"
   ]
 }
