@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/golang/garbage/garbage-collection-in-go-part1-semantics.md",
+                "file": "learnbook/stack/golang/garbage/garbage-collection-in-go-part2-gctraces.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -46,8 +46,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -113,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md",
+                "file": "learnbook/stack/golang/garbage/garbage-collection-in-go-part2-gctraces.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md",
+                "file": "learnbook/stack/golang/garbage/garbage-collection-in-go-part2-gctraces.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md"
+                "file": "learnbook/stack/golang/garbage/garbage-collection-in-go-part2-gctraces.md"
               }
             }
           }
@@ -176,12 +175,12 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "e3404966007ecb53",
+  "active": "9b90c7ce9ec057a0",
   "lastOpenFiles": [
+    "learnbook/stack/golang/garbage/garbage-collection-in-go-part1-semantics.md",
+    "learnbook/stack/golang/garbage/garbage-collection-in-go-part2-gctraces.md",
     "learnbook/stack/golang/garbage/garbage-collection-in-go-part3-gcpacing.md",
     "learnbook/stack/golang/_sidebar.md",
-    "learnbook/stack/golang/garbage/garbage-collection-in-go-part2-gctraces.md",
-    "learnbook/stack/golang/garbage/garbage-collection-in-go-part1-semantics.md",
     "learnbook/stack/golang/_assets/1c1b78cb9e737dfd87f4cfd5aecde82d_MD5.png",
     "learnbook/stack/golang/_assets/1f6b5c05460bfe358e66f965df7eaf23_MD5.png",
     "learnbook/stack/golang/_assets/fc600275b81a1f415048c941deba6b59_MD5.png",
