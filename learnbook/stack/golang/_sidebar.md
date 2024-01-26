@@ -63,6 +63,11 @@
     - [03. Golang 规则引擎原理及实战](./stack/golang/features/The-principle-and-practice-of-Golang-rule-engine.md)
     - [04. 用 Go 实现一个完整的数学表达式计算引擎](./stack/golang/features/Implement-a-complete-mathematical-expression-calculation-engine.md)
 
+- **垃圾回收**
+    - [Go 中的垃圾回收：第一部分 - 语义](./stack/golang/garbage/garbage-collection-in-go-part1-semantics.md)
+    - [Go 中的垃圾回收：第二部分 - GC 跟踪](./stack/golang/garbage/garbage-collection-in-go-part2-gctraces.md)
+    - [Go 中的垃圾回收：第三部分 - GC 起搏](./stack/golang/garbage/garbage-collection-in-go-part3-gcpacing.md)
+
 - **Go 实践**
     - [01. 记一次降低30%的CPU使用率的优化](./stack/golang/practice/optimization-of-reducing-CPU-utilization-by-30-percent.md)
     - [02. 处理 IO 操作的一些注意事项](./stack/golang/practice/some-considerations-for-handling-IO-operations.md)
