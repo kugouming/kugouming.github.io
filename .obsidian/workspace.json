@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/nginx/Configure-IP-based-virtual-hosts.md",
+                "file": "learnbook/stack/golang/devops/Golang-implements-virtual-IP.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -55,7 +55,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/stack/nginx/Configure-IP-based-virtual-hosts.md",
+                "file": "learnbook/stack/golang/_sidebar.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/stack/nginx/Configure-IP-based-virtual-hosts.md",
+                "file": "learnbook/stack/golang/_sidebar.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/stack/nginx/Configure-IP-based-virtual-hosts.md"
+                "file": "learnbook/stack/golang/_sidebar.md"
               }
             }
           }
@@ -184,17 +184,19 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "67f245959181d0ce",
+  "active": "e3404966007ecb53",
   "lastOpenFiles": [
+    "learnbook/stack/golang/devops/Golang-implements-virtual-IP.md",
+    "learnbook/stack/golang/_sidebar.md",
+    "learnbook/stack/nginx/Configure-IP-based-virtual-hosts.md",
+    "learnbook/stack/golang/devops",
     "learnbook/stack/nginx/_assets/2ec7d2ed992bb82b16250d0fae882905_MD5.jpeg",
     "learnbook/stack/nginx/_assets/6abd4bc270915e5c187272d942ec9532_MD5.jpeg",
     "learnbook/stack/nginx/_assets/02fa56f89e4ff46704a1c6ac7afb718d_MD5.jpeg",
     "learnbook/stack/nginx/Nginx-Virtual-IP-Practice.md",
     "learnbook/stack/nginx/_sidebar.md",
-    "learnbook/stack/nginx/Configure-IP-based-virtual-hosts.md",
     "stack/nginx/Nginx-Virtual-IP-Practice.md",
     "stack/nginx",
-    "learnbook/stack/golang/_sidebar.md",
     "learnbook/stack/golang/garbage/garbage-collection-in-go-part3-gcpacing.md",
     "learnbook/stack/nginx/_assets/Pasted image 20240311144830.png",
     "learnbook/stack/nginx/_assets/Pasted image 20240311144809.png",
@@ -207,7 +209,6 @@
     "learnbook/stack/golang/garbage/_assets/c25654b34967f0f66b69201dfdfbcaca_MD5.png",
     "learnbook/stack/golang/garbage/_assets/c089206df84932ad92cc16f3c07774b4_MD5.png",
     "learnbook/stack/golang/garbage/_assets/30cd0549ed6562b16c65012ffe280e11_MD5.png",
-    "learnbook/stack/golang/garbage/_assets/f14199ca5b0d8ba005c5832255e7920e_MD5.png",
     "learnbook/stack/golang/garbage/garbage-collection-in-go-part2-gctraces.md",
     "learnbook/stack/golang/garbage/garbage-collection-in-go-part1-semantics.md",
     "learnbook/stack/golang/_assets",
@@ -230,7 +231,6 @@
     "learnbook/algorithm/fucking-algorithm/数据结构系列/单调队列.md",
     "learnbook/stack/sql/basic",
     "learnbook/stack/golang/basic/_assets",
-    "learnbook/stack/golang/program-mode/_assets",
-    "learnbook/stack/golang/debug/_assets"
+    "learnbook/stack/golang/program-mode/_assets"
   ]
 }

@@ -106,3 +106,6 @@
     - [01. [外]编程实战](https://learnku.com/docs/gobyexample/2020/hello-world/6252)
     - [02. [外]Go性能大杀器](https://golang2.eddycjy.com/posts/ch6/01-pprof-1/)
     - [0x. PHP到Go速转手册](./stack/golang/php2go.md)
+
+- **系统运维**
+	- [01. Go实现虚拟IP](./stack/golang/devops/Golang-implements-virtual-IP.md)
