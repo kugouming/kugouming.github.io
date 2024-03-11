@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/golang/garbage/garbage-collection-in-go-part3-gcpacing.md",
+                "file": "learnbook/stack/nginx/Nginx-Virtual-IP-Practice.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -47,7 +47,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md",
+                "file": "learnbook/stack/nginx/Nginx-Virtual-IP-Practice.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md",
+                "file": "learnbook/stack/nginx/Nginx-Virtual-IP-Practice.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md"
+                "file": "learnbook/stack/nginx/Nginx-Virtual-IP-Practice.md"
               }
             }
           }
@@ -176,12 +176,19 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "e3404966007ecb53",
+  "active": "67f245959181d0ce",
   "lastOpenFiles": [
+    "learnbook/stack/golang/_sidebar.md",
+    "learnbook/stack/nginx/_sidebar.md",
+    "learnbook/stack/nginx/Nginx-Virtual-IP-Practice.md",
+    "learnbook/stack/golang/garbage/garbage-collection-in-go-part3-gcpacing.md",
+    "learnbook/stack/nginx/_assets/Pasted image 20240311144830.png",
+    "learnbook/stack/nginx/_assets/Pasted image 20240311144809.png",
+    "learnbook/stack/nginx/_assets/Pasted image 20240311144513.png",
+    "learnbook/stack/nginx/_assets",
     "stack/golang/garbage/Quickly-locate-memory-leak-problems.md",
     "stack/golang/garbage",
     "learnbook/stack/golang/garbage/Quickly-locate-memory-leak-problems.md",
-    "learnbook/stack/golang/_sidebar.md",
     "learnbook/stack/golang/garbage/_assets/b854882fb85291bf764a667a3e4bb748_MD5.png",
     "learnbook/stack/golang/garbage/_assets/c25654b34967f0f66b69201dfdfbcaca_MD5.png",
     "learnbook/stack/golang/garbage/_assets/c089206df84932ad92cc16f3c07774b4_MD5.png",
@@ -189,12 +196,8 @@
     "learnbook/stack/golang/garbage/_assets/f14199ca5b0d8ba005c5832255e7920e_MD5.png",
     "learnbook/stack/golang/garbage/_assets/4d3d4794cd01940f4199ee2a03bd8b75_MD5.png",
     "learnbook/stack/golang/garbage/_assets/132c3ee0016561196ae678655b0e7b53_MD5.png",
-    "learnbook/stack/golang/garbage/_assets/93136ee6b9f289934ed06a0983009d21_MD5.png",
     "learnbook/stack/golang/garbage/garbage-collection-in-go-part2-gctraces.md",
     "learnbook/stack/golang/garbage/garbage-collection-in-go-part1-semantics.md",
-    "learnbook/stack/golang/garbage/garbage-collection-in-go-part3-gcpacing.md",
-    "learnbook/stack/golang/_assets/1c1b78cb9e737dfd87f4cfd5aecde82d_MD5.png",
-    "learnbook/stack/golang/_assets/1f6b5c05460bfe358e66f965df7eaf23_MD5.png",
     "learnbook/stack/golang/_assets",
     "learnbook/stack/golang/garbage/_assets",
     "learnbook/stack/golang/garbage",
@@ -218,11 +221,8 @@
     "learnbook/stack/sql/_sidebar.md",
     "learnbook/stack/sql/basic",
     "learnbook/stack/golang/basic/_assets",
-    "learnbook/stack/golang/debug/go-delve-remote.md",
-    "learnbook/stack/golang/program-mode/How-to-really-write-Golang-code-well.md",
     "learnbook/stack/golang/program-mode/_assets",
     "learnbook/stack/golang/debug/_assets",
-    "learnbook/stack/golang/optimize/_assets",
-    "learnbook/stack/golang/optimize"
+    "learnbook/stack/golang/optimize/_assets"
   ]
 }
