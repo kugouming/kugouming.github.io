@@ -34,14 +34,6 @@
             }
           },
           {
-            "id": "2113123798bc4985",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
             "id": "e3404966007ecb53",
             "type": "leaf",
             "state": {
@@ -55,7 +47,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -188,13 +180,18 @@
   "lastOpenFiles": [
     "learnbook/stack/golang/devops/Golang-implements-virtual-IP.md",
     "learnbook/stack/golang/_sidebar.md",
+    "learnbook/stack/golang/interview/Has-the-memory-of-deleting-a-Key-in-the-map-been-released.md",
+    "stack/golang/interview/What-is-the-difference-between-make-and-new.md",
+    "stack/golang/interview",
+    "learnbook/stack/nginx/_sidebar.md",
+    "learnbook/stack/golang/interview/What-is-the-difference-between-make-and-new.md",
+    "learnbook/stack/golang/interview",
     "learnbook/stack/nginx/Configure-IP-based-virtual-hosts.md",
     "learnbook/stack/golang/devops",
     "learnbook/stack/nginx/_assets/2ec7d2ed992bb82b16250d0fae882905_MD5.jpeg",
     "learnbook/stack/nginx/_assets/6abd4bc270915e5c187272d942ec9532_MD5.jpeg",
     "learnbook/stack/nginx/_assets/02fa56f89e4ff46704a1c6ac7afb718d_MD5.jpeg",
     "learnbook/stack/nginx/Nginx-Virtual-IP-Practice.md",
-    "learnbook/stack/nginx/_sidebar.md",
     "stack/nginx/Nginx-Virtual-IP-Practice.md",
     "stack/nginx",
     "learnbook/stack/golang/garbage/garbage-collection-in-go-part3-gcpacing.md",
@@ -226,11 +223,6 @@
     "learnbook/algorithm/fucking-algorithm/技术/linuxshell.md",
     "learnbook/algorithm/fucking-algorithm/技术/linux进程.md",
     "learnbook/algorithm/fucking-algorithm/技术/刷题技巧.md",
-    "learnbook/algorithm/fucking-algorithm/技术/密码技术.md",
-    "learnbook/algorithm/fucking-algorithm/数据结构系列/单调栈.md",
-    "learnbook/algorithm/fucking-algorithm/数据结构系列/单调队列.md",
-    "learnbook/stack/sql/basic",
-    "learnbook/stack/golang/basic/_assets",
-    "learnbook/stack/golang/program-mode/_assets"
+    "learnbook/stack/sql/basic"
   ]
 }
