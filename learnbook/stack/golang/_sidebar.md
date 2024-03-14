@@ -110,7 +110,7 @@
 - **系统运维**
 	- [01. Go实现虚拟IP](./stack/golang/devops/Golang-implements-virtual-IP.md)
 
-- **面试相关**
+- **面试指南**
 	- [01. Go中make和new有什么区别](./stack/golang/interview/What-is-the-difference-between-make-and-new.md)
 	- [02. map中删除一个Key内存是否被释放](./stack/golang/interview/Has-the-memory-of-deleting-a-Key-in-the-map-been-released.md)
 	- [03. [外]GMP 原理与调度](https://www.topgoer.com/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/GMP%E5%8E%9F%E7%90%86%E4%B8%8E%E8%B0%83%E5%BA%A6.html)
