@@ -34,12 +34,25 @@
             }
           },
           {
-            "id": "e3404966007ecb53",
+            "id": "2952be524c48e2f3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/php/php-interview-questions.md",
+                "file": "learnbook/stack/golang/garbage/Talk-about-two-GC-optimization-strategies-for-Go-that-are-about-to-become-outdated.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d176c27755118ee3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "learnbook/stack/golang/garbage/The-Road-to-GO-GC-Optimization.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -97,7 +110,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 287.5
+    "width": 399.5
   },
   "right": {
     "id": "565929c3bf4912da",
@@ -178,22 +191,24 @@
   },
   "active": "67f245959181d0ce",
   "lastOpenFiles": [
+    "learnbook/stack/golang/garbage/Talk-about-two-GC-optimization-strategies-for-Go-that-are-about-to-become-outdated.md",
+    "learnbook/stack/golang/_sidebar.md",
+    "learnbook/stack/php/php-interview-questions.md",
+    "learnbook/stack/golang/garbage/The-Road-to-GO-GC-Optimization.md",
+    "learnbook/stack/golang/garbage/_assets/da4822ad892484420bc4f0936abff33b_MD5.png",
+    "learnbook/stack/golang/garbage/_assets/b8d868edbbc8a5223ed478aadfdb593a_MD5.png",
+    "learnbook/stack/golang/garbage/_assets/8fb6f422c235bd15eb92f199e2e89954_MD5.png",
+    "learnbook/stack/golang/garbage/_assets/de34557c084cca2b8ce0b2e9dd634807_MD5.png",
+    "learnbook/stack/golang/garbage/_assets/95811c89e75e384c7c6837ba2a54cc96_MD5.png",
+    "learnbook/stack/golang/garbage/_assets/Pasted image 20240315114836.png",
+    "learnbook/stack/golang/garbage/_assets/Pasted image 20240315114820.png",
+    "learnbook/stack/golang/garbage/_assets/Pasted image 20240315114748.png",
+    "learnbook/stack/golang/garbage/_assets/Pasted image 20240315114426.png",
+    "learnbook/stack/golang/garbage/_assets/Pasted image 20240315111752.png",
     "learnbook/stack/golang/README.md",
     "learnbook/stack/php/_sidebar.md",
-    "learnbook/stack/php/php-interview-questions.md",
     "learnbook/stack/golang/devops/Golang-implements-virtual-IP.md",
-    "learnbook/stack/php/_assets/dff5d237e85158b6e324e0caa79d7eed_MD5.png",
-    "learnbook/stack/php/_assets/01e4250aa81b28d7574bd243aa39ad5e_MD5.png",
-    "learnbook/stack/php/_assets/04926de91d20c1ef517ca5f290a0c0f0_MD5.png",
-    "learnbook/stack/php/_assets/e80f6fbcd33a07a78b7d8bef63fbddaf_MD5.png",
-    "learnbook/stack/php/_assets/b00916e1d27bdaff3c8e405b6304d96f_MD5.png",
-    "learnbook/stack/php/_assets/7bceed96a1904cf198b5400541cca7d5_MD5.png",
-    "learnbook/stack/php/_assets/b6cafe74e496ffba2c3d8350ad2219aa_MD5.png",
-    "learnbook/stack/php/_assets/a0eed5df496c11130336ae0ba5cb99d2_MD5.png",
-    "learnbook/stack/php/_assets/852089ff57991d1fa3ad30699fe8c33c_MD5.png",
-    "learnbook/stack/php/_assets/2895ce1dfef28a7f3dcfe6a1df04b11e_MD5.png",
     "learnbook/stack/php/_assets",
-    "learnbook/stack/golang/_sidebar.md",
     "learnbook/stack/golang/interview/Has-the-memory-of-deleting-a-Key-in-the-map-been-released.md",
     "stack/golang/interview/What-is-the-difference-between-make-and-new.md",
     "stack/golang/interview",
@@ -220,9 +235,6 @@
     "learnbook/algorithm/nagle-algorithm.md",
     "learnbook/algorithm/fucking-algorithm/_sidebar.md",
     "learnbook/algorithm/fucking-algorithm/动态规划系列/编辑距离.md",
-    "learnbook/algorithm/fucking-algorithm/动态规划系列/背包问题.md",
-    "learnbook/algorithm/fucking-algorithm/高频面试系列/二分查找判定子序列.md",
-    "learnbook/algorithm/fucking-algorithm/高频面试系列/打印素数.md",
-    "learnbook/algorithm/fucking-algorithm/技术/redis入侵.md"
+    "learnbook/algorithm/fucking-algorithm/动态规划系列/背包问题.md"
   ]
 }

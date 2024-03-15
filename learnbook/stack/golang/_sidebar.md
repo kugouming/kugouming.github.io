@@ -68,6 +68,8 @@
     - [Go 中的垃圾回收：第一部分 - 语义](./stack/golang/garbage/garbage-collection-in-go-part1-semantics.md)
     - [Go 中的垃圾回收：第二部分 - GC 跟踪](./stack/golang/garbage/garbage-collection-in-go-part2-gctraces.md)
     - [Go 中的垃圾回收：第三部分 - GC 起搏](./stack/golang/garbage/garbage-collection-in-go-part3-gcpacing.md)
+    - [性能优化｜GC 优化之路](./stack/golang/garbage/The-Road-to-GO-GC-Optimization.md)
+    - [性能优化｜两个即将过时的GC优化策略](./stack/golang/garbage/Talk-about-two-GC-optimization-strategies-for-Go-that-are-about-to-become-outdated.md)
 
 - **Go 实践**
     - [01. 记一次降低30%的CPU使用率的优化](./stack/golang/practice/optimization-of-reducing-CPU-utilization-by-30-percent.md)
