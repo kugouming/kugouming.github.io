@@ -4,16 +4,29 @@
     "type": "split",
     "children": [
       {
-        "id": "9deb7956bce29ffa",
+        "id": "da147c32a3e8bb70",
         "type": "tabs",
         "children": [
           {
-            "id": "ac6dcc8140a78c10",
+            "id": "401c8f59cf43c24a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/books/_sidebar.md",
+                "file": "learnbook/stack/other/Using-Vercel-to-Reverse-Openai.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0ce7d304daac962a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "learnbook/stack/other/Using-Vercel-to-Reverse-Openai.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -70,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 399.5
+    "width": 298.5
   },
   "right": {
     "id": "565929c3bf4912da",
@@ -86,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/books/_sidebar.md",
+                "file": "learnbook/stack/other/Using-Vercel-to-Reverse-Openai.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/books/_sidebar.md",
+                "file": "learnbook/stack/other/Using-Vercel-to-Reverse-Openai.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/books/_sidebar.md"
+                "file": "learnbook/stack/other/Using-Vercel-to-Reverse-Openai.md"
               }
             }
           }
@@ -149,10 +162,28 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "ac6dcc8140a78c10",
+  "active": "401c8f59cf43c24a",
   "lastOpenFiles": [
-    "learnbook/books/Uniapp-Little-Rabbit-Fresh-Baby-Mini-Program.md",
+    "learnbook/stack/other/_assets/19f09370278d121d28b4df2cbefffebb_MD5.webp",
+    "learnbook/stack/other/_assets/a443b1055cd3bf5232a65f82db4b0c69_MD5.webp",
+    "learnbook/stack/other/_assets/f7df9c94aa4f47b16716e38c69e926e5_MD5.webp",
+    "learnbook/stack/other/_assets/6ba88a86ebe40e078b639556309645ed_MD5.webp",
+    "learnbook/stack/other/_assets/94fd100174ba5a860a6c4208539136d6_MD5.webp",
+    "learnbook/stack/other/_assets/814bb41bdf7a6194b7e773f1f27d324a_MD5.webp",
+    "learnbook/stack/other/_assets/a3a1fb19851ea40234cf5c25871fb278_MD5.webp",
+    "learnbook/stack/other/_assets/80b4139d03634f8b060337c2fcbb2eca_MD5.webp",
+    "learnbook/stack/other/_assets/e7c97091b4356c66c53cc67bde729940_MD5.webp",
+    "learnbook/stack/other/_assets/8393f4f2bce6d082af382a54abaa1db6_MD5.webp",
+    "learnbook/stack/other/_assets/8850c3aff6bc4200f1ca630614b167fe_MD5.webp",
+    "learnbook/stack/other/_assets",
+    "learnbook/stack/other/_sidebar.md",
+    "learnbook/_sidebar.md",
+    "learnbook/others/docsify/helpers.md",
+    "learnbook/stack/other/Using-Vercel-to-Reverse-Openai.md",
+    "learnbook/bookmark/stack/go.md",
+    "learnbook/others/vpn",
     "learnbook/books/_sidebar.md",
+    "learnbook/books/Uniapp-Little-Rabbit-Fresh-Baby-Mini-Program.md",
     "learnbook/books/leetcode-cookbook-go.md",
     "learnbook/books/search-engine-book.md",
     "learnbook/stack/golang/_sidebar.md",
@@ -164,16 +195,6 @@
     "learnbook/statics/books/xiaotuxian/uni-app小程序-day01.pdf",
     "learnbook/statics/books/xiaotuxian",
     "learnbook/stack/golang/basic/Deeply-understand-Golang.md",
-    "learnbook/stack/golang/basic/_assets/f5b57bffd7086b2a3669b9b6ac0e4271_MD5.png",
-    "learnbook/stack/golang/basic/_assets/7db8234d512feb7dac2366f171d6966e_MD5.png",
-    "learnbook/stack/golang/basic/_assets/f9d29f24b0d0644e76f446ffed9edb79_MD5.png",
-    "learnbook/stack/golang/basic/_assets/91764ddf21b990ffd4a58b1ffb1135c6_MD5.png",
-    "learnbook/stack/golang/basic/_assets/e3d5bf53752e2995b5b38ab253e1da3d_MD5.png",
-    "learnbook/stack/golang/basic/_assets/cb2a0f05ea75ac889ba793d42b320395_MD5.png",
-    "learnbook/stack/golang/basic/_assets/4ca060d7cadcfaa105de013219d3fb31_MD5.png",
-    "learnbook/stack/golang/basic/_assets/ad33e072d1e90da2a8273b8bc3b41e51_MD5.png",
-    "learnbook/stack/golang/basic/_assets/0e3164529c849c770cd87177a3f8a604_MD5.png",
-    "learnbook/stack/golang/basic/_assets/80e225c1ed874ffe4facfdffb9dabcdd_MD5.png",
     "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp/04_Principles-and-Standards-of-Dotting.md",
     "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp/05_AB-experiment-from-initiation-to-promotion.md",
     "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp/06_Basic-Principles-and-Practical-Cases-of-AB-Experiment.md",
@@ -186,16 +207,8 @@
     "learnbook/stack/golang/garbage/Talk-about-two-GC-optimization-strategies-for-Go-that-are-about-to-become-outdated.md",
     "learnbook/stack/golang/garbage/Quickly-locate-memory-leak-problems.md",
     "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp.md",
-    "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp",
-    "learnbook/stack/analysis/course/_assets",
     "learnbook/stack/sql/_sidebar.md",
     "learnbook/stack/sql/basic/The-difference-between-B-tree-and-b+-tree-in-MySQL-database.md",
-    "learnbook/stack/sql/basic/explain-the-command-in-detail.md",
-    "learnbook/stack/php/php-interview-questions.md",
-    "learnbook/stack/golang/README.md",
-    "learnbook/stack/php/_sidebar.md",
-    "learnbook/stack/golang/devops/Golang-implements-virtual-IP.md",
-    "learnbook/stack/golang/interview/Has-the-memory-of-deleting-a-Key-in-the-map-been-released.md",
-    "stack/golang/interview/What-is-the-difference-between-make-and-new.md"
+    "learnbook/stack/sql/basic/explain-the-command-in-detail.md"
   ]
 }
