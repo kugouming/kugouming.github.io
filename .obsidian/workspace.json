@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md",
+                "file": "learnbook/books/_sidebar.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md",
+                "file": "learnbook/books/_sidebar.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md",
+                "file": "learnbook/books/_sidebar.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md"
+                "file": "learnbook/books/_sidebar.md"
               }
             }
           }
@@ -151,6 +151,18 @@
   },
   "active": "ac6dcc8140a78c10",
   "lastOpenFiles": [
+    "learnbook/books/Uniapp-Little-Rabbit-Fresh-Baby-Mini-Program.md",
+    "learnbook/books/_sidebar.md",
+    "learnbook/books/leetcode-cookbook-go.md",
+    "learnbook/books/search-engine-book.md",
+    "learnbook/stack/golang/_sidebar.md",
+    "learnbook/statics/books/xiaotuxian/uni-app小程序-day06.pdf",
+    "learnbook/statics/books/xiaotuxian/uni-app小程序-day05.pdf",
+    "learnbook/statics/books/xiaotuxian/uni-app小程序-day04.pdf",
+    "learnbook/statics/books/xiaotuxian/uni-app小程序-day03.pdf",
+    "learnbook/statics/books/xiaotuxian/uni-app小程序-day02.pdf",
+    "learnbook/statics/books/xiaotuxian/uni-app小程序-day01.pdf",
+    "learnbook/statics/books/xiaotuxian",
     "learnbook/stack/golang/basic/Deeply-understand-Golang.md",
     "learnbook/stack/golang/basic/_assets/f5b57bffd7086b2a3669b9b6ac0e4271_MD5.png",
     "learnbook/stack/golang/basic/_assets/7db8234d512feb7dac2366f171d6966e_MD5.png",
@@ -177,24 +189,13 @@
     "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp",
     "learnbook/stack/analysis/course/_assets",
     "learnbook/stack/sql/_sidebar.md",
-    "learnbook/stack/analysis/course",
-    "learnbook/stack/analysis",
     "learnbook/stack/sql/basic/The-difference-between-B-tree-and-b+-tree-in-MySQL-database.md",
-    "learnbook/stack/sql/basic/_assets",
     "learnbook/stack/sql/basic/explain-the-command-in-detail.md",
-    "learnbook/stack/golang/_sidebar.md",
     "learnbook/stack/php/php-interview-questions.md",
     "learnbook/stack/golang/README.md",
     "learnbook/stack/php/_sidebar.md",
     "learnbook/stack/golang/devops/Golang-implements-virtual-IP.md",
-    "learnbook/stack/php/_assets",
     "learnbook/stack/golang/interview/Has-the-memory-of-deleting-a-Key-in-the-map-been-released.md",
-    "stack/golang/interview/What-is-the-difference-between-make-and-new.md",
-    "stack/golang/interview",
-    "learnbook/stack/nginx/_sidebar.md",
-    "learnbook/stack/golang/interview/What-is-the-difference-between-make-and-new.md",
-    "learnbook/stack/golang/interview",
-    "learnbook/stack/nginx/Configure-IP-based-virtual-hosts.md",
-    "learnbook/stack/golang/devops"
+    "stack/golang/interview/What-is-the-difference-between-make-and-new.md"
   ]
 }

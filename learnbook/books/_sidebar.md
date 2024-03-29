@@ -24,6 +24,9 @@
 - **技术成长**
     - [中文技术文档写作规范](./books/document-style-guide/)
 
+- **小程序相关**
+	- [01. uniapp小兔鲜儿小程序](./books/Uniapp-Little-Rabbit-Fresh-Baby-Mini-Program.md)
+
 - **技术管理**
     - [01. 从业务蜕变成优秀管理](./books/MTP-Excellent-Manager-Transformation-Plan/01.md)
     - [02. 如何正确制定目标计划](./books/MTP-Excellent-Manager-Transformation-Plan/02.md)
