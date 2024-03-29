@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" href="/favicon.ico">
+        <script id="meeting-script" charset="utf-8"
+            src="http://wm.bcc-szwg.baidu.com:8089/scripts/meeting/js/meeting.js"></script>
+        <script>
+            function bookMeeting() {
+                var mdoc = document.getElementById("meeting-container");
+                var clsName = ["start_time", "end_time"];
+                var resp = {
+                    "start_time": [],
+                    "end_time": [],
+                };
+                for (var cls in resp) {
+                    var clsVal = mdoc.getElementsByClassName(cls);
+                    for (var j in clsVal) {
+                        resp[cls].push(clsVal[j].value)
+                    }
+                }
+                var bookList = [];
+                for (var i in resp["start_time"]) {
+                    if (resp["start_time"][i] && resp["end_time"][i]) {
+                        bookList.push({
+                            "start_time": resp["start_time"][i],
+                            "end_time": resp["end_time"][i]
+                        })
+                    }
+                }
+
+                var updoc = document.getElementsByClassName('setup-time')[0];
+                var setupTime = getValueByCls(updoc, 'year')
+                    + '-' + getValueByCls(updoc, 'month')
+                    + '-' + getValueByCls(updoc, 'day')
+                    + ' ' + getValueByCls(updoc, 'hour')
+                    + ':' + getValueByCls(updoc, 'minute');
+
+                var sdoc = document.getElementsByClassName('submit-area')[0];
+                var bufferTime = getValueByCls(sdoc, 'bufferTime');
+                var isRelease = getValueByCls(sdoc, 'isRelease');
+
+                console.log(setupTime,bufferTime,isRelease,bookList);
+
+                if(bookList.length <= 0) {
+                    return;
+                }
+
+                var m = new Meeting({
+                    // 设定脚本运行时间
+                    "setUpTime": setupTime,
+                    // 需要预订的会议室时间段
+                    "bookList": bookList,
+                    // 会议室释放状态 1:仅释放 0:全部
+                    "isRelease": isRelease,
+                    "bufferTime": bufferTime
+                });
+                
+                // 执行时间距离当前时间超过 5Hour 需要先退出再登录，否则存在执行脚本时 Cookie 信息过期
+                if(m.getDiffTime(setupTime) >= 5 * 3600 * 1000) {
+                    if(confirm("执行时间距离当前时间过久，可能存在登录信息过期不能执行脚本？是－退出再登录，否-不退出")) {
+                        window.location.href = '/h5/logout?t=' + (new Date()).getTime();
+                    }
+                }
+
+                m.process();
+            };
+
+            function getValueByCls(doc, cls) {
+                return doc.getElementsByClassName(cls)[0].value;
+            }
+
+            function closeTips() {
+                var idList = ['meeting-script-header','meeting-script','meeting-container','meeting-css'];
+                for(var i in idList) {
+                    var t = document.getElementById(idList[i]);
+                    document.body.removeChild(t);
+                }
+            }
+            
+            
+        </script>
+
+        <style id="meeting-css">
+            #meeting-close {
+                display: block;
+                height: 24px;
+                width: 31px;
+                border-radius: 12px 0px 0px 14px;
+                text-align: center;
+                border: 1px solid #bdbcbc;
+                text-indent: inherit;
+                position: absolute;
+                top: 0px;
+                line-height: 20px;
+                font-size: 20px;
+                left: -32px;
+                background: #efefef;
+                cursor: pointer;
+                border-right: none;
+                border-top: none;
+                color: #8a8a8a;
+                box-shadow: -5px 2px 5px 1px #666;
+            }
+            #meeting-container {
+                width: 640px !important;
+                height: 150px !important;
+                display: block;
+                position: fixed;
+                top: 0;
+                background: #fff;
+                z-index: 10000000000;
+                right: 0;
+                padding: 16px 10px;
+                margin: 0;
+                padding: 4px;
+                border-radius: 0 0 0 18px;
+                box-shadow: -3px 5px 13px 2px #666;
+            }
+
+            #meeting-container li {
+                list-style: none;
+            }
+
+            #meeting-container .book-list {
+                display: inline-block;
+                float: left;
+                margin-left: 5px;
+            }
+
+            #meeting-container .book-list li {
+                clear: both;
+                margin: 2px 2px;
+                width: 100%;
+                float: left;
+                display: inline-flex;
+                line-height: 30px;
+                flex-wrap: nowrap;
+                color: #ccc;
+            }
+
+
+            #meeting-container .book-list li input {
+                width: 142px;
+                display: inline-block;
+                margin: 2px 4px;
+                border: 1px solid #ccc;
+                line-height: 100%;
+                padding: 2px 4px;
+                background: #efefef;
+                font-size: 15px;
+            }
+
+            #meeting-container .setup-time {
+                display: inline-block;
+                float: left;
+                width: 122px;
+                margin: 2px 4px;
+            }
+
+            #meeting-container .setup-time li {
+                width: 100% !important;
+                overflow: hidden;
+                height: 44px;
+                line-height: 39px !important;
+                font-size: 17px;
+                text-align: center;
+                color: #666;
+                display: inline-flex;
+            }
+
+            #meeting-container .setup-time li input {
+                width: 50% !important;
+                text-align: center;
+                border: 0 !important;
+                background: #efefef;
+                color: #9e9c9c;
+                font-size: 34px;
+                display: inline-block;
+                margin: 2px 2px;
+                line-height: 100%;
+            }
+
+            #meeting-container .setup-time li input[class='year'] {
+                width: 100% !important;
+                text-align: center;
+                font-weight: bold;
+                font-size: 44px;
+                color: #828181;
+            }
+
+            #meeting-container .submit-area {
+                display: inline-block;
+                float: right;
+                margin-right: 0px;
+            }
+
+            #meeting-container .submit-area li {
+                clear: both;
+                width: 150px;
+                float: left;
+                display: inline-flex;
+                flex-wrap: nowrap;
+                color: #ccc;
+            }
+
+
+            #meeting-container .submit-area li input,
+            #meeting-container .submit-area li select {
+                display: inline-block;
+                float: left;
+                height: 24px;
+                line-height: 25px;
+                border-radius: 5px;
+                width: 40%;
+                clear: both;
+                margin: 4px 8px 4px 0px;
+                border: 0 !important;
+                background: #efefef;
+                text-align: center;
+            }
+
+            #submit-meeting {
+                display: block;
+                float: right;
+                background: #fff;
+                width: 159px;
+                height: 94px;
+                border: 1px solid #e0e0e0;
+                box-shadow: 3px 5px 20px 1px #909090;
+                font-size: 31px;
+                font-weight: bold;
+                color: #666;
+                cursor: pointer;
+                margin: 4px 17px 0px 1px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="meeting-container">
+            <url class="setup-time">
+                <li><input class="year" type="text" value="2021"></li>
+                <li><input class="month" type="text" value="05">-<input class="day" type="text" value="20"></li>
+                <li><input class="hour" type="text" value="08">:<input class="minute" type="text" value="00"></li>
+            </url>
+
+            <url class="book-list">
+                <li><input class="start_time" type="text" value="" placeholder="yyyy-mm-dd HH:MM"> ~<input
+                        class="end_time" type="text" value="" placeholder="yyyy-mm-dd HH:MM"></li>
+                <li><input class="start_time" type="text" value="" placeholder="yyyy-mm-dd HH:MM"> ~<input
+                        class="end_time" type="text" value="" placeholder="yyyy-mm-dd HH:MM"></li>
+                <li><input class="start_time" type="text" value="" placeholder="yyyy-mm-dd HH:MM"> ~<input
+                        class="end_time" type="text" value="" placeholder="yyyy-mm-dd HH:MM"></li>
+                <li><input class="start_time" type="text" value="" placeholder="yyyy-mm-dd HH:MM"> ~<input
+                        class="end_time" type="text" value="" placeholder="yyyy-mm-dd HH:MM"></li>
+            </url>
+
+            <url class="submit-area">
+                <li>
+                    <input type="number" class="bufferTime" value="1000" />
+                    <select class="isRelease">
+                        <option value="0">全部</option>
+                        <option value="1">已释</option>
+                        <option value="2">未释</option>
+                    </select>
+                </li>
+                <li></li>
+                <li><button id="submit-meeting" onclick="bookMeeting()">提交</button></li>
+            </url>
+            <div id="meeting-close" onclick="closeTips()">x</div>
+        </div>
+    </body>
+</html>

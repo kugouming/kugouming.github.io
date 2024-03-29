@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp/04_Principles-and-Standards-of-Dotting.md",
+                "file": "learnbook/stack/golang/_sidebar.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp/04_Principles-and-Standards-of-Dotting.md",
+                "file": "learnbook/stack/golang/_sidebar.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp/04_Principles-and-Standards-of-Dotting.md",
+                "file": "learnbook/stack/golang/_sidebar.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp/04_Principles-and-Standards-of-Dotting.md"
+                "file": "learnbook/stack/golang/_sidebar.md"
               }
             }
           }
@@ -151,19 +151,20 @@
   },
   "active": "ac6dcc8140a78c10",
   "lastOpenFiles": [
+    "learnbook/stack/golang/basic/Deeply-understand-Golang.md",
+    "learnbook/stack/golang/basic/_assets/f5b57bffd7086b2a3669b9b6ac0e4271_MD5.png",
+    "learnbook/stack/golang/basic/_assets/7db8234d512feb7dac2366f171d6966e_MD5.png",
+    "learnbook/stack/golang/basic/_assets/f9d29f24b0d0644e76f446ffed9edb79_MD5.png",
+    "learnbook/stack/golang/basic/_assets/91764ddf21b990ffd4a58b1ffb1135c6_MD5.png",
+    "learnbook/stack/golang/basic/_assets/e3d5bf53752e2995b5b38ab253e1da3d_MD5.png",
+    "learnbook/stack/golang/basic/_assets/cb2a0f05ea75ac889ba793d42b320395_MD5.png",
+    "learnbook/stack/golang/basic/_assets/4ca060d7cadcfaa105de013219d3fb31_MD5.png",
+    "learnbook/stack/golang/basic/_assets/ad33e072d1e90da2a8273b8bc3b41e51_MD5.png",
+    "learnbook/stack/golang/basic/_assets/0e3164529c849c770cd87177a3f8a604_MD5.png",
+    "learnbook/stack/golang/basic/_assets/80e225c1ed874ffe4facfdffb9dabcdd_MD5.png",
+    "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp/04_Principles-and-Standards-of-Dotting.md",
     "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp/05_AB-experiment-from-initiation-to-promotion.md",
     "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp/06_Basic-Principles-and-Practical-Cases-of-AB-Experiment.md",
-    "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp/_assets/c11b56782fc17fe907207050b067cac2_MD5.jpg",
-    "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp/_assets/5e4e057a6c6460eaa4bd0d811570fd81_MD5.jpg",
-    "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp/_assets/9061db21cc484b59e188f9a2b8d195ef_MD5.jpg",
-    "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp/_assets/246cfa1861ffae9e3a3a664c488bdb4a_MD5.jpg",
-    "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp/_assets/d6c0cffd38553b2833a69046c94ec6b6_MD5.jpg",
-    "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp/_assets/e7760299bf77755138ce7b16e8d5f8ac_MD5.jpg",
-    "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp/_assets/d8ea1238276004cf512ad584bb5e8a3d_MD5.jpg",
-    "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp/_assets/2d5ac28fa366ff6fe616d3818fbd7e0e_MD5.jpg",
-    "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp/_assets/421247270ad0336f6deaa30aad0eeb0d_MD5.jpg",
-    "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp/_assets/29f885dc2a8ab4fdb7afe3be5119e861_MD5.jpg",
-    "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp/04_Principles-and-Standards-of-Dotting.md",
     "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp/03_data-processing.md",
     "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp/README.md",
     "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp/02_Data-analysis-methods-1.md",
@@ -194,7 +195,6 @@
     "learnbook/stack/golang/interview/What-is-the-difference-between-make-and-new.md",
     "learnbook/stack/golang/interview",
     "learnbook/stack/nginx/Configure-IP-based-virtual-hosts.md",
-    "learnbook/stack/golang/devops",
-    "learnbook/stack/nginx/Nginx-Virtual-IP-Practice.md"
+    "learnbook/stack/golang/devops"
   ]
 }

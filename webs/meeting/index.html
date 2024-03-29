@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>如何使用脚本</title>
+        <meta charset=utf-8>
+        <link rel="shortcut icon" href="/favicon.ico">
+        <meta name=viewport content="width=device-width,initial-scale=1">
+    </head>
+    <body style="width: 500px; margin: 0 auto; line-height: 180%;">
+        <h1>如何使用脚本</h1>
+        <p>
+            请拖我到浏览器收藏夹:<a class="collect-tool"
+                href="javascript:void(function(document){
+                    var idName='meeting-render-script';
+                    if(document.getElementById(idName)){
+                        /*
+                        window.location.reload();
+                        document.body.removeChild(document.getElementById(idName));
+                        */
+                        return ;
+                    }
+
+                    var e = document.createElement('script');
+                    e.id = idName;
+                    e.setAttribute('charset', 'utf-8');
+                    e.src = 'http://wm.bcc-szwg.baidu.com:8089/scripts/meeting/js/render.js';
+                    document.body.appendChild(e);
+        }(document));" title="拖我到浏览器收藏夹试试">Meeting</a>
+        </p>
+        <hr>
+        <p>
+            <strong>注：</strong> <span style="color:red;">脚本防止恶意使用，限制了只能使用本人 & 科技园1号楼2层 & 人数在10~20 范围的会议室</span>
+        </p>
+        <hr>
+        <p>
+            1、打开网页之后，看到红色『Meeting』<br />
+            <img src="./images/meeting-store-1.png" width="400px"><br />
+            2、鼠标左键按住拖拽至浏览器收藏夹指定位置<br />
+            <img src="./images/meeting-store-2.png" width="300px"><br />
+            3、页面布局结构<br />
+            <img src="./images/meeting-how.png" width="600px"><br />
+            4、脚本执行Debug信息输出<br />
+            <img src="./images/meeting-debug.png" width="600px"><br />
+            5、浏览器控制台 Console<br />
+            <img src="./images/meeting-console.png" width="600px"><br />
+        </p>
+        <dl>
+            <dt>文件描述:</dt>
+            <dd>`meeting.js`     解析执行抢会议室的核心文件</dd>
+            <dd>`render.js`      用于生成浏览器页面的文件</dd>
+            <dd>`meeting.html`   用与编写`render.js`时的测试文件</dd>
+            <dd>`index.html`     说明文件的使用方式和脚本介绍</dd>
+            <dd>`build.sh`       脚本的部署文件</dd>
+            <dt>源文件压缩加密</dt>
+            <dd>1. JS 压缩加密 https://tool.lu/js/</dd>
+        </dl>
+    </body>
+</html>

@@ -5,6 +5,7 @@
     - [01. Defer 语句中的细节](./stack/golang/basic/Details-in-the-Defer-statement.md)
     - [02. 编译时参数传递](./stack/golang/basic/compile-time-parameter-passing.md)
     - [03. Defer 必掌握的7个知识点](./stack/golang/basic/7-knowledge-points-you-must-master-about-Defer.md)
+    - [04. 深入理解 Go](./stack/golang/basic/Deeply-understand-Golang.md)
 
 - **Go 调试**
      - [01. 如何使用 dlv 调试 Go 代码](./stack/golang/how-to-use-dlv.md)
