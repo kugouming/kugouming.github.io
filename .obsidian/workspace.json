@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/other/Using-Vercel-to-Reverse-Openai.md",
+                "file": "learnbook/stack/other/Baidu-Technical-Rank-Requirements.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -26,14 +26,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/other/Using-Vercel-to-Reverse-Openai.md",
+                "file": "learnbook/stack/other/_sidebar.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -99,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/stack/other/Using-Vercel-to-Reverse-Openai.md",
+                "file": "learnbook/stack/other/_sidebar.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/stack/other/Using-Vercel-to-Reverse-Openai.md",
+                "file": "learnbook/stack/other/_sidebar.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/stack/other/Using-Vercel-to-Reverse-Openai.md"
+                "file": "learnbook/stack/other/_sidebar.md"
               }
             }
           }
@@ -162,24 +163,26 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "401c8f59cf43c24a",
+  "active": "0ce7d304daac962a",
   "lastOpenFiles": [
+    "learnbook/stack/other/Baidu-Technical-Rank-Requirements.md",
+    "learnbook/stack/other/_sidebar.md",
+    "learnbook/stack/other/Using-Vercel-to-Reverse-Openai.md",
+    "learnbook/stack/other/_assets/4dd8c426329a2406a01e61b427e6ae32_MD5.png",
+    "learnbook/stack/other/_assets/49950d0b8d3570f465150884960f54f5_MD5.png",
+    "learnbook/stack/other/_assets/10a031910d28de5354f8998a1725fa82_MD5.png",
+    "learnbook/stack/other/_assets/1357a911c7cb7ca2af5cdcb9a731cf16_MD5.png",
+    "learnbook/stack/other/30-minutes-to-understand-the-core-concepts-of-graphql.md",
+    "learnbook/stack/other/README.md",
     "learnbook/stack/other/_assets/19f09370278d121d28b4df2cbefffebb_MD5.webp",
     "learnbook/stack/other/_assets/a443b1055cd3bf5232a65f82db4b0c69_MD5.webp",
     "learnbook/stack/other/_assets/f7df9c94aa4f47b16716e38c69e926e5_MD5.webp",
     "learnbook/stack/other/_assets/6ba88a86ebe40e078b639556309645ed_MD5.webp",
     "learnbook/stack/other/_assets/94fd100174ba5a860a6c4208539136d6_MD5.webp",
     "learnbook/stack/other/_assets/814bb41bdf7a6194b7e773f1f27d324a_MD5.webp",
-    "learnbook/stack/other/_assets/a3a1fb19851ea40234cf5c25871fb278_MD5.webp",
-    "learnbook/stack/other/_assets/80b4139d03634f8b060337c2fcbb2eca_MD5.webp",
-    "learnbook/stack/other/_assets/e7c97091b4356c66c53cc67bde729940_MD5.webp",
-    "learnbook/stack/other/_assets/8393f4f2bce6d082af382a54abaa1db6_MD5.webp",
-    "learnbook/stack/other/_assets/8850c3aff6bc4200f1ca630614b167fe_MD5.webp",
     "learnbook/stack/other/_assets",
-    "learnbook/stack/other/_sidebar.md",
     "learnbook/_sidebar.md",
     "learnbook/others/docsify/helpers.md",
-    "learnbook/stack/other/Using-Vercel-to-Reverse-Openai.md",
     "learnbook/bookmark/stack/go.md",
     "learnbook/others/vpn",
     "learnbook/books/_sidebar.md",
@@ -206,9 +209,6 @@
     "learnbook/stack/golang/garbage/The-Road-to-GO-GC-Optimization.md",
     "learnbook/stack/golang/garbage/Talk-about-two-GC-optimization-strategies-for-Go-that-are-about-to-become-outdated.md",
     "learnbook/stack/golang/garbage/Quickly-locate-memory-leak-problems.md",
-    "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp.md",
-    "learnbook/stack/sql/_sidebar.md",
-    "learnbook/stack/sql/basic/The-difference-between-B-tree-and-b+-tree-in-MySQL-database.md",
-    "learnbook/stack/sql/basic/explain-the-command-in-detail.md"
+    "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp.md"
   ]
 }
