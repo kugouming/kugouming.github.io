@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/other/_sidebar.md",
+                "file": "learnbook/stack/sql/_sidebar.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -84,7 +84,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 298.5
+    "width": 217.5
   },
   "right": {
     "id": "565929c3bf4912da",
@@ -100,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/stack/other/_sidebar.md",
+                "file": "learnbook/stack/sql/_sidebar.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/stack/other/_sidebar.md",
+                "file": "learnbook/stack/sql/_sidebar.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/stack/other/_sidebar.md"
+                "file": "learnbook/stack/sql/_sidebar.md"
               }
             }
           }
@@ -149,7 +149,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 340.5
+    "width": 340.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -165,8 +166,16 @@
   },
   "active": "0ce7d304daac962a",
   "lastOpenFiles": [
-    "learnbook/stack/other/Baidu-Technical-Rank-Requirements.md",
+    "learnbook/stack/sql/basic/60-high-frequency-interview-questions-selected-from-the-database.md",
+    "learnbook/stack/sql/_sidebar.md",
+    "learnbook/stack/sql/basic/_assets/Pasted image 20240416094837.png",
+    "learnbook/stack/sql/basic/_assets/Pasted image 20240416094652.png",
+    "learnbook/stack/sql/basic/_assets/Pasted image 20240416094546.png",
+    "learnbook/stack/sql/basic/_assets/Pasted image 20240416094440.png",
+    "learnbook/stack/sql/basic/_assets/Pasted image 20240416094157.png",
+    "learnbook/stack/sql/basic/explain-the-command-in-detail.md",
     "learnbook/stack/other/_sidebar.md",
+    "learnbook/stack/other/Baidu-Technical-Rank-Requirements.md",
     "learnbook/stack/other/Using-Vercel-to-Reverse-Openai.md",
     "learnbook/stack/other/_assets/4dd8c426329a2406a01e61b427e6ae32_MD5.png",
     "learnbook/stack/other/_assets/49950d0b8d3570f465150884960f54f5_MD5.png",
@@ -175,11 +184,6 @@
     "learnbook/stack/other/30-minutes-to-understand-the-core-concepts-of-graphql.md",
     "learnbook/stack/other/README.md",
     "learnbook/stack/other/_assets/19f09370278d121d28b4df2cbefffebb_MD5.webp",
-    "learnbook/stack/other/_assets/a443b1055cd3bf5232a65f82db4b0c69_MD5.webp",
-    "learnbook/stack/other/_assets/f7df9c94aa4f47b16716e38c69e926e5_MD5.webp",
-    "learnbook/stack/other/_assets/6ba88a86ebe40e078b639556309645ed_MD5.webp",
-    "learnbook/stack/other/_assets/94fd100174ba5a860a6c4208539136d6_MD5.webp",
-    "learnbook/stack/other/_assets/814bb41bdf7a6194b7e773f1f27d324a_MD5.webp",
     "learnbook/stack/other/_assets",
     "learnbook/_sidebar.md",
     "learnbook/others/docsify/helpers.md",
@@ -207,8 +211,6 @@
     "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp/01_Indicator-Modeling-Indicator-Selection.md",
     "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp/_assets",
     "learnbook/stack/golang/garbage/The-Road-to-GO-GC-Optimization.md",
-    "learnbook/stack/golang/garbage/Talk-about-two-GC-optimization-strategies-for-Go-that-are-about-to-become-outdated.md",
-    "learnbook/stack/golang/garbage/Quickly-locate-memory-leak-problems.md",
-    "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp.md"
+    "learnbook/stack/golang/garbage/Talk-about-two-GC-optimization-strategies-for-Go-that-are-about-to-become-outdated.md"
   ]
 }
