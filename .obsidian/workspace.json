@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/sql/_sidebar.md",
+                "file": "learnbook/stack/sql/basic/60-high-frequency-interview-questions-selected-from-the-database.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -100,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/stack/sql/_sidebar.md",
+                "file": "learnbook/stack/sql/basic/60-high-frequency-interview-questions-selected-from-the-database.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/stack/sql/_sidebar.md",
+                "file": "learnbook/stack/sql/basic/60-high-frequency-interview-questions-selected-from-the-database.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/stack/sql/_sidebar.md"
+                "file": "learnbook/stack/sql/basic/60-high-frequency-interview-questions-selected-from-the-database.md"
               }
             }
           }
@@ -166,8 +166,8 @@
   },
   "active": "0ce7d304daac962a",
   "lastOpenFiles": [
-    "learnbook/stack/sql/basic/60-high-frequency-interview-questions-selected-from-the-database.md",
     "learnbook/stack/sql/_sidebar.md",
+    "learnbook/stack/sql/basic/60-high-frequency-interview-questions-selected-from-the-database.md",
     "learnbook/stack/sql/basic/_assets/Pasted image 20240416094837.png",
     "learnbook/stack/sql/basic/_assets/Pasted image 20240416094652.png",
     "learnbook/stack/sql/basic/_assets/Pasted image 20240416094546.png",
