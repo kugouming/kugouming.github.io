@@ -13,19 +13,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/_sidebar.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0ce7d304daac962a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "learnbook/stack/golang/crawler/Official-account-article-or-picture-download.md",
                 "mode": "source",
                 "backlinks": false,
@@ -99,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/_sidebar.md",
+                "file": "learnbook/stack/golang/crawler/Official-account-article-or-picture-download.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/_sidebar.md",
+                "file": "learnbook/stack/golang/crawler/Official-account-article-or-picture-download.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/_sidebar.md"
+                "file": "learnbook/stack/golang/crawler/Official-account-article-or-picture-download.md"
               }
             }
           }
@@ -165,8 +152,10 @@
   },
   "active": "401c8f59cf43c24a",
   "lastOpenFiles": [
-    "learnbook/stack/golang/_sidebar.md",
+    "learnbook/_sidebar.md",
+    "learnbook/stack/golang/devops/Golang-implements-virtual-IP.md",
     "learnbook/stack/golang/crawler/Official-account-article-or-picture-download.md",
+    "learnbook/stack/golang/_sidebar.md",
     "learnbook/stack/other/Baidu-Technical-Rank-Requirements.md",
     "stack/golang/devops/Golang-implements-virtual-IP.md",
     "stack/golang/devops",
@@ -197,14 +186,12 @@
     "learnbook/stack/other/README.md",
     "learnbook/stack/other/_assets/19f09370278d121d28b4df2cbefffebb_MD5.webp",
     "learnbook/stack/other/_assets",
-    "learnbook/_sidebar.md",
     "learnbook/others/docsify/helpers.md",
     "learnbook/bookmark/stack/go.md",
     "learnbook/others/vpn",
     "learnbook/books/_sidebar.md",
     "learnbook/books/Uniapp-Little-Rabbit-Fresh-Baby-Mini-Program.md",
     "learnbook/books/leetcode-cookbook-go.md",
-    "learnbook/books/search-engine-book.md",
     "learnbook/statics/books/xiaotuxian/uni-app小程序-day06.pdf",
     "learnbook/statics/books/xiaotuxian/uni-app小程序-day05.pdf",
     "learnbook/statics/books/xiaotuxian/uni-app小程序-day04.pdf",
