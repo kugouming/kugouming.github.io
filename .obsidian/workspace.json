@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/other/Baidu-Technical-Rank-Requirements.md",
+                "file": "learnbook/_sidebar.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -26,15 +26,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/sql/basic/60-high-frequency-interview-questions-selected-from-the-database.md",
+                "file": "learnbook/stack/golang/crawler/Official-account-article-or-picture-download.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -84,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 217.5
+    "width": 286.5
   },
   "right": {
     "id": "565929c3bf4912da",
@@ -100,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/stack/sql/basic/60-high-frequency-interview-questions-selected-from-the-database.md",
+                "file": "learnbook/_sidebar.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/stack/sql/basic/60-high-frequency-interview-questions-selected-from-the-database.md",
+                "file": "learnbook/_sidebar.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/stack/sql/basic/60-high-frequency-interview-questions-selected-from-the-database.md"
+                "file": "learnbook/_sidebar.md"
               }
             }
           }
@@ -164,10 +163,24 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "0ce7d304daac962a",
+  "active": "401c8f59cf43c24a",
   "lastOpenFiles": [
-    "learnbook/stack/sql/_sidebar.md",
+    "learnbook/stack/golang/_sidebar.md",
+    "learnbook/stack/golang/crawler/Official-account-article-or-picture-download.md",
+    "learnbook/stack/other/Baidu-Technical-Rank-Requirements.md",
+    "stack/golang/devops/Golang-implements-virtual-IP.md",
+    "stack/golang/devops",
+    "learnbook/stack/golang/crawler",
+    "learnbook/stack/golang/code/go-update-cache-by-crontab.md",
+    "learnbook/stack/golang/code/go-time.AfterFunc()-example.md",
+    "learnbook/stack/golang/code/go-sync-map-implement.md",
+    "learnbook/stack/golang/code/Common-methods-for-Go-current-limiting.md",
+    "learnbook/stack/golang/interview/What-is-the-difference-between-make-and-new.md",
+    "learnbook/stack/golang/interview/Has-the-memory-of-deleting-a-Key-in-the-map-been-released.md",
+    "stack/golang/features/the-context.withcancel-understanding-of-cancellation-mechanism.md",
+    "stack/golang/garbage/Quickly-locate-memory-leak-problems.md",
     "learnbook/stack/sql/basic/60-high-frequency-interview-questions-selected-from-the-database.md",
+    "learnbook/stack/sql/_sidebar.md",
     "learnbook/stack/sql/basic/_assets/Pasted image 20240416094837.png",
     "learnbook/stack/sql/basic/_assets/Pasted image 20240416094652.png",
     "learnbook/stack/sql/basic/_assets/Pasted image 20240416094546.png",
@@ -175,7 +188,6 @@
     "learnbook/stack/sql/basic/_assets/Pasted image 20240416094157.png",
     "learnbook/stack/sql/basic/explain-the-command-in-detail.md",
     "learnbook/stack/other/_sidebar.md",
-    "learnbook/stack/other/Baidu-Technical-Rank-Requirements.md",
     "learnbook/stack/other/Using-Vercel-to-Reverse-Openai.md",
     "learnbook/stack/other/_assets/4dd8c426329a2406a01e61b427e6ae32_MD5.png",
     "learnbook/stack/other/_assets/49950d0b8d3570f465150884960f54f5_MD5.png",
@@ -193,24 +205,11 @@
     "learnbook/books/Uniapp-Little-Rabbit-Fresh-Baby-Mini-Program.md",
     "learnbook/books/leetcode-cookbook-go.md",
     "learnbook/books/search-engine-book.md",
-    "learnbook/stack/golang/_sidebar.md",
     "learnbook/statics/books/xiaotuxian/uni-app小程序-day06.pdf",
     "learnbook/statics/books/xiaotuxian/uni-app小程序-day05.pdf",
     "learnbook/statics/books/xiaotuxian/uni-app小程序-day04.pdf",
     "learnbook/statics/books/xiaotuxian/uni-app小程序-day03.pdf",
     "learnbook/statics/books/xiaotuxian/uni-app小程序-day02.pdf",
-    "learnbook/statics/books/xiaotuxian/uni-app小程序-day01.pdf",
-    "learnbook/statics/books/xiaotuxian",
-    "learnbook/stack/golang/basic/Deeply-understand-Golang.md",
-    "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp/04_Principles-and-Standards-of-Dotting.md",
-    "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp/05_AB-experiment-from-initiation-to-promotion.md",
-    "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp/06_Basic-Principles-and-Practical-Cases-of-AB-Experiment.md",
-    "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp/03_data-processing.md",
-    "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp/README.md",
-    "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp/02_Data-analysis-methods-1.md",
-    "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp/01_Indicator-Modeling-Indicator-Selection.md",
-    "learnbook/stack/analysis/course/Data-Analysis-28-Day-Training-Camp/_assets",
-    "learnbook/stack/golang/garbage/The-Road-to-GO-GC-Optimization.md",
-    "learnbook/stack/golang/garbage/Talk-about-two-GC-optimization-strategies-for-Go-that-are-about-to-become-outdated.md"
+    "learnbook/statics/books/xiaotuxian/uni-app小程序-day01.pdf"
   ]
 }
