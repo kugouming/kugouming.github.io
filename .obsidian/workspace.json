@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "da147c32a3e8bb70",
+        "id": "2f8d86e37cf994ad",
         "type": "tabs",
         "children": [
           {
-            "id": "401c8f59cf43c24a",
+            "id": "d683611df1677ec2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/golang/crawler/Official-account-article-or-picture-download.md",
+                "file": "learnbook/stack/python/crawler/Use-python-to-crawl-articles-on-WeChat-official-account.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/stack/golang/crawler/Official-account-article-or-picture-download.md",
+                "file": "learnbook/stack/python/crawler/Use-python-to-crawl-articles-on-WeChat-official-account.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/stack/golang/crawler/Official-account-article-or-picture-download.md",
+                "file": "learnbook/stack/python/crawler/Use-python-to-crawl-articles-on-WeChat-official-account.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/stack/golang/crawler/Official-account-article-or-picture-download.md"
+                "file": "learnbook/stack/python/crawler/Use-python-to-crawl-articles-on-WeChat-official-account.md"
               }
             }
           }
@@ -150,11 +150,24 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "401c8f59cf43c24a",
+  "active": "d683611df1677ec2",
   "lastOpenFiles": [
+    "learnbook/stack/python/crawler/_assets/Pasted image 20240725112411.png",
+    "learnbook/stack/python/crawler/_assets/b3720a91537b2bde7d66262b294a22b4_MD5.png",
+    "learnbook/stack/python/crawler/_assets/Pasted image 20240725112218.png",
+    "learnbook/stack/python/crawler/_assets/Pasted image 20240725112200.png",
+    "learnbook/stack/python/crawler/_assets/017cf3a98c3b970c998284a3bd45dbd2_MD5.png",
+    "learnbook/stack/python/crawler/_assets/e254a27e75bf8fbb3fde2b8592122c2e_MD5.png",
+    "learnbook/stack/python/crawler/_assets/8604e6a413f8689321374b2b55360371_MD5.png",
+    "learnbook/stack/python/crawler/_assets/Pasted image 20240725111741.png",
+    "learnbook/stack/python/crawler/_assets",
+    "learnbook/stack/python/_sidebar.md",
+    "learnbook/stack/python/crawler/Use-python-to-crawl-articles-on-WeChat-official-account.md",
+    "learnbook/stack/python/crawler",
+    "learnbook/stack/python/未命名.md",
+    "learnbook/stack/golang/crawler/Official-account-article-or-picture-download.md",
     "learnbook/_sidebar.md",
     "learnbook/stack/golang/devops/Golang-implements-virtual-IP.md",
-    "learnbook/stack/golang/crawler/Official-account-article-or-picture-download.md",
     "learnbook/stack/golang/_sidebar.md",
     "learnbook/stack/other/Baidu-Technical-Rank-Requirements.md",
     "stack/golang/devops/Golang-implements-virtual-IP.md",
@@ -173,30 +186,17 @@
     "learnbook/stack/sql/basic/_assets/Pasted image 20240416094837.png",
     "learnbook/stack/sql/basic/_assets/Pasted image 20240416094652.png",
     "learnbook/stack/sql/basic/_assets/Pasted image 20240416094546.png",
-    "learnbook/stack/sql/basic/_assets/Pasted image 20240416094440.png",
-    "learnbook/stack/sql/basic/_assets/Pasted image 20240416094157.png",
     "learnbook/stack/sql/basic/explain-the-command-in-detail.md",
     "learnbook/stack/other/_sidebar.md",
     "learnbook/stack/other/Using-Vercel-to-Reverse-Openai.md",
-    "learnbook/stack/other/_assets/4dd8c426329a2406a01e61b427e6ae32_MD5.png",
-    "learnbook/stack/other/_assets/49950d0b8d3570f465150884960f54f5_MD5.png",
-    "learnbook/stack/other/_assets/10a031910d28de5354f8998a1725fa82_MD5.png",
-    "learnbook/stack/other/_assets/1357a911c7cb7ca2af5cdcb9a731cf16_MD5.png",
     "learnbook/stack/other/30-minutes-to-understand-the-core-concepts-of-graphql.md",
     "learnbook/stack/other/README.md",
-    "learnbook/stack/other/_assets/19f09370278d121d28b4df2cbefffebb_MD5.webp",
     "learnbook/stack/other/_assets",
     "learnbook/others/docsify/helpers.md",
-    "learnbook/bookmark/stack/go.md",
     "learnbook/others/vpn",
-    "learnbook/books/_sidebar.md",
-    "learnbook/books/Uniapp-Little-Rabbit-Fresh-Baby-Mini-Program.md",
-    "learnbook/books/leetcode-cookbook-go.md",
     "learnbook/statics/books/xiaotuxian/uni-app小程序-day06.pdf",
     "learnbook/statics/books/xiaotuxian/uni-app小程序-day05.pdf",
     "learnbook/statics/books/xiaotuxian/uni-app小程序-day04.pdf",
-    "learnbook/statics/books/xiaotuxian/uni-app小程序-day03.pdf",
-    "learnbook/statics/books/xiaotuxian/uni-app小程序-day02.pdf",
-    "learnbook/statics/books/xiaotuxian/uni-app小程序-day01.pdf"
+    "learnbook/statics/books/xiaotuxian/uni-app小程序-day03.pdf"
   ]
 }
