@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/python/crawler/Use-python-to-crawl-articles-on-WeChat-official-account.md",
+                "file": "learnbook/stack/php/application/PHP implementation for sharing custom text and images on WeChat.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/stack/python/crawler/Use-python-to-crawl-articles-on-WeChat-official-account.md",
+                "file": "learnbook/stack/php/application/PHP implementation for sharing custom text and images on WeChat.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/stack/python/crawler/Use-python-to-crawl-articles-on-WeChat-official-account.md",
+                "file": "learnbook/stack/php/application/PHP implementation for sharing custom text and images on WeChat.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/stack/python/crawler/Use-python-to-crawl-articles-on-WeChat-official-account.md"
+                "file": "learnbook/stack/php/application/PHP implementation for sharing custom text and images on WeChat.md"
               }
             }
           }
@@ -152,6 +152,15 @@
   },
   "active": "d683611df1677ec2",
   "lastOpenFiles": [
+    "learnbook/stack/php/application/_assets/7953961a7d57b9b58a997322daa964a3_MD5.png",
+    "learnbook/stack/php/application/_assets/Pasted image 20240726222531.png",
+    "learnbook/stack/php/application/_assets/Pasted image 20240726222333.png",
+    "learnbook/stack/php/application/_assets/Pasted image 20240726222306.png",
+    "learnbook/stack/php/application/_assets",
+    "learnbook/stack/php/_sidebar.md",
+    "learnbook/stack/php/application/PHP implementation for sharing custom text and images on WeChat.md",
+    "learnbook/stack/php/application",
+    "learnbook/stack/python/crawler/Use-python-to-crawl-articles-on-WeChat-official-account.md",
     "learnbook/stack/python/crawler/_assets/Pasted image 20240725112411.png",
     "learnbook/stack/python/crawler/_assets/b3720a91537b2bde7d66262b294a22b4_MD5.png",
     "learnbook/stack/python/crawler/_assets/Pasted image 20240725112218.png",
@@ -159,10 +168,8 @@
     "learnbook/stack/python/crawler/_assets/017cf3a98c3b970c998284a3bd45dbd2_MD5.png",
     "learnbook/stack/python/crawler/_assets/e254a27e75bf8fbb3fde2b8592122c2e_MD5.png",
     "learnbook/stack/python/crawler/_assets/8604e6a413f8689321374b2b55360371_MD5.png",
-    "learnbook/stack/python/crawler/_assets/Pasted image 20240725111741.png",
     "learnbook/stack/python/crawler/_assets",
     "learnbook/stack/python/_sidebar.md",
-    "learnbook/stack/python/crawler/Use-python-to-crawl-articles-on-WeChat-official-account.md",
     "learnbook/stack/python/crawler",
     "learnbook/stack/python/未命名.md",
     "learnbook/stack/golang/crawler/Official-account-article-or-picture-download.md",
@@ -183,20 +190,13 @@
     "stack/golang/garbage/Quickly-locate-memory-leak-problems.md",
     "learnbook/stack/sql/basic/60-high-frequency-interview-questions-selected-from-the-database.md",
     "learnbook/stack/sql/_sidebar.md",
-    "learnbook/stack/sql/basic/_assets/Pasted image 20240416094837.png",
-    "learnbook/stack/sql/basic/_assets/Pasted image 20240416094652.png",
-    "learnbook/stack/sql/basic/_assets/Pasted image 20240416094546.png",
     "learnbook/stack/sql/basic/explain-the-command-in-detail.md",
     "learnbook/stack/other/_sidebar.md",
     "learnbook/stack/other/Using-Vercel-to-Reverse-Openai.md",
     "learnbook/stack/other/30-minutes-to-understand-the-core-concepts-of-graphql.md",
-    "learnbook/stack/other/README.md",
     "learnbook/stack/other/_assets",
-    "learnbook/others/docsify/helpers.md",
     "learnbook/others/vpn",
     "learnbook/statics/books/xiaotuxian/uni-app小程序-day06.pdf",
-    "learnbook/statics/books/xiaotuxian/uni-app小程序-day05.pdf",
-    "learnbook/statics/books/xiaotuxian/uni-app小程序-day04.pdf",
-    "learnbook/statics/books/xiaotuxian/uni-app小程序-day03.pdf"
+    "learnbook/statics/books/xiaotuxian/uni-app小程序-day05.pdf"
   ]
 }
