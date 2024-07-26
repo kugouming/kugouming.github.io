@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/php/_sidebar.md",
+                "file": "learnbook/stack/php/application/PHP-implementation-for-sharing-custom-text-and-images-on-WeChat.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/stack/php/_sidebar.md",
+                "file": "learnbook/stack/php/application/PHP-implementation-for-sharing-custom-text-and-images-on-WeChat.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/stack/php/_sidebar.md",
+                "file": "learnbook/stack/php/application/PHP-implementation-for-sharing-custom-text-and-images-on-WeChat.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/stack/php/_sidebar.md"
+                "file": "learnbook/stack/php/application/PHP-implementation-for-sharing-custom-text-and-images-on-WeChat.md"
               }
             }
           }
@@ -152,13 +152,13 @@
   },
   "active": "d683611df1677ec2",
   "lastOpenFiles": [
+    "learnbook/stack/php/_sidebar.md",
     "learnbook/stack/php/application/PHP-implementation-for-sharing-custom-text-and-images-on-WeChat.md",
     "learnbook/stack/php/application/_assets/7953961a7d57b9b58a997322daa964a3_MD5.png",
     "learnbook/stack/php/application/_assets/Pasted image 20240726222531.png",
     "learnbook/stack/php/application/_assets/Pasted image 20240726222333.png",
     "learnbook/stack/php/application/_assets/Pasted image 20240726222306.png",
     "learnbook/stack/php/application/_assets",
-    "learnbook/stack/php/_sidebar.md",
     "learnbook/stack/php/application",
     "learnbook/stack/python/crawler/Use-python-to-crawl-articles-on-WeChat-official-account.md",
     "learnbook/stack/python/crawler/_assets/Pasted image 20240725112411.png",
