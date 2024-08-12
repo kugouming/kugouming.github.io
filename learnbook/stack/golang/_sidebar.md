@@ -23,6 +23,7 @@
     - [01. template 用法详解](./stack/golang/stdlib/Detailed-usage-of-template.md)
     - [02. 深入剖析 template](./stack/golang/stdlib/In-depth-analysis-of-template.md)
     - [03. 高级并发用法-sync.Pool](./stack/golang/stdlib/Advanced-concurrency-usage-sync.pool.md)
+    - [04. Go 并发库 - singlelight](./stack/golang/stdlib/Go-Concurrent-Library-Singlelight.md)
 
 - **Go 编程模式**
     - [01. 切片、接口、时间和性能](./stack/golang/program-mode/slice-interface-time-and-performance.md)
