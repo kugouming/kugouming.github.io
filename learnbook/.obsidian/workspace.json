@@ -1,0 +1,154 @@
+{
+  "main": {
+    "id": "a070394db269c586",
+    "type": "split",
+    "children": [
+      {
+        "id": "1aad415e266df296",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "98091e28e93fb00b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "stack/analysis/course/Data-Analysis-28-Day-Training-Camp/01_Indicator-Modeling-Indicator-Selection.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9c5af61fbd0b7cd9",
+    "type": "split",
+    "children": [
+      {
+        "id": "a9ec2ca86183da2f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c298599971c88d9d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "9aa3319f31d2f6a7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e105bbb3d088fe42",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ea04e777333570eb",
+    "type": "split",
+    "children": [
+      {
+        "id": "6e3d5f2bf2748ae7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c21cc9a8ebaba26c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "stack/analysis/course/Data-Analysis-28-Day-Training-Camp/01_Indicator-Modeling-Indicator-Selection.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f435ec54fe85252d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "stack/analysis/course/Data-Analysis-28-Day-Training-Camp/01_Indicator-Modeling-Indicator-Selection.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1ce0545b26577341",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "8811e2d1f1b69ae2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "stack/analysis/course/Data-Analysis-28-Day-Training-Camp/01_Indicator-Modeling-Indicator-Selection.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "98091e28e93fb00b",
+  "lastOpenFiles": [
+    "README.md",
+    "_sidebar.md"
+  ]
+}
