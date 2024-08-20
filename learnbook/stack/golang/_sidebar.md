@@ -38,6 +38,7 @@
     - [08. Pipeline](./stack/golang/program-mode/pipeline.md)
     - [09. Kubernetes Visitor模式](./stack/golang/program-mode/kubernetes-visitor-mode.md)
     - [10. 如何真正写好Golang代码](./stack/golang/program-mode/How-to-really-write-Golang-code-well.md)
+    - [11. 详解Go优雅的使用接口与继承](./stack/golang/program-mode/Detailed-explanation-of-Gos-elegant-user-interface-and-inheritance.md)
 
 - **Wasm 相关**
     - [01. Go、WebAssembly、HTTP 请求和 Promise](./stack/golang/wasm/go-webassembly-http-requests-and-promises.md)
