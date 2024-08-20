@@ -6,6 +6,8 @@
     - [02. 编译时参数传递](./stack/golang/basic/compile-time-parameter-passing.md)
     - [03. Defer 必掌握的7个知识点](./stack/golang/basic/7-knowledge-points-you-must-master-about-Defer.md)
     - [04. 深入理解 Go](./stack/golang/basic/Deeply-understand-Golang.md)
+    - [05. RWMutex 注意事项](./stack/golang/basic/RWMutex-precautions.md)
+    - [06. 内存管理：Stack vs Heap](./stack/golang/basic/Memory-Management-Stack-vs-Heap.md)
 
 - **Go 调试**
      - [01. 如何使用 dlv 调试 Go 代码](./stack/golang/how-to-use-dlv.md)
