@@ -6,3 +6,5 @@
     - [02. Python序列化proto中repeated修饰的数据](./stack/python/protobuf/proto-repeated-attr.md)
 - **网络爬虫**
 	- [01. 使用python爬取微信公众号文章](./stack/python/crawler/Use-python-to-crawl-articles-on-WeChat-official-account.md)
+- **网络服务**
+	- [01. 一行命令快速搭建 HTTP 服务](./stack/python/network/Quickly-set-up-HTTP-service-with-one-command.md)
