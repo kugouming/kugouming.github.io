@@ -8,6 +8,7 @@
     - [04. 深入理解 Go](./stack/golang/basic/Deeply-understand-Golang.md)
     - [05. RWMutex 注意事项](./stack/golang/basic/RWMutex-precautions.md)
     - [06. 内存管理：Stack vs Heap](./stack/golang/basic/Memory-Management-Stack-vs-Heap.md)
+    - [07. 重试机制解决瞬态错误](./stack/golang/basic/The-retry-mechanism-solves-transient-errors.md)
 
 - **Go 调试**
      - [01. 如何使用 dlv 调试 Go 代码](./stack/golang/how-to-use-dlv.md)
