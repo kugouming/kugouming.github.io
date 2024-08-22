@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/golang/practice/Best-Practices-for-Go-Backend-Architecture-Based-on-Gin-Framework.md",
+                "file": "learnbook/stack/golang/debug/vscode-debugging-skills.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/stack/golang/practice/Best-Practices-for-Go-Backend-Architecture-Based-on-Gin-Framework.md",
+                "file": "learnbook/stack/golang/debug/vscode-debugging-skills.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/stack/golang/practice/Best-Practices-for-Go-Backend-Architecture-Based-on-Gin-Framework.md",
+                "file": "learnbook/stack/golang/debug/vscode-debugging-skills.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/stack/golang/practice/Best-Practices-for-Go-Backend-Architecture-Based-on-Gin-Framework.md"
+                "file": "learnbook/stack/golang/debug/vscode-debugging-skills.md"
               }
             }
           }
@@ -152,10 +152,12 @@
   },
   "active": "d77721dc7b5ea461",
   "lastOpenFiles": [
-    "learnbook/stack/golang/practice/Go-programming-best-practices.md",
     "learnbook/stack/golang/_sidebar.md",
-    "learnbook/stack/golang/basic/The-retry-mechanism-solves-transient-errors.md",
+    "stack/golang/debug/vscode-debugging-skills.md",
+    "stack/golang/debug",
     "learnbook/stack/golang/practice/Best-Practices-for-Go-Backend-Architecture-Based-on-Gin-Framework.md",
+    "learnbook/stack/golang/practice/Go-programming-best-practices.md",
+    "learnbook/stack/golang/basic/The-retry-mechanism-solves-transient-errors.md",
     "learnbook/stack/python/_sidebar.md",
     "learnbook/stack/python/network/Quickly-set-up-HTTP-service-with-one-command.md",
     "learnbook/stack/python/network",
@@ -194,9 +196,7 @@
     "learnbook/stack/golang/code/go-update-cache-by-crontab.md",
     "learnbook/stack/golang/code/go-time.AfterFunc()-example.md",
     "learnbook/stack/golang/code/go-sync-map-implement.md",
-    "learnbook/stack/golang/code/Common-methods-for-Go-current-limiting.md",
     "learnbook/stack/other/_assets",
-    "learnbook/others/vpn",
-    "learnbook/statics/books/xiaotuxian/uni-app小程序-day06.pdf"
+    "learnbook/others/vpn"
   ]
 }

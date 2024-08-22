@@ -235,3 +235,34 @@ result 是 c++ 的一个 class 变量，code 是它的方法。
 - vscode 调试只是作为一个客户端，**代码在本地，程序在远端**，用 vscode 拉通起来，完美体验；
 - 远程 attach 调试其实不需要远端有代码哦，这个记住了，**remotePath** 参数是关键；
 - 除了普通断点，条件断点和日志断点真的挺有用的；
+
+## 附注
+
+### 本地vscode环境配置
+
+```json
+// 文件: .vscode/launch.json
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "service-dev",
+			"type": "go",
+			"request": "launch",
+			"mode": "auto",
+			"cwd": "${workspaceRoot}",
+			"program": "${workspaceRoot}/cmd/",
+			"args": [
+				"-conf",
+				"${workspaceRoot}/conf/conf.toml",
+				"-c",
+				"${workspaceRoot}/conf/conf.toml"
+			],
+			"env": {
+				"HTTP_PROXY": "http://127.0.0.1:8888",
+				"HTTPS_PROXY": "http://127.0.0.1:8888",
+			}
+		}
+	]
+}
+```
