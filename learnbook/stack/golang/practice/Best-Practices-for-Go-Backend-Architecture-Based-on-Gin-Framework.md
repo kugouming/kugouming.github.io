@@ -29,10 +29,15 @@
 ### 用例层（Usecase）
 
 - encapsulates the application's business rules and logic.
+
     封装应用程序的业务规则和逻辑。
+
 - interacts with repositories to access and manipulate data.
-    与存储库交互以访问和操作数据。
+
+	与存储库交互以访问和操作数据。
+
 - implements the application's core functionality.
+
     实现应用程序的核心功能。
 
 ### 仓储层（Repository）
