@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md",
+                "file": "learnbook/stack/golang/basic/Analysis-of-Memory-Leakage-Caused-by-Time-After.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md",
+                "file": "learnbook/stack/golang/basic/Analysis-of-Memory-Leakage-Caused-by-Time-After.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md",
+                "file": "learnbook/stack/golang/basic/Analysis-of-Memory-Leakage-Caused-by-Time-After.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md"
+                "file": "learnbook/stack/golang/basic/Analysis-of-Memory-Leakage-Caused-by-Time-After.md"
               }
             }
           }
@@ -152,9 +152,14 @@
   },
   "active": "d77721dc7b5ea461",
   "lastOpenFiles": [
+    "learnbook/stack/golang/basic/_assets/be2ad627652b89ff99532aaac90baaaa_MD5.png",
+    "learnbook/stack/golang/basic/_assets/6b6b88142d0182d9ef9a1ec371817ec8_MD5.png",
+    "learnbook/stack/golang/basic/_assets/7e6b49194238d863d64d3bb543e01ee3_MD5.png",
+    "learnbook/stack/golang/basic/_assets/77855a929b421983743631b7703724ee_MD5.png",
+    "learnbook/stack/golang/_sidebar.md",
+    "learnbook/stack/golang/basic/Analysis-of-Memory-Leakage-Caused-by-Time-After.md",
     "learnbook/stack/golang/code/Implementing-server-side-event-push-SSE-using-Go.md",
     "learnbook/stack/golang/code/_assets/b6dca3346c1065bb0a788379aafa271c_MD5.webp",
-    "learnbook/stack/golang/_sidebar.md",
     "learnbook/stack/golang/Implementing-server-side-event-push-SSE-using-Go.md",
     "learnbook/stack/golang/debug/vscode-debugging-skills.md",
     "stack/golang/debug/vscode-debugging-skills.md",
@@ -183,16 +188,12 @@
     "learnbook/stack/php/application/_assets",
     "learnbook/stack/php/application",
     "learnbook/stack/python/crawler/Use-python-to-crawl-articles-on-WeChat-official-account.md",
-    "learnbook/stack/python/crawler/_assets/Pasted image 20240725112411.png",
-    "learnbook/stack/python/crawler/_assets/b3720a91537b2bde7d66262b294a22b4_MD5.png",
-    "learnbook/stack/python/crawler/_assets/Pasted image 20240725112218.png",
     "learnbook/stack/python/crawler/_assets",
     "learnbook/stack/python/crawler",
     "learnbook/stack/python/未命名.md",
     "learnbook/stack/golang/crawler/Official-account-article-or-picture-download.md",
     "learnbook/_sidebar.md",
     "learnbook/stack/golang/devops/Golang-implements-virtual-IP.md",
-    "learnbook/stack/other/Baidu-Technical-Rank-Requirements.md",
     "stack/golang/devops",
     "learnbook/stack/golang/crawler",
     "learnbook/stack/other/_assets",
