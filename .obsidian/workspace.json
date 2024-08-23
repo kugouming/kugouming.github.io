@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/golang/debug/vscode-debugging-skills.md",
+                "file": "learnbook/stack/golang/_sidebar.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/stack/golang/debug/vscode-debugging-skills.md",
+                "file": "learnbook/stack/golang/_sidebar.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/stack/golang/debug/vscode-debugging-skills.md",
+                "file": "learnbook/stack/golang/_sidebar.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/stack/golang/debug/vscode-debugging-skills.md"
+                "file": "learnbook/stack/golang/_sidebar.md"
               }
             }
           }
@@ -152,7 +152,11 @@
   },
   "active": "d77721dc7b5ea461",
   "lastOpenFiles": [
+    "learnbook/stack/golang/code/Implementing-server-side-event-push-SSE-using-Go.md",
+    "learnbook/stack/golang/code/_assets/b6dca3346c1065bb0a788379aafa271c_MD5.webp",
     "learnbook/stack/golang/_sidebar.md",
+    "learnbook/stack/golang/Implementing-server-side-event-push-SSE-using-Go.md",
+    "learnbook/stack/golang/debug/vscode-debugging-skills.md",
     "stack/golang/debug/vscode-debugging-skills.md",
     "stack/golang/debug",
     "learnbook/stack/golang/practice/Best-Practices-for-Go-Backend-Architecture-Based-on-Gin-Framework.md",
@@ -182,7 +186,6 @@
     "learnbook/stack/python/crawler/_assets/Pasted image 20240725112411.png",
     "learnbook/stack/python/crawler/_assets/b3720a91537b2bde7d66262b294a22b4_MD5.png",
     "learnbook/stack/python/crawler/_assets/Pasted image 20240725112218.png",
-    "learnbook/stack/python/crawler/_assets/Pasted image 20240725112200.png",
     "learnbook/stack/python/crawler/_assets",
     "learnbook/stack/python/crawler",
     "learnbook/stack/python/未命名.md",
@@ -190,12 +193,8 @@
     "learnbook/_sidebar.md",
     "learnbook/stack/golang/devops/Golang-implements-virtual-IP.md",
     "learnbook/stack/other/Baidu-Technical-Rank-Requirements.md",
-    "stack/golang/devops/Golang-implements-virtual-IP.md",
     "stack/golang/devops",
     "learnbook/stack/golang/crawler",
-    "learnbook/stack/golang/code/go-update-cache-by-crontab.md",
-    "learnbook/stack/golang/code/go-time.AfterFunc()-example.md",
-    "learnbook/stack/golang/code/go-sync-map-implement.md",
     "learnbook/stack/other/_assets",
     "learnbook/others/vpn"
   ]

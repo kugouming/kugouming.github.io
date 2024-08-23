@@ -95,6 +95,7 @@
     - [06. 滑动窗口设计实现](./stack/golang/code/Rolling-window-design.md)
     - [07. Go 语言高级网络编程示例](./stack/golang/code/Go-language-advanced-network-programming.md)
     - [08. Golang实现Tcp反向代理服务器](./stack/golang/code/tcp-reverse-proxy.md)
+    - [09. 使用Go实现服务端事件推送SSE](./stack/golang/code/Implementing-server-side-event-push-SSE-using-Go.md)
 
 - **单测相关**
     - [01. go test 命令完全攻略](./stack/golang/test/go-test-command.md)
