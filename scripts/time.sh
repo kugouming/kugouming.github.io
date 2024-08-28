@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# How to:
+#    curl -fsSL 'http://iskill.site/scripts/time.sh' | bash -C
+
 function handle_log()
 {
     #echo `date +%s.%N`

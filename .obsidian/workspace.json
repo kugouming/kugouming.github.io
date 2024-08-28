@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "2f8d86e37cf994ad",
+        "id": "6c835e14fe1c0d6f",
         "type": "tabs",
         "children": [
           {
-            "id": "d77721dc7b5ea461",
+            "id": "2686824fcf1be921",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "learnbook/stack/golang/basic/Analysis-of-Memory-Leakage-Caused-by-Time-After.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/stack/golang/basic/Analysis-of-Memory-Leakage-Caused-by-Time-After.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/stack/golang/basic/Analysis-of-Memory-Leakage-Caused-by-Time-After.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "learnbook/stack/golang/basic/Analysis-of-Memory-Leakage-Caused-by-Time-After.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -150,14 +141,15 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "d77721dc7b5ea461",
+  "active": "c60ce6a1e141977d",
   "lastOpenFiles": [
+    "scripts/server.sh",
+    "learnbook/stack/golang/basic/Analysis-of-Memory-Leakage-Caused-by-Time-After.md",
     "learnbook/stack/golang/basic/_assets/be2ad627652b89ff99532aaac90baaaa_MD5.png",
     "learnbook/stack/golang/basic/_assets/6b6b88142d0182d9ef9a1ec371817ec8_MD5.png",
     "learnbook/stack/golang/basic/_assets/7e6b49194238d863d64d3bb543e01ee3_MD5.png",
     "learnbook/stack/golang/basic/_assets/77855a929b421983743631b7703724ee_MD5.png",
     "learnbook/stack/golang/_sidebar.md",
-    "learnbook/stack/golang/basic/Analysis-of-Memory-Leakage-Caused-by-Time-After.md",
     "learnbook/stack/golang/code/Implementing-server-side-event-push-SSE-using-Go.md",
     "learnbook/stack/golang/code/_assets/b6dca3346c1065bb0a788379aafa271c_MD5.webp",
     "learnbook/stack/golang/Implementing-server-side-event-push-SSE-using-Go.md",
@@ -184,7 +176,6 @@
     "learnbook/stack/php/application/_assets/7953961a7d57b9b58a997322daa964a3_MD5.png",
     "learnbook/stack/php/application/_assets/Pasted image 20240726222531.png",
     "learnbook/stack/php/application/_assets/Pasted image 20240726222333.png",
-    "learnbook/stack/php/application/_assets/Pasted image 20240726222306.png",
     "learnbook/stack/php/application/_assets",
     "learnbook/stack/php/application",
     "learnbook/stack/python/crawler/Use-python-to-crawl-articles-on-WeChat-official-account.md",
