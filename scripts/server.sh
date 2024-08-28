@@ -12,6 +12,6 @@ while true; do
     fi
 done
 
-echo -e "\n\n当前目录为：\n\t$(pwd)\n\nWebServer: http://$(hostname -i):${port}\n\n"
+echo -e "\n\n当前目录为：\n\t$(pwd)\n\nWebServer: http://$(hostname -i | awk '{print $NF}'):${port}\n\n"
 
 python -m SimpleHTTPServer $port > /dev/null 2>&1 &
