@@ -11,11 +11,30 @@
             "id": "2686824fcf1be921",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "learnbook/stack/linux/_sidebar.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e5b424fc9329e9d1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "learnbook/stack/linux/ssh/SSH-remote-port-forwarding-or-drilling-holes.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,6 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "learnbook/stack/linux/ssh/SSH-remote-port-forwarding-or-drilling-holes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "learnbook/stack/linux/ssh/SSH-remote-port-forwarding-or-drilling-holes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +139,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "learnbook/stack/linux/ssh/SSH-remote-port-forwarding-or-drilling-holes.md"
+              }
             }
           }
         ],
@@ -141,8 +164,18 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "c60ce6a1e141977d",
+  "active": "e5b424fc9329e9d1",
   "lastOpenFiles": [
+    "learnbook/stack/linux/_sidebar.md",
+    "learnbook/stack/linux/ssh/SSH-remote-port-forwarding-or-drilling-holes.md",
+    "learnbook/stack/javascript/_sidebar.md",
+    "learnbook/stack/linux/ssh/_assets/Pasted image 20240830160638.png",
+    "learnbook/stack/linux/ssh/_assets/Pasted image 20240830160608.png",
+    "learnbook/stack/linux/ssh/_assets/Pasted image 20240830160537.png",
+    "learnbook/stack/linux/ssh/_assets/Pasted image 20240830160258.png",
+    "learnbook/stack/linux/ssh/_assets",
+    "learnbook/stack/linux/ssh",
+    "learnbook/stack/other/_sidebar.md",
     "scripts/server.sh",
     "learnbook/stack/golang/basic/Analysis-of-Memory-Leakage-Caused-by-Time-After.md",
     "learnbook/stack/golang/basic/_assets/be2ad627652b89ff99532aaac90baaaa_MD5.png",
@@ -170,24 +203,14 @@
     "stack/golang/features/the-context.withcancel-understanding-of-cancellation-mechanism.md",
     "learnbook/stack/golang/stdlib/Go-Concurrent-Library-Singlelight.md",
     "learnbook/stack/golang/stdlib/_assets/fb9e0af0ca21b36c614333b677cce82a_MD5.png",
-    "learnbook/stack/golang/stdlib/_assets/Pasted image 20240812235326.png",
     "learnbook/stack/php/application/PHP-implementation-for-sharing-custom-text-and-images-on-WeChat.md",
     "learnbook/stack/php/_sidebar.md",
-    "learnbook/stack/php/application/_assets/7953961a7d57b9b58a997322daa964a3_MD5.png",
-    "learnbook/stack/php/application/_assets/Pasted image 20240726222531.png",
-    "learnbook/stack/php/application/_assets/Pasted image 20240726222333.png",
     "learnbook/stack/php/application/_assets",
     "learnbook/stack/php/application",
     "learnbook/stack/python/crawler/Use-python-to-crawl-articles-on-WeChat-official-account.md",
     "learnbook/stack/python/crawler/_assets",
     "learnbook/stack/python/crawler",
     "learnbook/stack/python/未命名.md",
-    "learnbook/stack/golang/crawler/Official-account-article-or-picture-download.md",
-    "learnbook/_sidebar.md",
-    "learnbook/stack/golang/devops/Golang-implements-virtual-IP.md",
-    "stack/golang/devops",
-    "learnbook/stack/golang/crawler",
-    "learnbook/stack/other/_assets",
-    "learnbook/others/vpn"
+    "stack/golang/devops"
   ]
 }
