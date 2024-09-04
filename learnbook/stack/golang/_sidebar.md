@@ -11,6 +11,7 @@
     - [07. 重试机制解决瞬态错误](./stack/golang/basic/The-retry-mechanism-solves-transient-errors.md)
     - [08. 坑: time.After 导致内存泄露问题分析](./stack/golang/basic/Analysis-of-Memory-Leakage-Caused-by-Time-After.md)
     - [09. Go 源码里的 //go: 指令 && 自动化工具](./stack/golang/basic/The-go-command-and-automation-tools-in-the-Go-source-code.md)
+    - [10. Go语言数据争用与race原理](./stack/golang/basic/Go-language-data-contention-and-race-principle.md)
 
 - **Go 调试**
      - [01. 如何使用 dlv 调试 Go 代码](./stack/golang/how-to-use-dlv.md)

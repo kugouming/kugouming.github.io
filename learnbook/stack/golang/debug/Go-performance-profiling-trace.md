@@ -139,7 +139,7 @@ $ go tool trace trace.out
 
 ![image](_assets/7d0039dffb732f895af13fb9e363fdf3_MD5.jpg)
 
-完全看懵的你，稳住，对着合适的区域执行快捷键 `W` 不断地放大时间线，如下：
+完全看不懵的你，稳住，对着合适的区域执行快捷键 `W` 不断地放大时间线，如下：
 
 ![image](_assets/179e544ced2027ad6f6d2cc62f1d60c3_MD5.jpg)
 
