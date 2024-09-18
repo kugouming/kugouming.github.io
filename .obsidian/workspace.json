@@ -13,11 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/golang/basic/Go-language-data-contention-and-race-principle.md",
+                "file": "learnbook/stack/elasticsearch/_sidebar.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
+            }
+          },
+          {
+            "id": "99138b00e34dce5e",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -86,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/stack/golang/basic/Go-language-data-contention-and-race-principle.md",
+                "file": "learnbook/stack/elasticsearch/_sidebar.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/stack/golang/basic/Go-language-data-contention-and-race-principle.md",
+                "file": "learnbook/stack/elasticsearch/_sidebar.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/stack/golang/basic/Go-language-data-contention-and-race-principle.md"
+                "file": "learnbook/stack/elasticsearch/_sidebar.md"
               }
             }
           }
@@ -152,13 +160,22 @@
   },
   "active": "65997564a049d1ee",
   "lastOpenFiles": [
+    "learnbook/stack/elasticsearch/basic/basic-query-syntax.md",
+    "learnbook/stack/elasticsearch/_sidebar.md",
+    "stack/elasticsearch/basic/es-common-query-statements.md",
+    "stack/elasticsearch/basic",
+    "stack/elasticsearch",
+    "learnbook/stack/elasticsearch/basic/es-common-query-statements.md",
+    "learnbook/stack/golang/_sidebar.md",
+    "stack/golang/basic/Details-in-the-Defer-statement.md",
+    "stack/golang/basic",
+    "learnbook/stack/elasticsearch/basic",
+    "learnbook/stack/golang/basic/Go-language-data-contention-and-race-principle.md",
     "learnbook/stack/golang/basic/_assets/2d198ef104c54401f96bd8a38cfc6862_MD5.png",
     "learnbook/stack/golang/basic/_assets/de1044c39f51d19a03b18f9da8b18733_MD5.png",
     "learnbook/stack/golang/basic/_assets/0f7166f62d65719c23f518874ab438ae_MD5.png",
     "learnbook/stack/golang/basic/_assets/8c58058b496b8d4b9d1047c9f8ede2b2_MD5.png",
-    "learnbook/stack/golang/_sidebar.md",
     "learnbook/stack/linux/_sidebar.md",
-    "learnbook/stack/golang/basic/Go-language-data-contention-and-race-principle.md",
     "learnbook/stack/golang/basic/_assets/b73ad2b1a2680e867012871b4c9dea04_MD5.webp",
     "learnbook/stack/golang/basic/_assets/f7c076e02c545debcd314ff6b908ec4c_MD5.webp",
     "learnbook/stack/golang/basic/_assets/59cb3de57922ff7c6c76fb940240429e_MD5.webp",
@@ -170,7 +187,6 @@
     "learnbook/stack/golang/basic/The-go-command-and-automation-tools-in-the-Go-source-code.md",
     "learnbook/stack/linux/ssh/SSH-remote-port-forwarding-or-drilling-holes.md",
     "learnbook/stack/javascript/_sidebar.md",
-    "learnbook/stack/linux/ssh/_assets/Pasted image 20240830160638.png",
     "learnbook/stack/linux/ssh/_assets",
     "learnbook/stack/linux/ssh",
     "learnbook/stack/other/_sidebar.md",
@@ -189,14 +205,6 @@
     "learnbook/stack/python/network",
     "learnbook/stack/golang/program-mode/Detailed-explanation-of-Gos-elegant-user-interface-and-inheritance.md",
     "learnbook/stack/golang/basic/Memory-Management-Stack-vs-Heap.md",
-    "learnbook/stack/golang/basic/RWMutex-precautions.md",
-    "stack/golang/interview/What-is-the-difference-between-make-and-new.md",
-    "stack/golang/garbage/Quickly-locate-memory-leak-problems.md",
-    "stack/golang/features/the-context.withcancel-understanding-of-cancellation-mechanism.md",
-    "learnbook/stack/php/application/_assets",
-    "learnbook/stack/php/application",
-    "learnbook/stack/python/crawler/_assets",
-    "learnbook/stack/python/crawler",
-    "stack/golang/devops"
+    "learnbook/stack/php/application/_assets"
   ]
 }
