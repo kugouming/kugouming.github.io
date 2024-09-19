@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/elasticsearch/basic/basic-query-syntax.md",
+                "file": "learnbook/stack/elasticsearch/_sidebar.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/stack/elasticsearch/basic/basic-query-syntax.md",
+                "file": "learnbook/stack/elasticsearch/_sidebar.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/stack/elasticsearch/basic/basic-query-syntax.md",
+                "file": "learnbook/stack/elasticsearch/_sidebar.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/stack/elasticsearch/basic/basic-query-syntax.md"
+                "file": "learnbook/stack/elasticsearch/_sidebar.md"
               }
             }
           }
@@ -160,13 +160,15 @@
   },
   "active": "65997564a049d1ee",
   "lastOpenFiles": [
+    "learnbook/stack/golang/_sidebar.md",
     "learnbook/stack/elasticsearch/_sidebar.md",
+    "learnbook/_sidebar.md",
+    "learnbook/stack/elasticsearch/README.md",
     "learnbook/stack/elasticsearch/basic/basic-query-syntax.md",
     "stack/elasticsearch/basic/es-common-query-statements.md",
     "stack/elasticsearch/basic",
     "stack/elasticsearch",
     "learnbook/stack/elasticsearch/basic/es-common-query-statements.md",
-    "learnbook/stack/golang/_sidebar.md",
     "stack/golang/basic/Details-in-the-Defer-statement.md",
     "stack/golang/basic",
     "learnbook/stack/elasticsearch/basic",
@@ -203,8 +205,6 @@
     "learnbook/stack/python/_sidebar.md",
     "learnbook/stack/python/network/Quickly-set-up-HTTP-service-with-one-command.md",
     "learnbook/stack/python/network",
-    "learnbook/stack/golang/program-mode/Detailed-explanation-of-Gos-elegant-user-interface-and-inheritance.md",
-    "learnbook/stack/golang/basic/Memory-Management-Stack-vs-Heap.md",
     "learnbook/stack/php/application/_assets"
   ]
 }
