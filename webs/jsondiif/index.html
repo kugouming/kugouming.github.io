@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="description" content="Validate, format, and compare two JSON documents.  See the differences between the objects instead of just the new lines and mixed up properties.">
+        <title>JSON Diff - The semantic JSON compare tool</title>
+
+        <link rel="stylesheet" href="./assets/reset.css" type="text/css" media="screen">
+        <link rel="stylesheet" href="./assets/throbber.css" type="text/css" media="screen">
+        <link rel="stylesheet" href="./assets/jdd.css" type="text/css" media="screen">
+
+        <script src="./assets/jsl/jsl.format.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./assets/jsl/jsl.parser.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./assets/jdd.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body>
+        <div id="main">
+            <div class="header">
+                <h1>JSON Diff<i style="font-size: 20px;margin-left: 30px;color: #7e7e7e;">The semantic JSON compare tool</i></h1>
+            </div>
+
+            <div class="initContainer">
+                <div class="left">
+                    <textarea spellcheck="false" id="textarealeft" placeholder="Enter JSON to compare, enter an URL to JSON" tabindex="1"></textarea>
+                    <pre id="errorLeft" class="error"></pre>
+                    <span class="fileInput">or <input type="file" id="fileLeft" onchange="jdd.handleFiles(this.files, 'left')" tabindex="4"></span>
+                </div>
+
+                <div class="center">
+                    <button id="compare" tabindex="3">Compare</button>
+                    <br/><br/>
+                    <button id="sortcompare" tabindex="3">Sort & Compare</button>
+                    <div class="throbber-loader"></div>
+                    <br/><br/>
+                    or<br /><br />Try <a href="#" id="sample">Sample Data</a>
+                </div>
+
+                <div class="right">
+                    <textarea spellcheck="false" class="right" id="textarearight" placeholder="Enter JSON to compare, enter an URL to JSON" tabindex="2"></textarea>
+                    <pre id="errorRight" class="error"></pre>
+                    <span class="fileInput">or <input type="file" id="fileRight" onchange="jdd.handleFiles(this.files, 'right')" tabindex="5"></span>
+                </div>
+            </div>
+
+            <div id="invalidUrl" class="tip error">暂不支持URL格式比较！</div>
+            <div class="diffcontainer">
+                <div id="report"></div>
+                <pre id="out" class="left" class="codeBlock"></pre>
+                <pre id="out2" class="right" class="codeBlock"></pre>
+                <ul id="toolbar" class="toolbar"></ul>
+            </div>
+        </div>
+    </body>
+</html>
