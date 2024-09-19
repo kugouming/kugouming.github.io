@@ -807,12 +807,16 @@ var jdd = {
 
             return true;
         } catch (parseException) {
+            let msg = parseException.message
+            if (json.length == 0) {
+                msg = "The data is empty, please input valid json data."
+            }
             if (side === jdd.LEFT) {
-                document.getElementById('errorLeft').textContent = parseException.message;
+                document.getElementById('errorLeft').textContent = msg;
                 document.getElementById('errorLeft').style.display='block';
                 document.getElementById('textarealeft').classList.add('error');
             } else {
-                document.getElementById('errorRight').textContent = parseException.message;
+                document.getElementById('errorRight').textContent = msg;
                 document.getElementById('errorRight').style.display='block';
                 document.getElementById('textarearight').classList.add('error');
             }
