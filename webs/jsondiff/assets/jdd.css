@@ -222,6 +222,8 @@ div.codeLine span.missing {
 div.codeLine span.selected {
     background: #cef;
     color: #47e;
+    border: 1px solid #89cbda;
+    box-shadow: 1px 4px 12px #b5c2c7;
 }
 
 canvas.center {
