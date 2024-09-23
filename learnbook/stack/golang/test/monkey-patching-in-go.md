@@ -1,6 +1,7 @@
 # Monkey 在 Go 中的应用
 
-?> 1. 应用：[Github](https://github.com/bouk/monkey)<br>2. 原文：[Monkey Patching in Go](https://bou.ke/blog/monkey-patching-in-go/)  
+> 1. 应用：[Github](https://github.com/bouk/monkey)
+> 2. 原文：[Monkey Patching in Go](https://bou.ke/blog/monkey-patching-in-go/)  
 
 许多人认为猴子补丁仅限于 Ruby 和 Python 等动态语言。然而事实并非如此，因为计算机只是愚蠢的机器，我们总是可以让它们做我们想做的事！让我们看看 Go 函数是如何工作的以及如何在运行时修改它们。本文将使用大量英特尔汇编语法，因此我假设您已经可以阅读它或者在阅读时使用[参考](https://software.intel.com/en-us/articles/introduction-to-x64-assembly)。
 

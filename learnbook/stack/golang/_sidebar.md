@@ -122,6 +122,7 @@
 
 - **系统运维**
 	- [01. Go实现虚拟IP](./stack/golang/devops/Golang-implements-virtual-IP.md)
+	- [02. 流量回放工具-GoReplay](/stack/golang/devops/Traffic-replay-tool-GoReplay.md)
 
 - **网络爬虫**
 	- [01. 公众号文章或图片下载](./stack/golang/crawler/Official-account-article-or-picture-download.md)

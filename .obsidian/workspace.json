@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/elasticsearch/_sidebar.md",
+                "file": "learnbook/stack/golang/devops/Traffic-replay-tool-GoReplay.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/stack/elasticsearch/_sidebar.md",
+                "file": "learnbook/stack/golang/devops/Traffic-replay-tool-GoReplay.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/stack/elasticsearch/_sidebar.md",
+                "file": "learnbook/stack/golang/devops/Traffic-replay-tool-GoReplay.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/stack/elasticsearch/_sidebar.md"
+                "file": "learnbook/stack/golang/devops/Traffic-replay-tool-GoReplay.md"
               }
             }
           }
@@ -160,6 +160,17 @@
   },
   "active": "65997564a049d1ee",
   "lastOpenFiles": [
+    "learnbook/stack/golang/devops/_assets/Pasted image 20240923100055.png",
+    "learnbook/stack/golang/_sidebar.md",
+    "learnbook/stack/golang/devops/Traffic-replay-tool-GoReplay.md",
+    "learnbook/stack/golang/devops/_assets/43c89295000177ed48b15cee103a622b_MD5.jpg",
+    "learnbook/stack/golang/devops/_assets",
+    "learnbook/stack/golang/go-delve.md",
+    "learnbook/stack/golang/interview/What-is-the-difference-between-make-and-new.md",
+    "learnbook/stack/golang/interview/Has-the-memory-of-deleting-a-Key-in-the-map-been-released.md",
+    "learnbook/stack/golang/test/monkey-patching-in-go.md",
+    "learnbook/stack/golang/devops/Golang-implements-virtual-IP.md",
+    "learnbook/stack/elasticsearch/_sidebar.md",
     "webs/crontab/assets/index.js",
     "webs/crontab/assets/index.css",
     "webs/crontab/assets",
@@ -169,10 +180,6 @@
     "webs/jsondiff/assets/jsl/jsl.interactions.js",
     "webs/jsondiff/assets/jsl/jsl.format.js",
     "webs/jsondiff/assets/throbber.css",
-    "webs/jsondiff/assets/reset.css",
-    "webs/jsondiff/assets/jsl",
-    "learnbook/stack/golang/_sidebar.md",
-    "learnbook/stack/elasticsearch/_sidebar.md",
     "learnbook/_sidebar.md",
     "learnbook/stack/elasticsearch/README.md",
     "learnbook/stack/elasticsearch/basic/basic-query-syntax.md",
@@ -190,7 +197,6 @@
     "learnbook/stack/golang/basic/_assets/59cb3de57922ff7c6c76fb940240429e_MD5.webp",
     "learnbook/stack/golang/basic/_assets/048c671f851e44934ccbad2ad9ada630_MD5.webp",
     "learnbook/stack/golang/basic/_assets/86d89badd7f47a6b752c2e7d5cfa2365_MD5.webp",
-    "learnbook/stack/golang/basic/_assets/7200d6ea6c593dcfb594d43aaf42c480_MD5.webp",
     "learnbook/stack/golang/debug/godebug-gc.md",
     "learnbook/stack/golang/debug/Go-performance-profiling-trace.md",
     "learnbook/stack/golang/basic/The-go-command-and-automation-tools-in-the-Go-source-code.md",
@@ -199,12 +205,6 @@
     "learnbook/stack/other/_sidebar.md",
     "learnbook/stack/golang/basic/Analysis-of-Memory-Leakage-Caused-by-Time-After.md",
     "learnbook/stack/golang/code/Implementing-server-side-event-push-SSE-using-Go.md",
-    "learnbook/stack/golang/Implementing-server-side-event-push-SSE-using-Go.md",
-    "learnbook/stack/golang/debug/vscode-debugging-skills.md",
-    "stack/golang/debug/vscode-debugging-skills.md",
-    "learnbook/stack/golang/practice/Best-Practices-for-Go-Backend-Architecture-Based-on-Gin-Framework.md",
-    "learnbook/stack/golang/practice/Go-programming-best-practices.md",
-    "learnbook/stack/golang/basic/The-retry-mechanism-solves-transient-errors.md",
-    "learnbook/stack/python/_sidebar.md"
+    "learnbook/stack/golang/Implementing-server-side-event-push-SSE-using-Go.md"
   ]
 }
