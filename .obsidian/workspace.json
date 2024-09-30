@@ -13,7 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/golang/devops/Traffic-replay-tool-GoReplay.md",
+                "file": "learnbook/stack/golang/program-mode/Dependency-injection-to-write-better-code.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "798f5616a5535eff",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "learnbook/stack/golang/_sidebar.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -28,7 +41,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/stack/golang/devops/Traffic-replay-tool-GoReplay.md",
+                "file": "learnbook/stack/golang/_sidebar.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/stack/golang/devops/Traffic-replay-tool-GoReplay.md",
+                "file": "learnbook/stack/golang/_sidebar.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/stack/golang/devops/Traffic-replay-tool-GoReplay.md"
+                "file": "learnbook/stack/golang/_sidebar.md"
               }
             }
           }
@@ -158,11 +172,12 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "65997564a049d1ee",
+  "active": "798f5616a5535eff",
   "lastOpenFiles": [
-    "learnbook/stack/golang/devops/_assets/Pasted image 20240923100055.png",
+    "learnbook/stack/golang/program-mode/Dependency-injection-to-write-better-code.md",
     "learnbook/stack/golang/_sidebar.md",
     "learnbook/stack/golang/devops/Traffic-replay-tool-GoReplay.md",
+    "learnbook/stack/golang/devops/_assets/Pasted image 20240923100055.png",
     "learnbook/stack/golang/devops/_assets/43c89295000177ed48b15cee103a622b_MD5.jpg",
     "learnbook/stack/golang/devops/_assets",
     "learnbook/stack/golang/go-delve.md",
@@ -196,7 +211,6 @@
     "learnbook/stack/golang/basic/_assets/f7c076e02c545debcd314ff6b908ec4c_MD5.webp",
     "learnbook/stack/golang/basic/_assets/59cb3de57922ff7c6c76fb940240429e_MD5.webp",
     "learnbook/stack/golang/basic/_assets/048c671f851e44934ccbad2ad9ada630_MD5.webp",
-    "learnbook/stack/golang/basic/_assets/86d89badd7f47a6b752c2e7d5cfa2365_MD5.webp",
     "learnbook/stack/golang/debug/godebug-gc.md",
     "learnbook/stack/golang/debug/Go-performance-profiling-trace.md",
     "learnbook/stack/golang/basic/The-go-command-and-automation-tools-in-the-Go-source-code.md",
