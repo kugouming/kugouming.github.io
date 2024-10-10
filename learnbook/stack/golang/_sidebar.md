@@ -29,11 +29,11 @@
     - [01. template 用法详解](./stack/golang/stdlib/Detailed-usage-of-template.md)
     - [02. 深入剖析 template](./stack/golang/stdlib/In-depth-analysis-of-template.md)
     - [03. 高级并发用法-sync.Pool](./stack/golang/stdlib/Advanced-concurrency-usage-sync.pool.md)
-    - [04. Go 并发库 - singlelight](./stack/golang/stdlib/Go-Concurrent-Library-Singlelight.md)
 
 - **常用Lib库**
-	- [01. 一个强大可靠的Golang池化库](./stack/golang/libs/A-powerful-and-reliable-Golang-pooling-library.md)
-	- [02. Go语言函数式编程库samber/lo](./stack/golang/libs/Go-functional-programming-library-lo.md)
+	- [01. 一个强大可靠的Golang池化库 - ants](./stack/golang/libs/A-powerful-and-reliable-Golang-pooling-library.md)
+	- [02. Go语言函数式编程库 - samber/lo](./stack/golang/libs/Go-functional-programming-library-lo.md)
+    - [03. Go 并发库 - singlelight](./stack/golang/stdlib/Go-Concurrent-Library-Singlelight.md)
 
 - **Go 编程模式**
     - [01. 切片、接口、时间和性能](./stack/golang/program-mode/slice-interface-time-and-performance.md)
