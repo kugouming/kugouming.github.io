@@ -31,6 +31,9 @@
     - [03. 高级并发用法-sync.Pool](./stack/golang/stdlib/Advanced-concurrency-usage-sync.pool.md)
     - [04. Go 并发库 - singlelight](./stack/golang/stdlib/Go-Concurrent-Library-Singlelight.md)
 
+- **常用Lib库**
+	- [01. 一个强大可靠的Golang池化库](./stack/golang/libs/A-powerful-and-reliable-Golang-pooling-library.md)
+
 - **Go 编程模式**
     - [01. 切片、接口、时间和性能](./stack/golang/program-mode/slice-interface-time-and-performance.md)
     - [02. 错误处理](./stack/golang/program-mode/error-handling.md)
@@ -105,7 +108,6 @@
     - [01. go test 命令完全攻略](./stack/golang/test/go-test-command.md)
     - [02. 如何写出优雅的单测](./stack/golang/test/how-to-write-elegant-single-test.md)
     - [03. Monkey 在 Go 中的应用](./stack/golang/test/monkey-patching-in-go.md)
-
 
 - **GraphQL 相关**
     - [01. [推荐]gqlgen简介](./stack/golang/graphql/Introduction-to-gqlgen.md)

@@ -13,20 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/golang/program-mode/Dependency-injection-to-write-better-code.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "798f5616a5535eff",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "learnbook/stack/golang/_sidebar.md",
+                "file": "learnbook/stack/golang/libs/A-powerful-and-reliable-Golang-pooling-library.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -37,8 +24,13 @@
             "id": "99138b00e34dce5e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "learnbook/stack/golang/_sidebar.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ],
@@ -172,10 +164,13 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "798f5616a5535eff",
+  "active": "99138b00e34dce5e",
   "lastOpenFiles": [
-    "learnbook/stack/golang/program-mode/Dependency-injection-to-write-better-code.md",
+    "learnbook/stack/golang/libs/A-powerful-and-reliable-Golang-pooling-library.md",
     "learnbook/stack/golang/_sidebar.md",
+    "learnbook/_sidebar.md",
+    "learnbook/stack/golang/libs",
+    "learnbook/stack/golang/program-mode/Dependency-injection-to-write-better-code.md",
     "learnbook/stack/golang/devops/Traffic-replay-tool-GoReplay.md",
     "learnbook/stack/golang/devops/_assets/Pasted image 20240923100055.png",
     "learnbook/stack/golang/devops/_assets/43c89295000177ed48b15cee103a622b_MD5.jpg",
@@ -194,8 +189,6 @@
     "webs/jsondiff/assets/jsl/jsl.parser.js",
     "webs/jsondiff/assets/jsl/jsl.interactions.js",
     "webs/jsondiff/assets/jsl/jsl.format.js",
-    "webs/jsondiff/assets/throbber.css",
-    "learnbook/_sidebar.md",
     "learnbook/stack/elasticsearch/README.md",
     "learnbook/stack/elasticsearch/basic/basic-query-syntax.md",
     "stack/elasticsearch/basic/es-common-query-statements.md",
@@ -218,7 +211,6 @@
     "learnbook/stack/javascript/_sidebar.md",
     "learnbook/stack/other/_sidebar.md",
     "learnbook/stack/golang/basic/Analysis-of-Memory-Leakage-Caused-by-Time-After.md",
-    "learnbook/stack/golang/code/Implementing-server-side-event-push-SSE-using-Go.md",
-    "learnbook/stack/golang/Implementing-server-side-event-push-SSE-using-Go.md"
+    "learnbook/stack/golang/code/Implementing-server-side-event-push-SSE-using-Go.md"
   ]
 }
