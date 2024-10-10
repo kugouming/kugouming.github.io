@@ -33,6 +33,7 @@
 
 - **常用Lib库**
 	- [01. 一个强大可靠的Golang池化库](./stack/golang/libs/A-powerful-and-reliable-Golang-pooling-library.md)
+	- [02. Go语言函数式编程库samber/lo](./stack/golang/libs/Go-functional-programming-library-lo.md)
 
 - **Go 编程模式**
     - [01. 切片、接口、时间和性能](./stack/golang/program-mode/slice-interface-time-and-performance.md)
