@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md",
+                "file": "learnbook/stack/golang/code/Crontab-Cycle-Workflow-Design.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md",
+                "file": "learnbook/stack/golang/code/Crontab-Cycle-Workflow-Design.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md",
+                "file": "learnbook/stack/golang/code/Crontab-Cycle-Workflow-Design.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md"
+                "file": "learnbook/stack/golang/code/Crontab-Cycle-Workflow-Design.md"
               }
             }
           }
@@ -179,8 +179,11 @@
   },
   "active": "e573ec7b6c06f921",
   "lastOpenFiles": [
-    "learnbook/stack/golang/libs/Go-functional-programming-library-lo.md",
+    "learnbook/stack/golang/code/_assets/dbfae3635fec7adccd38c51cdad0f177_MD5.webp",
+    "learnbook/stack/golang/code/_assets/6175292ec231f4f0094b88e36a4835a0_MD5.webp",
     "learnbook/stack/golang/_sidebar.md",
+    "learnbook/stack/golang/code/Crontab-Cycle-Workflow-Design.md",
+    "learnbook/stack/golang/libs/Go-functional-programming-library-lo.md",
     "learnbook/stack/golang/libs/A-powerful-and-reliable-Golang-pooling-library.md",
     "learnbook/_sidebar.md",
     "learnbook/stack/golang/libs",
@@ -217,13 +220,10 @@
     "learnbook/stack/golang/basic/_assets/b73ad2b1a2680e867012871b4c9dea04_MD5.webp",
     "learnbook/stack/golang/basic/_assets/f7c076e02c545debcd314ff6b908ec4c_MD5.webp",
     "learnbook/stack/golang/basic/_assets/59cb3de57922ff7c6c76fb940240429e_MD5.webp",
-    "learnbook/stack/golang/basic/_assets/048c671f851e44934ccbad2ad9ada630_MD5.webp",
     "learnbook/stack/golang/debug/godebug-gc.md",
     "learnbook/stack/golang/debug/Go-performance-profiling-trace.md",
     "learnbook/stack/golang/basic/The-go-command-and-automation-tools-in-the-Go-source-code.md",
     "learnbook/stack/linux/ssh/SSH-remote-port-forwarding-or-drilling-holes.md",
-    "learnbook/stack/javascript/_sidebar.md",
-    "learnbook/stack/other/_sidebar.md",
-    "learnbook/stack/golang/basic/Analysis-of-Memory-Leakage-Caused-by-Time-After.md"
+    "learnbook/stack/javascript/_sidebar.md"
   ]
 }
