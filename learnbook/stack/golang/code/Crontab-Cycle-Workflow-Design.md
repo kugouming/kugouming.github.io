@@ -617,7 +617,7 @@ func AddOrDelCronOp(client *clientv3.Client, op string, workflowId, cron, detail
 		ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
 
 		bs, _ := json.Marshal(cronVal{
-			Cron:    cron, //
+			Cron:    cron,
 			Id:      workflowId,
 			Details: details,
 		})
@@ -722,7 +722,7 @@ func LoadCronServiceByOne(client *clientv3.Client, flowKey, nodeId string) {
 	// 添加到cron服务
 	tk := task.NewTask(flowKey, cv.Cron, func(ctx context.Context) error {
 		fmt.Printf("[%s] running cron task %s...\n", nodeId, flowKey)
-		returnnil
+		return nil
 	})
 	task.AddTask(flowKey, tk)
 	fmt.Printf("[%s] load cron success, key:%s, expr:%s \n", nodeId, flowKey, cv.Cron)
