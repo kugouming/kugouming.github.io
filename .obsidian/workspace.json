@@ -13,6 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "learnbook/stack/golang/code/Example-of-crontab-expression-parsing.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6098e3ce60a82064",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "learnbook/stack/golang/_sidebar.md",
                 "mode": "source",
                 "backlinks": false,
@@ -86,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md",
+                "file": "learnbook/stack/golang/code/Example-of-crontab-expression-parsing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md",
+                "file": "learnbook/stack/golang/code/Example-of-crontab-expression-parsing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md"
+                "file": "learnbook/stack/golang/code/Example-of-crontab-expression-parsing.md"
               }
             }
           }
@@ -150,13 +163,14 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "c60ce6a1e141977d",
+  "active": "99138b00e34dce5e",
   "lastOpenFiles": [
+    "learnbook/stack/golang/_sidebar.md",
+    "learnbook/stack/golang/code/Example-of-crontab-expression-parsing.md",
     "learnbook/books/advanced-go-programming-book/ch6-cloud/ch6-03-delay-job.md",
     "learnbook/stack/golang/code/Crontab-Cycle-Workflow-Design.md",
     "learnbook/stack/golang/code/go-update-cache-by-crontab.md",
     "learnbook/stack/golang/libs/A-powerful-and-reliable-Golang-pooling-library.md",
-    "learnbook/stack/golang/_sidebar.md",
     "learnbook/stack/golang/libs/Go-functional-programming-library-lo.md",
     "learnbook/stack/golang/code/_assets/dbfae3635fec7adccd38c51cdad0f177_MD5.webp",
     "learnbook/stack/golang/code/_assets/6175292ec231f4f0094b88e36a4835a0_MD5.webp",
@@ -196,7 +210,6 @@
     "learnbook/stack/golang/basic/_assets/f7c076e02c545debcd314ff6b908ec4c_MD5.webp",
     "learnbook/stack/golang/debug/godebug-gc.md",
     "learnbook/stack/golang/debug/Go-performance-profiling-trace.md",
-    "learnbook/stack/golang/basic/The-go-command-and-automation-tools-in-the-Go-source-code.md",
-    "learnbook/stack/linux/ssh/SSH-remote-port-forwarding-or-drilling-holes.md"
+    "learnbook/stack/golang/basic/The-go-command-and-automation-tools-in-the-Go-source-code.md"
   ]
 }
