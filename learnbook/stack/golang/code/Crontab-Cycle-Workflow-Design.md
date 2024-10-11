@@ -423,7 +423,11 @@ go run main.go
 如果一切正常，您应该会看到类似以下的输出：
 
 ```
-Received KeepAlive response=> key: keepalive-key, value: keepalive-value   Received KeepAlive response=> key: keepalive-key, value: keepalive-value   Received KeepAlive response=> key: keepalive-key, value: keepalive-value   Received KeepAlive response=> key: keepalive-key, value: keepalive-value   Received KeepAlive response=> key: keepalive-key, value: keepalive-value
+Received KeepAlive response=> key: keepalive-key, value: keepalive-value   
+Received KeepAlive response=> key: keepalive-key, value: keepalive-value   
+Received KeepAlive response=> key: keepalive-key, value: keepalive-value   
+Received KeepAlive response=> key: keepalive-key, value: keepalive-value   
+Received KeepAlive response=> key: keepalive-key, value: keepalive-value
 ```
 
 ### 主节点选举
@@ -497,6 +501,7 @@ func startElection(id int, wg *sync.WaitGroup) {
 			fmt.Printf("Node %d is the leader now\n", id)
 		} else {
 			fmt.Printf("Node %d is a follower\n", id)
+			return
 		}
 
 		// todo 启动cron服务
@@ -551,7 +556,8 @@ go run main.go
 如果一切正常，您应该会看到类似以下的输出：
 
 ```
-Node 3is the leader now   node-3启动定时任务服务...   
+Node 3is the leader now   
+node-3启动定时任务服务...   
 Node3 session expired, restarting election   
 node-3关闭定时任务服务...   
 Node5is the leader now   
@@ -613,7 +619,7 @@ func AddOrDelCronOp(client *clientv3.Client, op string, workflowId, cron, detail
 		ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
 
 		bs, _ := json.Marshal(cronVal{
-			Cron:    cron, //
+			Cron:    cron,
 			Id:      workflowId,
 			Details: details,
 		})
@@ -718,7 +724,7 @@ func LoadCronServiceByOne(client *clientv3.Client, flowKey, nodeId string) {
 	// 添加到cron服务
 	tk := task.NewTask(flowKey, cv.Cron, func(ctx context.Context) error {
 		fmt.Printf("[%s] running cron task %s...\n", nodeId, flowKey)
-		returnnil
+		return nil
 	})
 	task.AddTask(flowKey, tk)
 	fmt.Printf("[%s] load cron success, key:%s, expr:%s \n", nodeId, flowKey, cv.Cron)
@@ -736,6 +742,7 @@ func LoadExistedCronServices(client *clientv3.Client, nodeId string) {
 	// 先清空初始化op_list
 	client.Delete(ctx, "op_list")
 
+	// 通过前缀匹配的方式获取所有任务
 	resp, err := client.Get(ctx, "/flow/", clientv3.WithPrefix())
 	cancel()
 	if err != nil {
@@ -861,6 +868,7 @@ func campaignLoop(client *clientv3.Client, nodeId string, wg *sync.WaitGroup) {
 			fmt.Printf("[%s] is the leader now\n", nodeId)
 		} else {
 			fmt.Printf("[%s] is a follower\n", nodeId)
+			return // 按照逻辑梳理：原则上定时任务只在主节点执行，所以从节点应该退出
 		}
 
 		// 加载存量的cron服务
