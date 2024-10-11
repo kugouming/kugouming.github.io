@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/golang/code/Crontab-Cycle-Workflow-Design.md",
+                "file": "learnbook/stack/golang/_sidebar.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -70,8 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 620.5
   },
   "right": {
     "id": "565929c3bf4912da",
@@ -87,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/stack/golang/code/Crontab-Cycle-Workflow-Design.md",
+                "file": "learnbook/stack/golang/_sidebar.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/stack/golang/code/Crontab-Cycle-Workflow-Design.md",
+                "file": "learnbook/stack/golang/_sidebar.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/stack/golang/code/Crontab-Cycle-Workflow-Design.md"
+                "file": "learnbook/stack/golang/_sidebar.md"
               }
             }
           }
@@ -151,10 +150,12 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "99138b00e34dce5e",
+  "active": "c60ce6a1e141977d",
   "lastOpenFiles": [
-    "learnbook/stack/golang/libs/A-powerful-and-reliable-Golang-pooling-library.md",
+    "learnbook/books/advanced-go-programming-book/ch6-cloud/ch6-03-delay-job.md",
     "learnbook/stack/golang/code/Crontab-Cycle-Workflow-Design.md",
+    "learnbook/stack/golang/code/go-update-cache-by-crontab.md",
+    "learnbook/stack/golang/libs/A-powerful-and-reliable-Golang-pooling-library.md",
     "learnbook/stack/golang/_sidebar.md",
     "learnbook/stack/golang/libs/Go-functional-programming-library-lo.md",
     "learnbook/stack/golang/code/_assets/dbfae3635fec7adccd38c51cdad0f177_MD5.webp",
@@ -196,8 +197,6 @@
     "learnbook/stack/golang/debug/godebug-gc.md",
     "learnbook/stack/golang/debug/Go-performance-profiling-trace.md",
     "learnbook/stack/golang/basic/The-go-command-and-automation-tools-in-the-Go-source-code.md",
-    "learnbook/stack/linux/ssh/SSH-remote-port-forwarding-or-drilling-holes.md",
-    "learnbook/stack/javascript/_sidebar.md",
-    "learnbook/stack/other/_sidebar.md"
+    "learnbook/stack/linux/ssh/SSH-remote-port-forwarding-or-drilling-holes.md"
   ]
 }
