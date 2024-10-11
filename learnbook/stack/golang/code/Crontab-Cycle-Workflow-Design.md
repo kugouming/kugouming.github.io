@@ -423,7 +423,11 @@ go run main.go
 如果一切正常，您应该会看到类似以下的输出：
 
 ```
-Received KeepAlive response=> key: keepalive-key, value: keepalive-value   Received KeepAlive response=> key: keepalive-key, value: keepalive-value   Received KeepAlive response=> key: keepalive-key, value: keepalive-value   Received KeepAlive response=> key: keepalive-key, value: keepalive-value   Received KeepAlive response=> key: keepalive-key, value: keepalive-value
+Received KeepAlive response=> key: keepalive-key, value: keepalive-value   
+Received KeepAlive response=> key: keepalive-key, value: keepalive-value   
+Received KeepAlive response=> key: keepalive-key, value: keepalive-value   
+Received KeepAlive response=> key: keepalive-key, value: keepalive-value   
+Received KeepAlive response=> key: keepalive-key, value: keepalive-value
 ```
 
 ### 主节点选举

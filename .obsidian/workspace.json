@@ -26,19 +26,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/golang/libs/Go-functional-programming-library-lo.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e573ec7b6c06f921",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "learnbook/stack/golang/code/Crontab-Cycle-Workflow-Design.md",
                 "mode": "source",
                 "backlinks": false,
@@ -47,7 +34,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -177,13 +164,13 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "e573ec7b6c06f921",
+  "active": "99138b00e34dce5e",
   "lastOpenFiles": [
+    "learnbook/stack/golang/_sidebar.md",
+    "learnbook/stack/golang/libs/Go-functional-programming-library-lo.md",
     "learnbook/stack/golang/code/_assets/dbfae3635fec7adccd38c51cdad0f177_MD5.webp",
     "learnbook/stack/golang/code/_assets/6175292ec231f4f0094b88e36a4835a0_MD5.webp",
-    "learnbook/stack/golang/_sidebar.md",
     "learnbook/stack/golang/code/Crontab-Cycle-Workflow-Design.md",
-    "learnbook/stack/golang/libs/Go-functional-programming-library-lo.md",
     "learnbook/stack/golang/libs/A-powerful-and-reliable-Golang-pooling-library.md",
     "learnbook/_sidebar.md",
     "learnbook/stack/golang/libs",
@@ -219,11 +206,11 @@
     "learnbook/stack/linux/_sidebar.md",
     "learnbook/stack/golang/basic/_assets/b73ad2b1a2680e867012871b4c9dea04_MD5.webp",
     "learnbook/stack/golang/basic/_assets/f7c076e02c545debcd314ff6b908ec4c_MD5.webp",
-    "learnbook/stack/golang/basic/_assets/59cb3de57922ff7c6c76fb940240429e_MD5.webp",
     "learnbook/stack/golang/debug/godebug-gc.md",
     "learnbook/stack/golang/debug/Go-performance-profiling-trace.md",
     "learnbook/stack/golang/basic/The-go-command-and-automation-tools-in-the-Go-source-code.md",
     "learnbook/stack/linux/ssh/SSH-remote-port-forwarding-or-drilling-holes.md",
-    "learnbook/stack/javascript/_sidebar.md"
+    "learnbook/stack/javascript/_sidebar.md",
+    "learnbook/stack/other/_sidebar.md"
   ]
 }
