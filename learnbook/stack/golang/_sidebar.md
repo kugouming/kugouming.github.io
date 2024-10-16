@@ -31,9 +31,10 @@
     - [03. 高级并发用法-sync.Pool](./stack/golang/stdlib/Advanced-concurrency-usage-sync.pool.md)
 
 - **常用Lib库**
-	- [01. 一个强大可靠的Golang池化库 - ants](./stack/golang/libs/A-powerful-and-reliable-Golang-pooling-library.md)
-	- [02. Go语言函数式编程库 - samber/lo](./stack/golang/libs/Go-functional-programming-library-lo.md)
+    - [01. 一个强大可靠的Golang池化库 - ants](./stack/golang/libs/A-powerful-and-reliable-Golang-pooling-library.md)
+    - [02. Go语言函数式编程库 - samber/lo](./stack/golang/libs/Go-functional-programming-library-lo.md)
     - [03. Go 并发库 - singlelight](./stack/golang/stdlib/Go-Concurrent-Library-Singlelight.md)
+    - [04. 配置加载框架 - go-conf](./stack/golang/libs/Configure-loading-framework.md)
 
 - **Go 编程模式**
     - [01. 切片、接口、时间和性能](./stack/golang/program-mode/slice-interface-time-and-performance.md)
@@ -126,14 +127,14 @@
     - [0x. PHP到Go速转手册](./stack/golang/php2go.md)
 
 - **系统运维**
-	- [01. Go实现虚拟IP](./stack/golang/devops/Golang-implements-virtual-IP.md)
-	- [02. 流量回放工具-GoReplay](/stack/golang/devops/Traffic-replay-tool-GoReplay.md)
+    - [01. Go实现虚拟IP](./stack/golang/devops/Golang-implements-virtual-IP.md)
+    - [02. 流量回放工具-GoReplay](/stack/golang/devops/Traffic-replay-tool-GoReplay.md)
 
 - **网络爬虫**
-	- [01. 公众号文章或图片下载](./stack/golang/crawler/Official-account-article-or-picture-download.md)
+    - [01. 公众号文章或图片下载](./stack/golang/crawler/Official-account-article-or-picture-download.md)
 
 - **面试指南**
-	- [01. Go中make和new有什么区别](./stack/golang/interview/What-is-the-difference-between-make-and-new.md)
-	- [02. map中删除一个Key内存是否被释放](./stack/golang/interview/Has-the-memory-of-deleting-a-Key-in-the-map-been-released.md)
-	- [03. [外]GMP 原理与调度](https://www.topgoer.com/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/GMP%E5%8E%9F%E7%90%86%E4%B8%8E%E8%B0%83%E5%BA%A6.html)
-	- [04. [外]Goroutine池](https://www.topgoer.com/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/goroutine%E6%B1%A0.html)
+    - [01. Go中make和new有什么区别](./stack/golang/interview/What-is-the-difference-between-make-and-new.md)
+    - [02. map中删除一个Key内存是否被释放](./stack/golang/interview/Has-the-memory-of-deleting-a-Key-in-the-map-been-released.md)
+    - [03. [外]GMP 原理与调度](https://www.topgoer.com/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/GMP%E5%8E%9F%E7%90%86%E4%B8%8E%E8%B0%83%E5%BA%A6.html)
+    - [04. [外]Goroutine池](https://www.topgoer.com/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/goroutine%E6%B1%A0.html)

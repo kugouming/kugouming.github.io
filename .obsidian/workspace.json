@@ -179,9 +179,10 @@
   },
   "active": "e573ec7b6c06f921",
   "lastOpenFiles": [
+    "learnbook/stack/golang/libs/Configure-loading-framework.md",
+    "learnbook/stack/golang/_sidebar.md",
     "learnbook/stack/golang/code/Example-of-crontab-expression-parsing.md",
     "learnbook/stack/golang/libs/A-powerful-and-reliable-Golang-pooling-library.md",
-    "learnbook/stack/golang/_sidebar.md",
     "learnbook/stack/golang/code/Crontab-Cycle-Workflow-Design.md",
     "learnbook/stack/golang/code/_assets/dbfae3635fec7adccd38c51cdad0f177_MD5.webp",
     "learnbook/stack/golang/code/_assets/6175292ec231f4f0094b88e36a4835a0_MD5.webp",
@@ -223,7 +224,6 @@
     "learnbook/stack/golang/debug/godebug-gc.md",
     "learnbook/stack/golang/debug/Go-performance-profiling-trace.md",
     "learnbook/stack/golang/basic/The-go-command-and-automation-tools-in-the-Go-source-code.md",
-    "learnbook/stack/linux/ssh/SSH-remote-port-forwarding-or-drilling-holes.md",
-    "learnbook/stack/javascript/_sidebar.md"
+    "learnbook/stack/linux/ssh/SSH-remote-port-forwarding-or-drilling-holes.md"
   ]
 }
