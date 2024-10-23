@@ -35,6 +35,7 @@
     - [02. Go语言函数式编程库 - samber/lo](./stack/golang/libs/Go-functional-programming-library-lo.md)
     - [03. Go 并发库 - singlelight](./stack/golang/stdlib/Go-Concurrent-Library-Singlelight.md)
     - [04. 配置加载框架 - go-conf](./stack/golang/libs/Configure-loading-framework.md)
+    -  [05. 分布式ID生成服务 - idalloc](./stack/golang/libs/Distributed-ID-Generation-Service-idalloc.md)
 
 - **Go 编程模式**
     - [01. 切片、接口、时间和性能](./stack/golang/program-mode/slice-interface-time-and-performance.md)

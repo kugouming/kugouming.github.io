@@ -17,7 +17,9 @@
                 "mode": "source",
                 "backlinks": false,
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "A-powerful-and-reliable-Golang-pooling-library"
             }
           },
           {
@@ -30,7 +32,9 @@
                 "mode": "source",
                 "backlinks": false,
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Go-functional-programming-library-lo"
             }
           },
           {
@@ -39,11 +43,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md",
+                "file": "learnbook/stack/golang/libs/Distributed-ID-Generation-Service-idalloc.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Distributed-ID-Generation-Service-idalloc"
             }
           }
         ],
@@ -67,7 +73,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
             }
           },
           {
@@ -82,7 +90,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
             }
           },
           {
@@ -90,7 +100,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
             }
           }
         ]
@@ -113,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md",
+                "file": "learnbook/stack/golang/libs/Distributed-ID-Generation-Service-idalloc.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +133,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Distributed-ID-Generation-Service-idalloc 的反向链接列表"
             }
           },
           {
@@ -130,10 +144,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md",
+                "file": "learnbook/stack/golang/libs/Distributed-ID-Generation-Service-idalloc.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Distributed-ID-Generation-Service-idalloc 的出链列表"
             }
           },
           {
@@ -144,7 +160,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
             }
           },
           {
@@ -153,8 +171,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/stack/golang/_sidebar.md"
-              }
+                "file": "learnbook/stack/golang/libs/Distributed-ID-Generation-Service-idalloc.md"
+              },
+              "icon": "lucide-list",
+              "title": "Distributed-ID-Generation-Service-idalloc 的大纲"
             }
           }
         ],
@@ -180,13 +200,16 @@
   "active": "e573ec7b6c06f921",
   "lastOpenFiles": [
     "learnbook/stack/golang/libs/Configure-loading-framework.md",
+    "learnbook/stack/golang/libs/Distributed-ID-Generation-Service-idalloc.md",
+    "learnbook/stack/golang/libs/Go-functional-programming-library-lo.md",
+    "learnbook/stack/golang/libs/_assets/Pasted image 20241023094931.png",
+    "learnbook/stack/golang/libs/_assets",
     "learnbook/stack/golang/_sidebar.md",
     "learnbook/stack/golang/code/Example-of-crontab-expression-parsing.md",
     "learnbook/stack/golang/libs/A-powerful-and-reliable-Golang-pooling-library.md",
     "learnbook/stack/golang/code/Crontab-Cycle-Workflow-Design.md",
     "learnbook/stack/golang/code/_assets/dbfae3635fec7adccd38c51cdad0f177_MD5.webp",
     "learnbook/stack/golang/code/_assets/6175292ec231f4f0094b88e36a4835a0_MD5.webp",
-    "learnbook/stack/golang/libs/Go-functional-programming-library-lo.md",
     "learnbook/_sidebar.md",
     "learnbook/stack/golang/libs",
     "learnbook/stack/golang/program-mode/Dependency-injection-to-write-better-code.md",
@@ -207,7 +230,6 @@
     "webs/crontab",
     "webs/jsondiff/assets/jsl/jsl.parser.js",
     "webs/jsondiff/assets/jsl/jsl.interactions.js",
-    "webs/jsondiff/assets/jsl/jsl.format.js",
     "learnbook/stack/elasticsearch/README.md",
     "learnbook/stack/elasticsearch/basic/basic-query-syntax.md",
     "stack/elasticsearch/basic/es-common-query-statements.md",
@@ -220,10 +242,7 @@
     "learnbook/stack/golang/basic/_assets/8c58058b496b8d4b9d1047c9f8ede2b2_MD5.png",
     "learnbook/stack/linux/_sidebar.md",
     "learnbook/stack/golang/basic/_assets/b73ad2b1a2680e867012871b4c9dea04_MD5.webp",
-    "learnbook/stack/golang/basic/_assets/f7c076e02c545debcd314ff6b908ec4c_MD5.webp",
     "learnbook/stack/golang/debug/godebug-gc.md",
-    "learnbook/stack/golang/debug/Go-performance-profiling-trace.md",
-    "learnbook/stack/golang/basic/The-go-command-and-automation-tools-in-the-Go-source-code.md",
-    "learnbook/stack/linux/ssh/SSH-remote-port-forwarding-or-drilling-holes.md"
+    "learnbook/stack/golang/debug/Go-performance-profiling-trace.md"
   ]
 }
