@@ -73,6 +73,47 @@ json 库中 UseNumber 函数实现
 
 ```go
 // file: src/encoding/json/stream.go
+type Decoder struct {
+	r       io.Reader
+	buf     []byte
+	d       decodeState
+	scanp   int   // start of unread data in buf
+	scanned int64 // amount of data already scanned
+	scan    scanner
+	err     error
+
+	tokenState int
+	tokenStack []int
+}
+
+// NewDecoder returns a new decoder that reads from r.
+//
+// The decoder introduces its own buffering and may
+// read data from r beyond the JSON values requested.
+func NewDecoder(r io.Reader) *Decoder {
+	return &Decoder{r: r}
+}
+
+// UseNumber causes the Decoder to unmarshal a number into an interface{} as a
+// Number instead of as a float64.
+func (dec *Decoder) UseNumber() { dec.d.useNumber = true }
+
+
+# file: 
+
+// convertNumber converts the number literal s to a float64 or a Number
+// depending on the setting of d.useNumber.
+func (d *decodeState) convertNumber(s string) (any, error) {
+	if d.useNumber {
+		return Number(s), nil
+	}
+	f, err := strconv.ParseFloat(s, 64)
+	if err != nil {
+		return nil, &UnmarshalTypeError{Value: "number " + s, Type: reflect.TypeOf(0.0), Offset: int64(d.off)}
+	}
+	return f, nil
+}
+
 
 
 // A Number represents a JSON number literal.
