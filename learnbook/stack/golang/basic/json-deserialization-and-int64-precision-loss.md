@@ -72,7 +72,8 @@
 json 库中 UseNumber 函数实现
 
 ```go
-// file: src/encoding/json/stream.go
+# file: src/encoding/json/stream.go
+
 type Decoder struct {
 	r       io.Reader
 	buf     []byte
@@ -99,7 +100,7 @@ func NewDecoder(r io.Reader) *Decoder {
 func (dec *Decoder) UseNumber() { dec.d.useNumber = true }
 
 
-# file: 
+# file: src/encoding/json/decode.go
 
 // convertNumber converts the number literal s to a float64 or a Number
 // depending on the setting of d.useNumber.
@@ -113,7 +114,6 @@ func (d *decodeState) convertNumber(s string) (any, error) {
 	}
 	return f, nil
 }
-
 
 
 // A Number represents a JSON number literal.
