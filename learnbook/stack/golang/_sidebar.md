@@ -12,6 +12,7 @@
     - [08. 坑: time.After 导致内存泄露问题分析](./stack/golang/basic/Analysis-of-Memory-Leakage-Caused-by-Time-After.md)
     - [09. Go 源码里的 //go: 指令 && 自动化工具](./stack/golang/basic/The-go-command-and-automation-tools-in-the-Go-source-code.md)
     - [10. Go语言数据争用与race原理](./stack/golang/basic/Go-language-data-contention-and-race-principle.md)
+    - [11. Json 反序列化 int64 精度丢失](./stack/golang/basic/json-deserialization-and-int64-precision-loss.md)
 
 - **Go 调试**
      - [01. 如何使用 dlv 调试 Go 代码](./stack/golang/how-to-use-dlv.md)
