@@ -57,7 +57,7 @@
 ```go
     var configDetailList []interface{}
 	d := json.NewDecoder(bytes.NewReader([]byte(configStr)))
-	d.SetNumberType(json.UnmarshalIntOrFloat) // 关键
+	d.UseNumber().              // 关键
 	err = d.Decode(&configDetailList)
 	if err != nil {
 		logs.CtxError(ctx, "json Unmarshal is err,serviceMeta:%s,err:%s", key, err)
