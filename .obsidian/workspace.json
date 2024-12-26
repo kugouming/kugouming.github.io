@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5131169f85a2b39e",
+        "id": "8f8941f716c2e042",
         "type": "tabs",
         "children": [
           {
-            "id": "0c6421e4b6e0a172",
+            "id": "7ac64a4b464437d4",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -161,7 +161,7 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "0c6421e4b6e0a172",
+  "active": "7ac64a4b464437d4",
   "lastOpenFiles": [
     "learnbook/stack/golang/libs/A-powerful-and-reliable-Golang-pooling-library.md",
     "learnbook/stack/golang/libs/Go-functional-programming-library-lo.md",
