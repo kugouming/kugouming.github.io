@@ -11,10 +11,15 @@
             "id": "7ac64a4b464437d4",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "learnbook/stack/golang/trace/Solution-to-the-Failure-of-Multi-threaded-Read-Write-Locks-and-Birth-Death-Locks.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "Solution-to-the-Failure-of-Multi-threaded-Read-Write-Locks-and-Birth-Death-Locks"
             }
           }
         ]
@@ -163,10 +168,21 @@
   },
   "active": "7ac64a4b464437d4",
   "lastOpenFiles": [
+    "learnbook/stack/golang/trace/_assets/5873d10faf85edbdd4bc0c0bcef03ff8_MD5.webp",
+    "learnbook/stack/golang/trace/_assets/78283edc441bde5732e7c55db12020c8_MD5.webp",
+    "learnbook/stack/golang/trace/_assets/c1201c5ae480d797a08e3787b20e6c5b_MD5.webp",
+    "learnbook/stack/golang/trace/_assets/590f0531092f2c823cd19fecb655b076_MD5.webp",
+    "learnbook/stack/golang/trace/_assets/fce54ffa536aabeb17c37c2dea1cdbb6_MD5.webp",
+    "learnbook/stack/golang/trace/_assets/ba4a0dc00fe0e1191cc8d957c3113369_MD5.webp",
+    "learnbook/stack/golang/trace/_assets/5d69e989431604731a9dda16b9a81821_MD5.webp",
+    "learnbook/stack/golang/trace/_assets/73a584a71847ede16cec2d561d04a05e_MD5.webp",
+    "learnbook/stack/golang/trace/_assets",
+    "learnbook/stack/golang/_sidebar.md",
+    "learnbook/stack/golang/trace/Solution-to-the-Failure-of-Multi-threaded-Read-Write-Locks-and-Birth-Death-Locks.md",
+    "learnbook/stack/golang/trace",
     "learnbook/stack/golang/libs/A-powerful-and-reliable-Golang-pooling-library.md",
     "learnbook/stack/golang/libs/Go-functional-programming-library-lo.md",
     "learnbook/stack/golang/basic/json-deserialization-and-int64-precision-loss.md",
-    "learnbook/stack/golang/_sidebar.md",
     "learnbook/stack/golang/libs/Distributed-ID-Generation-Service-idalloc.md",
     "learnbook/stack/golang/libs/Configure-loading-framework.md",
     "learnbook/stack/golang/libs/_assets/Pasted image 20241023094931.png",
@@ -179,8 +195,6 @@
     "learnbook/stack/golang/libs",
     "learnbook/stack/golang/program-mode/Dependency-injection-to-write-better-code.md",
     "learnbook/stack/golang/devops/Traffic-replay-tool-GoReplay.md",
-    "learnbook/stack/golang/devops/_assets/Pasted image 20240923100055.png",
-    "learnbook/stack/golang/devops/_assets/43c89295000177ed48b15cee103a622b_MD5.jpg",
     "learnbook/stack/golang/devops/_assets",
     "learnbook/stack/golang/go-delve.md",
     "learnbook/stack/golang/interview/What-is-the-difference-between-make-and-new.md",
@@ -193,21 +207,12 @@
     "webs/crontab/assets",
     "webs/crontab/index.html",
     "webs/crontab",
-    "webs/jsondiff/assets/jsl/jsl.parser.js",
-    "webs/jsondiff/assets/jsl/jsl.interactions.js",
     "learnbook/stack/elasticsearch/README.md",
     "learnbook/stack/elasticsearch/basic/basic-query-syntax.md",
     "stack/elasticsearch/basic/es-common-query-statements.md",
     "learnbook/stack/elasticsearch/basic/es-common-query-statements.md",
     "stack/golang/basic/Details-in-the-Defer-statement.md",
     "learnbook/stack/golang/basic/Go-language-data-contention-and-race-principle.md",
-    "learnbook/stack/golang/basic/_assets/2d198ef104c54401f96bd8a38cfc6862_MD5.png",
-    "learnbook/stack/golang/basic/_assets/de1044c39f51d19a03b18f9da8b18733_MD5.png",
-    "learnbook/stack/golang/basic/_assets/0f7166f62d65719c23f518874ab438ae_MD5.png",
-    "learnbook/stack/golang/basic/_assets/8c58058b496b8d4b9d1047c9f8ede2b2_MD5.png",
-    "learnbook/stack/linux/_sidebar.md",
-    "learnbook/stack/golang/basic/_assets/b73ad2b1a2680e867012871b4c9dea04_MD5.webp",
-    "learnbook/stack/golang/debug/godebug-gc.md",
-    "learnbook/stack/golang/debug/Go-performance-profiling-trace.md"
+    "learnbook/stack/linux/_sidebar.md"
   ]
 }

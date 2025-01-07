@@ -135,6 +135,9 @@
 - **网络爬虫**
     - [01. 公众号文章或图片下载](./stack/golang/crawler/Official-account-article-or-picture-download.md)
 
+- **问题追查**
+	- [01. 多线程读写锁产生死锁的故障解决方案](./stack/golang/trace/Solution-to-the-Failure-of-Multi-threaded-Read-Write-Locks-and-Birth-Death-Locks.md)
+
 - **面试指南**
     - [01. Go中make和new有什么区别](./stack/golang/interview/What-is-the-difference-between-make-and-new.md)
     - [02. map中删除一个Key内存是否被释放](./stack/golang/interview/Has-the-memory-of-deleting-a-Key-in-the-map-been-released.md)
