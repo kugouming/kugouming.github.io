@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/stack/golang/trace/Solution-to-the-Failure-of-Multi-threaded-Read-Write-Locks-and-Birth-Death-Locks.md",
+                "file": "learnbook/stack/golang/practice/Go-database-migration-implementation-steps.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Solution-to-the-Failure-of-Multi-threaded-Read-Write-Locks-and-Birth-Death-Locks"
+              "title": "Go-database-migration-implementation-steps"
             }
           }
         ]
@@ -168,6 +168,9 @@
   },
   "active": "7ac64a4b464437d4",
   "lastOpenFiles": [
+    "learnbook/stack/golang/_sidebar.md",
+    "learnbook/stack/golang/practice/Go-database-migration-implementation-steps.md",
+    "learnbook/stack/golang/trace/Solution-to-the-Failure-of-Multi-threaded-Read-Write-Locks-and-Birth-Death-Locks.md",
     "learnbook/stack/golang/trace/_assets/5873d10faf85edbdd4bc0c0bcef03ff8_MD5.webp",
     "learnbook/stack/golang/trace/_assets/78283edc441bde5732e7c55db12020c8_MD5.webp",
     "learnbook/stack/golang/trace/_assets/c1201c5ae480d797a08e3787b20e6c5b_MD5.webp",
@@ -177,8 +180,6 @@
     "learnbook/stack/golang/trace/_assets/5d69e989431604731a9dda16b9a81821_MD5.webp",
     "learnbook/stack/golang/trace/_assets/73a584a71847ede16cec2d561d04a05e_MD5.webp",
     "learnbook/stack/golang/trace/_assets",
-    "learnbook/stack/golang/_sidebar.md",
-    "learnbook/stack/golang/trace/Solution-to-the-Failure-of-Multi-threaded-Read-Write-Locks-and-Birth-Death-Locks.md",
     "learnbook/stack/golang/trace",
     "learnbook/stack/golang/libs/A-powerful-and-reliable-Golang-pooling-library.md",
     "learnbook/stack/golang/libs/Go-functional-programming-library-lo.md",
@@ -190,7 +191,6 @@
     "learnbook/stack/golang/code/Example-of-crontab-expression-parsing.md",
     "learnbook/stack/golang/code/Crontab-Cycle-Workflow-Design.md",
     "learnbook/stack/golang/code/_assets/dbfae3635fec7adccd38c51cdad0f177_MD5.webp",
-    "learnbook/stack/golang/code/_assets/6175292ec231f4f0094b88e36a4835a0_MD5.webp",
     "learnbook/_sidebar.md",
     "learnbook/stack/golang/libs",
     "learnbook/stack/golang/program-mode/Dependency-injection-to-write-better-code.md",

@@ -96,6 +96,7 @@
     - [05. 只改一个参数让Golang GC耗时暴降到1/30！](./stack/golang/practice/Changing-only-one-parameter-reduces-Golang-GC-time-to-1-30.md)
     - [06. 20个Go编程最佳实践](./stack/golang/practice/Go-programming-best-practices.md)
     - [07. 基于 Gin 框架的 Go 后端架构最佳实践](./stack/golang/practice/Best-Practices-for-Go-Backend-Architecture-Based-on-Gin-Framework.md)
+    - [08. Go数据库迁移的实现步骤](./stack/golang/practice/Go-database-migration-implementation-steps.md)
 
 - **代码实现**
     - [01. Go sync.Map 实现](./stack/golang/code/go-sync-map-implement.md)
