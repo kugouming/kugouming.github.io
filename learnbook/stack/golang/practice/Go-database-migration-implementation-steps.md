@@ -553,3 +553,86 @@ func main() {
 }
 ```
 
+执行完之后，`person`表的结构变为
+
+```sql
+MariaDB [migration_test6]> DESC `person`;
++--------+-------------+------+-----+---------+----------------+
+| Field  | Type        | Null | Key | Default | Extra          |
++--------+-------------+------+-----+---------+----------------+
+| id     | bigint(20)  | NO   | PRI | NULL    | auto_increment |
+| name   | varchar(64) | NO   |     | NULL    |                |
+| age    | int(11)     | NO   |     | NULL    |                |
+| gender | int(11)     | NO   |     | NULL    |                |
++--------+-------------+------+-----+---------+----------------+
+4 rows in set (0.001 sec)
+```
+
+然后会发现`migrations`表里变为两条：
+
+```sql
+MariaDB [migration_test6]> SELECT * FROM `migrations`;
++----------------+
+| id             |
++----------------+
+| 20230616165624 |
+| SCHEMA_INIT    |
++----------------+
+2 rows in set (0.000 sec)
+```
+
+#### 2.2.2 新增name为index
+
+同样的，首先修改`Person`结构体，给`Name`列加上了名为`idx_name`的索引：
+
+```go
+type Person struct {
+   ID     int64  `gorm:"autoIncrement:true;primaryKey;column:id;type:bigint(20);not null"`
+   Name   string `gorm:"index:idx_name;column:name;type:varchar(64);not null;comment:'姓名'"`
+   Age    int    `gorm:"column:age;type:int(11);not null;comment:'年龄'"`
+   Gender int    `gorm:"column:gender;type:int(11);not null;comment:'性别：0-未知，1-男性，2-女性'"`
+}
+```
+
+然后新增版本：
+
+```go
+func migration(db *gorm.DB) {
+   m := gormigrate.New(db, gormigrate.DefaultOptions, []*gormigrate.Migration{
+      {
+         ID: "20230616165624",
+         Migrate: func(tx *gorm.DB) error {
+            return tx.AutoMigrate(&Person{})
+         },
+         Rollback: func(tx *gorm.DB) error { return tx.Migrator().DropColumn("person", "gender") },
+      },
+      {
+         ID: "20230619104829",
+         Migrate: func(tx *gorm.DB) error {
+            return tx.AutoMigrate(&Person{})
+         },
+         Rollback: func(tx *gorm.DB) error { return tx.Migrator().DropIndex("person", "idx_name") },
+      },
+   })
+   if err := m.Migrate(); err != nil {
+      log.Fatalf("Could not migrate: %v", err)
+   }
+   log.Printf("Migration did run successfully")
+}
+```
+
+执行完会发现，`person`表结构如下：
+
+```sql
+MariaDB [migration_test6]> DESC `person`;
++--------+-------------+------+-----+---------+----------------+
+| Field  | Type        | Null | Key | Default | Extra          |
++--------+-------------+------+-----+---------+----------------+
+| id     | bigint(20)  | NO   | PRI | NULL    | auto_increment |
+| name   | varchar(64) | NO   | MUL | NULL    |                |
+| age    | int(11)     | NO   |     | NULL    |                |
+| gender | int(11)     | NO   |     | NULL    |                |
++--------+-------------+------+-----+---------+----------------+
+4 rows in set (0.001 sec)
+```
+
