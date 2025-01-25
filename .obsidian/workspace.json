@@ -140,10 +140,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/stack/golang/libs/Distributed-ID-Generation-Service-idalloc.md"
+                "file": "learnbook/stack/golang/practice/Go-database-migration-implementation-steps.md"
               },
               "icon": "lucide-list",
-              "title": "Distributed-ID-Generation-Service-idalloc 的大纲"
+              "title": "Go-database-migration-implementation-steps 的大纲"
             }
           }
         ],
@@ -151,8 +151,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 340.5,
-    "collapsed": true
+    "width": 340.5
   },
   "left-ribbon": {
     "hiddenItems": {

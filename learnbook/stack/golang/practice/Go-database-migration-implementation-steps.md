@@ -636,3 +636,64 @@ MariaDB [migration_test6]> DESC `person`;
 4 rows in set (0.001 sec)
 ```
 
+而`migrations`表里会新增一个版本：
+
+```sql
+MariaDB [migration_test6]> SELECT * FROM `migrations`;
++----------------+
+| id             |
++----------------+
+| 20230616165624 |
+| 20230619104829 |
+| SCHEMA_INIT    |
++----------------+
+3 rows in set (0.000 sec)
+```
+
+#### 2.2.3 加联合索引
+
+假如我们希望加一个名为`idx_gender_name`的联合索引，使用`gender`和`name`列作为索引，那么需要修改`Person`结构体如下，一定要在每个相关字段上标注联合索引`idx_gender_name`，并且需要按照先后顺序利用`priority`确定优先级，数字越低，优先级越高。
+
+```go
+type Person struct {
+   ID     int64  `gorm:"autoIncrement:true;primaryKey;column:id;type:bigint(20);not null"`
+   Name   string `gorm:"index:idx_name;index:idx_gender_name,priority:2;column:name;type:varchar(64);not null;comment:''姓名''"` // '姓名'
+   Age    int    `gorm:"column:age;type:int(11);not null;comment:''年龄''"`                                                      // '年龄'
+   Gender int    `gorm:"index:idx_gender_name,priority:1;column:gender;type:int(11);not null;comment:''性别：0-未知，1-男性，2-女性''"`   // '性别：0-未知，1-男性，2-女性'
+}
+```
+
+然后同样加上版本规划：
+
+```go
+{
+   ID: "20230619112345",
+   Migrate: func(tx *gorm.DB) error {
+      return tx.AutoMigrate(&Person{})
+   },
+   Rollback: func(tx *gorm.DB) error { return tx.Migrator().DropIndex("person", "idx_gender_name") },
+},
+```
+
+可以发现`person`的索引如下：
+
+```sql
+MariaDB [migration_test6]> SHOW INDEX FROM `person`;
++--------+------------+-----------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+
+| Table  | Non_unique | Key_name        | Seq_in_index | Column_name | Collation | Cardinality | Sub_part | Packed | Null | Index_type | Comment | Index_comment |
++--------+------------+-----------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+
+| person |          0 | PRIMARY         |            1 | id          | A         |           0 |     NULL | NULL   |      | BTREE      |         |               |
+| person |          1 | idx_name        |            1 | name        | A         |           0 |     NULL | NULL   |      | BTREE      |         |               |
+| person |          1 | idx_gender_name |            1 | gender      | A         |           0 |     NULL | NULL   |      | BTREE      |         |               |
+| person |          1 | idx_gender_name |            2 | name        | A         |           0 |     NULL | NULL   |      | BTREE      |         |               |
++--------+------------+-----------------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+
+4 rows in set (0.000 sec)
+```
+
+可以发现，`gormigrate`可以实现数据库的版本迁移，并且是对`Go`语言友好的。在微服务中，如果数据库版本管理不是很复杂，且使用的是`gorm`组件，那么可以使用`gormigrate`。
+
+## 3. 参考文献
+- [在 Golang 利用 golang-migrate 實現 database migration](https://bingdoal.github.io/backend/2022/04/golang-golang-migrate-db-migration/)
+- [Golang后端学习笔记 — 3.使用Golang编写和执行数据库迁移](https://juejin.cn/post/7084781020205023239)
+- [对比 11 个 Go 数据库迁移（migration）工具](https://learnku.com/go/t/52493)
+- [Go 语言编程 — gormigrate GORM 的数据库迁移助手](https://bbs.huaweicloud.com/blogs/291765)
