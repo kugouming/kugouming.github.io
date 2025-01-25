@@ -10,15 +10,15 @@
 
 对于每次迁移而言，都需要有一个迁移文件，迁移文件需要命名为`{number}_xxx.up.sql`以及`{number}_xxx.down.sql`，其中`{number}`是数字，可以使用`migrate create`命令产生，如下，`-seq`表示按顺序产生文件：
 
-|     |                                                                   |
-| --- | ----------------------------------------------------------------- |
-| 1   | `migrate create -ext sql -dir ./migration_files -seq init_schema` |
+```bash
+migrate create -ext sql -dir ./migration_files -seq init_schema 
+```
 
 `{number}`将会是从1开始的递增的数字。如下，默认按照时间格式产生，`-tz`可以设置时区：
 
-|   |   |
-|---|---|
-|1|`migrate create -ext sql -dir ./migration_files -tz Asia/Shanghai init_schema`|
+```bash
+migrate create -ext sql -dir ./migration_files -tz Asia/Shanghai init_schema 
+```
 
 `{number}`将会是上海时区的时间格式。反正不管是什么格式，`golang-migration`按照从小到大的顺序依次执行。
 
