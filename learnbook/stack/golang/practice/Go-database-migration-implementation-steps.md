@@ -148,5 +148,82 @@ MariaDB [migration_test]> DESC `person`;
 这时候，会发现数据库会生成一个名为`schema_migrations`的表，可以看到其只有两列，其中第一列`version`表示现阶段的版本，比如以上我们只是执行了迁移的第一步，所以版本是`20230616164949`；第二列是`dirty`，0表示正常，1表示被出错了，一般而言需要手动处理。
 
 ```sql
+MariaDB [migration_test]> SELECT * FROM `schema_migrations`;
++----------------+-------+
+| version        | dirty |
++----------------+-------+
+| 20230616164949 |     0 |
++----------------+-------+
+1 row in set (0.001 sec)
+```
+
+同样的，我们可以使用以下指令回滚这一次操作：
+
+```bash
+$ migrate --path ./migration_files --database="mysql://root:IBHojwND.yo@tcp(10.117.49.6:13306)/migration_test?charset=utf8mb4&parseTime=true" -verbose down 1
+2023/06/19 11:12:57 Start buffering 20230616164949/d init
+2023/06/19 11:12:57 Read and execute 20230616164949/d init
+2023/06/19 11:12:58 Finished 20230616164949/d init (read 238.931375ms, ran 167.683125ms)
+2023/06/19 11:12:58 Finished after 552.185792ms
+2023/06/19 11:12:58 Closing source and database
+```
+
+可以发现操作被回滚，整个数据库只保留了`schema_migrations`表，执行了`20230616164949_init.down.sql`中的指令，`person`表被删除了。
+
+**整体升级**
+
+```bash
+$ migrate --path ./migration_files --database="mysql://root:IBHojwND.yo@tcp(10.117.49.6:13306)/migration_test?charset=utf8mb4&parseTime=true" -verbose up    
+2023/06/19 11:14:52 Start buffering 20230616164949/u init
+2023/06/19 11:14:52 Start buffering 20230616165624/u add_gender
+2023/06/19 11:14:52 Start buffering 20230619104829/u add_index_name
+2023/06/19 11:14:53 Read and execute 20230616164949/u init
+2023/06/19 11:14:53 Finished 20230616164949/u init (read 143.943417ms, ran 167.257042ms)
+2023/06/19 11:14:53 Read and execute 20230616165624/u add_gender
+2023/06/19 11:14:53 Finished 20230616165624/u add_gender (read 463.350333ms, ran 304.728208ms)
+2023/06/19 11:14:53 Read and execute 20230619104829/u add_index_name
+2023/06/19 11:14:54 Finished 20230619104829/u add_index_name (read 987.893333ms, ran 227.057417ms)
+2023/06/19 11:14:54 Finished after 1.391094s
+2023/06/19 11:14:54 Closing source and database
+```
+
+这时候可以发现，`person`表的所有改动都被付诸实现：
+
+```sql
+MariaDB [migration_test]> DESC `person`;
++--------+---------------------+------+-----+---------+----------------+
+| Field  | Type                | Null | Key | Default | Extra          |
++--------+---------------------+------+-----+---------+----------------+
+| id     | bigint(20) unsigned | NO   | PRI | NULL    | auto_increment |
+| name   | varchar(256)        | YES  | MUL | NULL    |                |
+| age    | bigint(20)          | YES  |     | NULL    |                |
+| gender | bigint(20)          | YES  |     | NULL    |                |
++--------+---------------------+------+-----+---------+----------------+
+4 rows in set (0.001 sec)
+```
+
+而`schema_migrations`表里的数据版本变成了最新的`20230619104829`，可以发现，此表中并没有存储历史版本。
+
+```sql
+MariaDB [migration_test]> SELECT * FROM `schema_migrations`;
++----------------+-------+
+| version        | dirty |
++----------------+-------+
+| 20230619104829 |     0 |
++----------------+-------+
+1 row in set (0.000 sec)
+```
+
+同样，也可以使用`down`来回滚整个表。
+
+当然，`golang-migrate`还有一些其他的操作，大家可以使用`migrate -help`命令学习。
+
+### 1.2 通过Go SDK实现
+
+除了以上通过命令的方式使用`golang-migrate`，也可以使用其`Go SDK`的方式运用于`Go project`中。
+
+`sql`文件的创建这里就不赘述了，当然可以为了方便，使用以下的`shell`文件简化创建`sql`的流程：
+
+```bash
 
 ```
