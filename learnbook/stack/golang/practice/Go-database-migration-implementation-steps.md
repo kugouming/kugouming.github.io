@@ -31,3 +31,30 @@ migrate create -ext sql -dir ./migration_files -tz Asia/Shanghai init_schema
 初始化数据库
 
 我们可以通过安装`migrate`工具，然后通过指令进行操作如下，生成`20230616164949_init.up.sql`和`20230616164949_init.down.sql`文件：
+
+```bash
+$ migrate create -ext sql -dir ./migration_files -tz Asia/Shanghai init       
+xxx/migration_files/20230616164949_init.up.sql
+xxx/migration_files/20230616164949_init.down.sql
+```
+
+在`20230616164949_init.up.sql`中填写：
+
+```sql
+-- ----------------------------
+-- Table structure for person
+-- ----------------------------
+DROP TABLE IF EXISTS `person`;
+CREATE TABLE `person` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(256) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `age` bigint(20) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+```
+
+在`20230616164949_init.down.sql`中填写：
+
+```sql
+DROP TABLE IF EXISTS `person`; 
+```
