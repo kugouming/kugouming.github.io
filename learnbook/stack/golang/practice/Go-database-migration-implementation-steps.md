@@ -58,3 +58,95 @@ CREATE TABLE `person` (
 ```sql
 DROP TABLE IF EXISTS `person`; 
 ```
+
+**新增一列**
+
+然后我们给`person`表新增一个性别`gender`列，先使用命令创建`sql`文件：
+
+```bash
+$ migrate create -ext sql -dir ./migration_files -tz Asia/Shanghai add_gender
+xxx/migration_files/20230616165624_add_gender.up.sql
+xxx/migration_files/20230616165624_add_gender.down.sql
+```
+
+`20230616165624_add_gender.up.sql`：
+
+```sql
+ALTER TABLE `person` ADD COLUMN `gender` BIGINT(20) DEFAULT NULL AFTER `age`; 
+```
+
+`20230616165624_add_gender.down.sql`：
+
+```sql
+ALTER TABLE `person` DROP COLUMN `gender`; 
+```
+
+**新增name为index**
+
+接下来，我们为`name`列创建一个索引，同样需要用命令创建`sql`文件：
+
+```bash
+$ migrate create -ext sql -dir ./migration_files -tz Asia/Shanghai add_index_name                                                                          
+xxx/migration_files/20230619104829_add_index_name.up.sql
+xxx/migration_files/20230619104829_add_index_name.down.sql
+```
+
+`20230619104829_add_index_name.up.sql`：
+
+```sql
+ALTER TABLE `person` ADD INDEX `idx_name`(`name`); 
+```
+
+`20230619104829_add_index_name.down.sql`：
+
+```sql
+ALTER TABLE `person` DROP INDEX `idx_name`; 
+```
+
+此时在迁移文件中有以下文件：
+
+```bash
+$ ll migration_files
+total 48
+-rw-r--r--  1 chenyiguo  staff    30B Jun 16 16:55 20230616164949_init.down.sql
+-rw-r--r--  1 chenyiguo  staff   396B Jun 16 16:55 20230616164949_init.up.sql
+-rw-r--r--  1 chenyiguo  staff    42B Jun 16 17:02 20230616165624_add_gender.down.sql
+-rw-r--r--  1 chenyiguo  staff    77B Jun 16 17:01 20230616165624_add_gender.up.sql
+-rw-r--r--  1 chenyiguo  staff    43B Jun 19 10:57 20230619104829_add_index_name.down.sql
+-rw-r--r--  1 chenyiguo  staff    50B Jun 19 10:57 20230619104829_add_index_name.up.sql
+```
+
+#### 1.1.2 进行迁移
+
+**一步迁移**
+
+我们可以使用如下指令每次执行一步迁移：
+
+```bash
+$ migrate --path ./migration_files --database="mysql://root:IBHojwND.yo@tcp(10.117.49.6:13306)/migration_test?charset=utf8mb4&parseTime=true" -verbose up 1
+2023/06/19 11:01:28 Start buffering 20230616164949/u init
+2023/06/19 11:01:28 Read and execute 20230616164949/u init
+2023/06/19 11:01:28 Finished 20230616164949/u init (read 133.166833ms, ran 286.737042ms)
+2023/06/19 11:01:28 Finished after 566.083083ms
+2023/06/19 11:01:28 Closing source and database
+```
+
+然后查看表`person`:
+
+```bash
+MariaDB [migration_test]> DESC `person`;
++-------+---------------------+------+-----+---------+----------------+
+| Field | Type                | Null | Key | Default | Extra          |
++-------+---------------------+------+-----+---------+----------------+
+| id    | bigint(20) unsigned | NO   | PRI | NULL    | auto_increment |
+| name  | varchar(256)        | YES  |     | NULL    |                |
+| age   | bigint(20)          | YES  |     | NULL    |                |
++-------+---------------------+------+-----+---------+----------------+
+3 rows in set (0.001 sec)
+```
+
+这时候，会发现数据库会生成一个名为`schema_migrations`的表，可以看到其只有两列，其中第一列`version`表示现阶段的版本，比如以上我们只是执行了迁移的第一步，所以版本是`20230616164949`；第二列是`dirty`，0表示正常，1表示被出错了，一般而言需要手动处理。
+
+```sql
+
+```
