@@ -225,5 +225,331 @@ MariaDB [migration_test]> SELECT * FROM `schema_migrations`;
 `sql`文件的创建这里就不赘述了，当然可以为了方便，使用以下的`shell`文件简化创建`sql`的流程：
 
 ```bash
-
+#!/bin/bash
+read -p "Please input sql change tag: " tag
+if [ x"${tag}" = x ]; then
+  echo "Please input sql change tag!!!"
+  exit 1
+fi
+# TIMEZONE是时区的环境变量，默认 Asia/Shanghai
+if [ x"${TIMEZONE}" = x ]; then
+  echo "Not set TIMEZONE, set default Asia/Shanghai"
+  TIMEZONE="Asia/Shanghai"
+fi
+migrate create -ext sql -dir ./migration_files -tz "${TIMEZONE}" ${tag}
 ```
+
+#### 1.2.1 代码实现
+
+```go
+package main
+import (
+   "context"
+   "database/sql"
+   "errors"
+   "fmt"
+   "github.com/golang-migrate/migrate/v4"
+   "github.com/sirupsen/logrus"
+   "os"
+   "time"
+   _ "github.com/go-sql-driver/mysql"
+   _ "github.com/golang-migrate/migrate/v4/database/mysql"
+   _ "github.com/golang-migrate/migrate/v4/source/file"
+)
+const (
+   dbUser     = "DB_USER"
+   dbPassWord = "DEVOPS_INFRA_PASSWORD"
+   dbUrl      = "DB_URL"
+)
+var (
+   username = "root"
+   password = "IBHojwND.yo"
+   hostname = "10.117.49.6:13306"
+   dbname   = "migration_test"
+   errUpFailed = errors.New("migration up failed")
+)
+func dsn(dbName string) string {
+   return fmt.Sprintf("%s:%s@tcp(%s)/%s?charset=utf8mb4&parseTime=true", username, password, hostname, dbName)
+}
+func createDBIfNotExist() error {
+   db, err := sql.Open("mysql", dsn(""))
+   if err != nil {
+      logrus.Errorf("opening DB err : %+v\n", err)
+      return err
+   }
+   defer db.Close()
+   ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+   defer cancel()
+   res, err := db.ExecContext(ctx, "CREATE DATABASE IF NOT EXISTS "+dbname)
+   if err != nil {
+      logrus.Errorf("creating DB err: %+v\n", err)
+      return err
+   }
+   no, err := res.RowsAffected()
+   if err != nil {
+      logrus.Errorf("affected rows err: %+v", err)
+      return err
+   }
+   logrus.Infof("rows affected %d\n", no)
+   return nil
+}
+func migration() (e error) {
+   // 新建migrate对象
+   m, err := migrate.New("file://migration_files", "mysql://"+dsn(dbname))
+   if err != nil {
+      logrus.Errorf("new migrate err: %+v", err)
+      return err
+   }
+   // 进行up操作
+   err = m.Up()
+   version, dirty, _ := m.Version()
+   if err == nil || err == migrate.ErrNoChange {
+      logrus.Infof("migrate up success, version: %+v, dirty: %+v", version, dirty)
+      return
+   }
+   logrus.Errorf("migrate up failed, version: %+v, dirty: %+v, err: %+v", version, dirty, err)
+   // 只要up没有成功，后续都是失败
+   e = errUpFailed
+   // 如果up失败，尝试回滚一步
+   version, dirty, _ = m.Version()
+   err = m.Steps(-1)
+   if err == nil || err == os.ErrNotExist {
+      logrus.Infof("migrate down -1 success, version: %+v, dirty: %+v", version, dirty)
+      return
+   }
+   logrus.Errorf("migrate down -1 failed, version: %+v, dirty: %+v, err: %+v", version, dirty, err)
+   // 如果回滚失败，判断是不是因为dirty
+   er, ok := err.(migrate.ErrDirty)
+   if !ok {
+      // 不是dirty错误
+      return
+   }
+   // 是dirty错误，那我们强制设置version，再利用这个版本进行回滚
+   err = m.Force(er.Version)
+   if err != nil {
+      logrus.Printf("migrate force %+v err: %+v", er.Version, err)
+      return
+   }
+   err = m.Steps(-1)
+   if err == nil || err == os.ErrNotExist {
+      logrus.Printf("migrate down -1 after force success, version: %+v, dirty: %+v", version, dirty)
+      return
+   }
+   logrus.Printf("migrate down -1 after force failed, version: %+v, dirty: %+v, err: %+v", version, dirty, err)
+   return
+}
+func main() {
+   // 如果数据库不存在则创建数据库
+   err := createDBIfNotExist()
+   if err != nil {
+      os.Exit(1)
+   }
+   // migration操作
+   err = migration()
+   if err != nil {
+      os.Exit(1)
+   }
+}
+```
+
+这样，程序执行后，就能达到和命令执行一样的效果，实现数据库的迁移。
+
+## 2. gormigrate
+
+当然，如果我们使用的是`gorm`，那么推荐使用`gromigrate`，`gorm`本身提供了`AutoMigrate`以及相应的`Migrator`的DDL接口，但是其更着重于`ORM`层面的功能，在`ORM Schema Version Control（数据库版本控制）`方面有所欠缺。而`gromigrate`就是一个轻量化的`Schema Migration Helper（迁移助手）`，基于`GORM AutoMigrate`和`Migrator`进行封装，用于弥补这一块的缺失。
+
+和`golang-migrate`不同的是，`AutoMigrate`会根据程序中数据结构的变化来改变表结构，无需自己写`sql`文件，我们仿照上述例子，来实现一遍。
+
+### 2.1 InitSchema
+
+应用于初始化没有表的场景，可以通过`InitSchema`函数实现注册函数，注意，这里的注册函数只有初始化函数，没有`Rollback`操作。
+
+```go
+package main
+import (
+   "context"
+   "database/sql"
+   "fmt"
+   "log"
+   "time"
+   "github.com/go-gormigrate/gormigrate/v2"
+   "gorm.io/driver/mysql"
+   "gorm.io/gorm"
+   "gorm.io/gorm/schema"
+)
+type Person struct {
+   ID   int64  `gorm:"autoIncrement:true;primaryKey;column:id;type:bigint(20);not null"`
+   Name string `gorm:"column:name;type:varchar(64);not null;comment:'姓名'"`
+   Age  int    `gorm:"column:age;type:int(11);not null;comment:'年龄'"`
+}
+const (
+   username = "root"
+   password = "IBHojwND.yo"
+   hostname = "10.117.49.6:13306"
+   dbname   = "migration_test"
+)
+func dsn(dbName string) string {
+   return fmt.Sprintf("%s:%s@tcp(%s)/%s?charset=utf8mb4&parseTime=true", username, password, hostname, dbName)
+}
+func createDBIfNotExist() error {
+   db, err := sql.Open("mysql", dsn(""))
+   if err != nil {
+      log.Printf("Error %s when opening DB\n", err)
+      return err
+   }
+   defer db.Close()
+   ctx, cancelfunc := context.WithTimeout(context.Background(), 5*time.Second)
+   defer cancelfunc()
+   res, err := db.ExecContext(ctx, "CREATE DATABASE IF NOT EXISTS "+dbname)
+   if err != nil {
+      log.Printf("Error %s when creating DB\n", err)
+      return err
+   }
+   no, err := res.RowsAffected()
+   if err != nil {
+      log.Printf("Error %s when fetching rows", err)
+      return err
+   }
+   log.Printf("rows affected %d\n", no)
+   return nil
+}
+func initScheme(db *gorm.DB) {
+   m := gormigrate.New(db, gormigrate.DefaultOptions, []*gormigrate.Migration{})
+   m.InitSchema(func(db *gorm.DB) error {
+      err := db.AutoMigrate(
+         &Person{},
+      )
+      if err != nil {
+         panic(err)
+      }
+      return nil
+   })
+   err := m.Migrate()
+   if err != nil {
+      panic(err)
+   }
+}
+func main() {
+   err := createDBIfNotExist()
+   if err != nil {
+      panic(err)
+   }
+   db, err := gorm.Open(mysql.New(mysql.Config{
+      DSN:                       dsn(dbname), // DSN data source name
+      DefaultStringSize:         256,         // string 类型字段的默认长度
+      DisableDatetimePrecision:  true,        // 禁用 datetime 精度，MySQL 5.6 之前的数据库不支持
+      DontSupportRenameIndex:    true,        // 重命名索引时采用删除并新建的方式，MySQL 5.7 之前的数据库和 MariaDB 不支持重命名索引
+      DontSupportRenameColumn:   true,        // 用 `change` 重命名列，MySQL 8 之前的数据库和 MariaDB 不支持重命名列
+      SkipInitializeWithVersion: false,       // 根据当前 MySQL 版本自动配置
+   }), &gorm.Config{
+      NamingStrategy: &schema.NamingStrategy{
+         TablePrefix:   "",
+         SingularTable: true,
+      },
+      //SkipDefaultTransaction: true, // 开启提高性能，https://gorm.io/docs/transactions.html
+   })
+   if err != nil {
+      panic(err)
+   }
+   initScheme(db)
+}
+```
+
+可以看到，此时的`Person`结构体：
+
+```go
+type Person struct {
+   ID   int64  `gorm:"autoIncrement:true;primaryKey;column:id;type:bigint(20);not null"`
+   Name string `gorm:"column:name;type:varchar(64);not null;comment:'姓名'"`
+   Age  int    `gorm:"column:age;type:int(11);not null;comment:'年龄'"`
+}
+```
+
+然后在可以看到生成了两个表：
+
+```sql
+MariaDB [migration_test6]> SHOW TABLES;
++---------------------------+
+| Tables_in_migration_test6 |
++---------------------------+
+| migrations                |
+| person                    |
++---------------------------+
+2 rows in set (0.000 sec)
+```
+
+其中，`person`是我们生成的表，其结构和`Person`结构体一致
+
+```sql
+MariaDB [migration_test6]> DESC `person`;
++-------+-------------+------+-----+---------+----------------+
+| Field | Type        | Null | Key | Default | Extra          |
++-------+-------------+------+-----+---------+----------------+
+| id    | bigint(20)  | NO   | PRI | NULL    | auto_increment |
+| name  | varchar(64) | NO   |     | NULL    |                |
+| age   | int(11)     | NO   |     | NULL    |                |
++-------+-------------+------+-----+---------+----------------+
+3 rows in set (0.001 sec)
+```
+
+而`migrations`表是迁移版本记录表，可以发现其只有一列，记录的就是版本号，`InitSchema`成功后版本号是`SCHEMA_INIT`。
+
+```sql
+MariaDB [migration_test6]> SELECT * FROM `migrations`;
++-------------+
+| id          |
++-------------+
+| SCHEMA_INIT |
++-------------+
+1 row in set (0.000 sec)
+```
+
+### 2.2 增量迁移
+
+需要注意的是，当使用`InitSchema`+`增量迁移`的时候，不能使用同一个实例对象。
+
+#### 2.2.1 新增一列
+
+比如接下来，我们将`Person`结构体新增一个属性`Gender`表示性别：
+
+```go
+type Person struct {
+   ID     int64  `gorm:"autoIncrement:true;primaryKey;column:id;type:bigint(20);not null"`
+   Name   string `gorm:"column:name;type:varchar(64);not null;comment:'姓名'"`
+   Age    int    `gorm:"column:age;type:int(11);not null;comment:'年龄'"`
+   Gender int    `gorm:"column:gender;type:int(11);not null;comment:'性别：0-未知，1-男性，2-女性'"`
+}
+```
+
+其实这时候调用`gorm.AutoMigrate`就已经能够自动创建列了，但是为了版本的管理，我们建立以下的版本管理：
+
+```go
+func migration(db *gorm.DB) {
+   m := gormigrate.New(db, gormigrate.DefaultOptions, []*gormigrate.Migration{
+      {
+         ID: "20230616165624",
+         Migrate: func(tx *gorm.DB) error {
+            return tx.AutoMigrate(&Person{})
+         },
+         Rollback: func(tx *gorm.DB) error { return tx.Migrator().DropColumn("person", "gender") },
+      },
+   })
+   if err := m.Migrate(); err != nil {
+      log.Fatalf("Could not migrate: %v", err)
+   }
+   log.Printf("Migration did run successfully")
+}
+```
+
+然后在`main`函数最后加上`migration(db)`：
+
+```go
+func main() {
+   ...
+   // 初始化
+   initScheme(db)
+   // 增量迁移
+   migration(db)
+}
+```
+
