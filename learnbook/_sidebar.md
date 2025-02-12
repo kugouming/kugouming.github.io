@@ -23,7 +23,7 @@
 	- [Other](./stack/other/)
 
 - **开发工具**
-	- [MacOS](./softs/macos/)
+	- [Mac](./softs/mac/)
 	- [Linux](./softs/linux/)
 - **书籍**
 	- [技术书籍](./books/)

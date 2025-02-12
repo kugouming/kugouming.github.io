@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/_sidebar.md",
+                "file": "learnbook/softs/mac/_sidebar.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
@@ -141,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/_sidebar.md",
+                "file": "learnbook/softs/mac/_sidebar.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -155,7 +155,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 340.5
+    "width": 340.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -171,20 +172,38 @@
   },
   "active": "7ac64a4b464437d4",
   "lastOpenFiles": [
-    "assets/images/favicon.svg",
-    "assets/images/logo.png",
-    "assets/images/logobig.png",
+    "learnbook/softs/mac/Zsh-installation-and-configuration.md",
+    "learnbook/softs/mac/_assets/ae493965767ac34d296b37b2b5bfa4e7_MD5.png",
+    "learnbook/softs/mac/_assets/6b4bda2b36d47628a1f43b4bb678bbef_MD5.png",
+    "learnbook/softs/mac/_assets/c2df0a3aea5526b307466d0f4395049d_MD5.png",
+    "learnbook/softs/mac/_assets/9e0ebd28f0d764286c7ea676141529a1_MD5.png",
+    "learnbook/softs/mac/_assets/05b64488054d97a6dec40c7eb908fe52_MD5.png",
+    "learnbook/softs/mac/_assets/6fb782fc28ae28b9fac2705bc716087a_MD5.png",
+    "learnbook/softs/mac/_assets/9411bf8af109d9256965ca5e2a9c1dd0_MD5.png",
+    "learnbook/softs/mac/_assets/3f4550a1e9774d52c905bef1ed1e929e_MD5.png",
+    "learnbook/softs/mac/_assets/45a302af11e320928594d733643225d1_MD5.png",
+    "learnbook/softs/mac/_assets/2c1ce73b72e09c2b5429f1314e3e5219_MD5.png",
+    "learnbook/softs/mac/_sidebar.md",
+    "learnbook/softs/mac/Install-Homebre-on-MAC.md",
+    "learnbook/others/ddia/_sidebar.md",
+    "learnbook/others/unique-id/_sidebar.md",
+    "learnbook/others/docsify/_sidebar.md",
+    "learnbook/books/document-style-guide/_sidebar.md",
+    "learnbook/sample/_sidebar.md",
+    "learnbook/books/_sidebar.md",
+    "learnbook/softs/mac/_assets",
+    "learnbook/_sidebar.md",
+    "learnbook/softs/mac/README.md",
+    "learnbook/softs/linux/README.md",
+    "learnbook/books/README.md",
+    "learnbook/sample/introduction.md",
+    "learnbook/README.md",
+    "learnbook/softs/linux",
+    "learnbook/softs/mac",
+    "learnbook/softs",
     "learnbook/stack/golang/practice/Go-database-migration-implementation-steps.md",
     "learnbook/stack/golang/_sidebar.md",
     "learnbook/stack/golang/trace/Solution-to-the-Failure-of-Multi-threaded-Read-Write-Locks-and-Birth-Death-Locks.md",
-    "learnbook/stack/golang/trace/_assets/5873d10faf85edbdd4bc0c0bcef03ff8_MD5.webp",
-    "learnbook/stack/golang/trace/_assets/78283edc441bde5732e7c55db12020c8_MD5.webp",
-    "learnbook/stack/golang/trace/_assets/c1201c5ae480d797a08e3787b20e6c5b_MD5.webp",
-    "learnbook/stack/golang/trace/_assets/590f0531092f2c823cd19fecb655b076_MD5.webp",
-    "learnbook/stack/golang/trace/_assets/fce54ffa536aabeb17c37c2dea1cdbb6_MD5.webp",
-    "learnbook/stack/golang/trace/_assets/ba4a0dc00fe0e1191cc8d957c3113369_MD5.webp",
-    "learnbook/stack/golang/trace/_assets/5d69e989431604731a9dda16b9a81821_MD5.webp",
-    "learnbook/stack/golang/trace/_assets/73a584a71847ede16cec2d561d04a05e_MD5.webp",
     "learnbook/stack/golang/trace/_assets",
     "learnbook/stack/golang/trace",
     "learnbook/stack/golang/libs/A-powerful-and-reliable-Golang-pooling-library.md",
@@ -195,27 +214,8 @@
     "learnbook/stack/golang/libs/_assets",
     "learnbook/stack/golang/code/Example-of-crontab-expression-parsing.md",
     "learnbook/stack/golang/code/Crontab-Cycle-Workflow-Design.md",
-    "learnbook/_sidebar.md",
     "learnbook/stack/golang/libs",
-    "learnbook/stack/golang/program-mode/Dependency-injection-to-write-better-code.md",
-    "learnbook/stack/golang/devops/Traffic-replay-tool-GoReplay.md",
     "learnbook/stack/golang/devops/_assets",
-    "learnbook/stack/golang/go-delve.md",
-    "learnbook/stack/golang/interview/What-is-the-difference-between-make-and-new.md",
-    "learnbook/stack/golang/interview/Has-the-memory-of-deleting-a-Key-in-the-map-been-released.md",
-    "learnbook/stack/golang/test/monkey-patching-in-go.md",
-    "learnbook/stack/golang/devops/Golang-implements-virtual-IP.md",
-    "learnbook/stack/elasticsearch/_sidebar.md",
-    "webs/crontab/assets/index.js",
-    "webs/crontab/assets/index.css",
-    "webs/crontab/assets",
-    "webs/crontab/index.html",
-    "webs/crontab",
-    "learnbook/stack/elasticsearch/README.md",
-    "learnbook/stack/elasticsearch/basic/basic-query-syntax.md",
-    "stack/elasticsearch/basic/es-common-query-statements.md",
-    "learnbook/stack/elasticsearch/basic/es-common-query-statements.md",
-    "stack/golang/basic/Details-in-the-Defer-statement.md",
-    "learnbook/stack/golang/basic/Go-language-data-contention-and-race-principle.md"
+    "webs/crontab/assets/index.js"
   ]
 }
