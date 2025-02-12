@@ -21,8 +21,21 @@
               "icon": "lucide-file",
               "title": "Go-database-migration-implementation-steps"
             }
+          },
+          {
+            "id": "1290469773fdc76f",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.4"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -141,13 +154,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/stack/golang/practice/Go-database-migration-implementation-steps.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Go-database-migration-implementation-steps 的大纲"
+              "title": "大纲"
             }
           }
         ],
@@ -169,10 +181,8 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "7ac64a4b464437d4",
+  "active": "1290469773fdc76f",
   "lastOpenFiles": [
-    "nav/index.html",
-    "nav/index copy.html",
     "learnbook/stack/golang/_sidebar.md",
     "learnbook/stack/golang/practice/Go-database-migration-implementation-steps.md",
     "learnbook/stack/golang/trace/Solution-to-the-Failure-of-Multi-threaded-Read-Write-Locks-and-Birth-Death-Locks.md",
@@ -211,11 +221,13 @@
     "webs/crontab/assets/index.css",
     "webs/crontab/assets",
     "webs/crontab/index.html",
+    "webs/crontab",
     "learnbook/stack/elasticsearch/README.md",
     "learnbook/stack/elasticsearch/basic/basic-query-syntax.md",
     "stack/elasticsearch/basic/es-common-query-statements.md",
     "learnbook/stack/elasticsearch/basic/es-common-query-statements.md",
     "stack/golang/basic/Details-in-the-Defer-statement.md",
-    "learnbook/stack/golang/basic/Go-language-data-contention-and-race-principle.md"
+    "learnbook/stack/golang/basic/Go-language-data-contention-and-race-principle.md",
+    "learnbook/stack/linux/_sidebar.md"
   ]
 }
