@@ -162,8 +162,7 @@ oh-my-zsh 内置了 `web-search` 插件。`web-search` 能让我们在命令�
 
 ![web-search搜索](https://cdn.haoyep.com/gh/leegical/Blog_img/cdnimg/202401012302476.png "web-search搜索")
 
-!> 重要
-  最后，记得[启用所有插件](https://www.haoyep.com/posts/zsh-config-oh-my-zsh/#%e5%90%af%e7%94%a8%e6%8f%92%e4%bb%b6)。
+!> 最后，记得[启用所有插件](https://www.haoyep.com/posts/zsh-config-oh-my-zsh/#%e5%90%af%e7%94%a8%e6%8f%92%e4%bb%b6)。
 
 ### 3.2 启用插件
 
@@ -175,8 +174,7 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting z extract web-search)
 
 ![zsh插件列表](https://cdn.haoyep.com/gh/leegical/Blog_img/cdnimg/202401012304774.png "zsh插件列表")
 
-?>提示
-部分插件需要参考[插件介绍](https://www.haoyep.com/posts/zsh-config-oh-my-zsh/#%e6%8f%92%e4%bb%b6%e4%bb%8b%e7%bb%8d)进行安装。
+?> 部分插件需要参考[插件介绍](https://www.haoyep.com/posts/zsh-config-oh-my-zsh/#%e6%8f%92%e4%bb%b6%e4%bb%8b%e7%bb%8d)进行安装。
 
 开启新的 Shell 或执行 `source ~/.zshrc`，就可以开始体验插件。
 
@@ -210,8 +208,7 @@ unproxy () {
 }
 ```
 
-?> 提示
-这里假设本地代理的端口是`1089`。
+?> 这里假设本地代理的端口是`1089`。
 
 ![使用本地代理命令](https://cdn.haoyep.com/gh/leegical/Blog_img/cdnimg/202401012307093.png "使用本地代理命令")
 
@@ -238,8 +235,7 @@ unproxy () {
 }
 ```
 
-!> 注意
-这里假设宿主机局域网 http 代理的端口是`10811`。
+!> 这里假设宿主机局域网 http 代理的端口是`10811`。
 
 ### 4.3 卸载 Oh My Zsh
 

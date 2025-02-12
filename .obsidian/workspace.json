@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/softs/mac/_sidebar.md",
+                "file": "learnbook/softs/mac/README.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "_sidebar"
+              "title": "README"
             }
           }
         ]
@@ -141,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/softs/mac/_sidebar.md",
+                "file": "learnbook/softs/mac/README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "_sidebar 的大纲"
+              "title": "README 的大纲"
             }
           }
         ],
@@ -172,7 +172,16 @@
   },
   "active": "7ac64a4b464437d4",
   "lastOpenFiles": [
+    "scripts/reset_navicat_162_1.sh",
+    "scripts/reset_navicat_162.sh",
+    "scripts/reset_navicat_162_2.sh",
+    "scripts/reset_navicat162.2.sh",
+    "scripts/reset_navicat162.sh",
+    "scripts/reset_navicat2.sh",
+    "scripts/reset_navicat.sh",
+    "learnbook/softs/mac/README.md",
     "learnbook/softs/mac/Zsh-installation-and-configuration.md",
+    "learnbook/softs/mac/_sidebar.md",
     "learnbook/softs/mac/_assets/ae493965767ac34d296b37b2b5bfa4e7_MD5.png",
     "learnbook/softs/mac/_assets/6b4bda2b36d47628a1f43b4bb678bbef_MD5.png",
     "learnbook/softs/mac/_assets/c2df0a3aea5526b307466d0f4395049d_MD5.png",
@@ -183,7 +192,6 @@
     "learnbook/softs/mac/_assets/3f4550a1e9774d52c905bef1ed1e929e_MD5.png",
     "learnbook/softs/mac/_assets/45a302af11e320928594d733643225d1_MD5.png",
     "learnbook/softs/mac/_assets/2c1ce73b72e09c2b5429f1314e3e5219_MD5.png",
-    "learnbook/softs/mac/_sidebar.md",
     "learnbook/softs/mac/Install-Homebre-on-MAC.md",
     "learnbook/others/ddia/_sidebar.md",
     "learnbook/others/unique-id/_sidebar.md",
@@ -193,7 +201,6 @@
     "learnbook/books/_sidebar.md",
     "learnbook/softs/mac/_assets",
     "learnbook/_sidebar.md",
-    "learnbook/softs/mac/README.md",
     "learnbook/softs/linux/README.md",
     "learnbook/books/README.md",
     "learnbook/sample/introduction.md",
@@ -204,18 +211,12 @@
     "learnbook/stack/golang/practice/Go-database-migration-implementation-steps.md",
     "learnbook/stack/golang/_sidebar.md",
     "learnbook/stack/golang/trace/Solution-to-the-Failure-of-Multi-threaded-Read-Write-Locks-and-Birth-Death-Locks.md",
-    "learnbook/stack/golang/trace/_assets",
-    "learnbook/stack/golang/trace",
     "learnbook/stack/golang/libs/A-powerful-and-reliable-Golang-pooling-library.md",
     "learnbook/stack/golang/libs/Go-functional-programming-library-lo.md",
     "learnbook/stack/golang/basic/json-deserialization-and-int64-precision-loss.md",
     "learnbook/stack/golang/libs/Distributed-ID-Generation-Service-idalloc.md",
     "learnbook/stack/golang/libs/Configure-loading-framework.md",
-    "learnbook/stack/golang/libs/_assets",
     "learnbook/stack/golang/code/Example-of-crontab-expression-parsing.md",
-    "learnbook/stack/golang/code/Crontab-Cycle-Workflow-Design.md",
-    "learnbook/stack/golang/libs",
-    "learnbook/stack/golang/devops/_assets",
-    "webs/crontab/assets/index.js"
+    "learnbook/stack/golang/code/Crontab-Cycle-Workflow-Design.md"
   ]
 }
