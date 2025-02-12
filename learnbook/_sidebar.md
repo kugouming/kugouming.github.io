@@ -22,6 +22,9 @@
 	- [Prometheus](./stack/prometheus)
 	- [Other](./stack/other/)
 
+- **开发工具**
+	- [MacOS](./softs/macos/)
+	- [Linux](./softs/linux/)
 - **书籍**
 	- [技术书籍](./books/)
 
@@ -29,7 +32,7 @@
 	- [labuladong 的算法小抄](./algorithm/fucking-algorithm/)
 	- [Nagle算法[摘选]](./algorithm/nagle-algorithm.md)
 
-- [**收藏夹**](./bookmark/)
+- **收藏夹**
 	- [技术栈](./bookmark/stack/)
 
 - **优秀文档集锦**
