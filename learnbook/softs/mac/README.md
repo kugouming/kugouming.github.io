@@ -32,6 +32,7 @@
 #### 开发套件
 
 - [PHP DNMP 环境](https://gitee.com/yeszao/dnmp)
+	- [Debugging PHP on Docker with VS Code](https://blog.devsense.com/2019/debugging-php-on-docker-with-visual-studio-code)
 - [PHP Study 环境](https://www.xp.cn/php-study)
 - [Go 版本管理工具(g)](https://github.com/voidint/g/blob/master/README_CN.md)
 
