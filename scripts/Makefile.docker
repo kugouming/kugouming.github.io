@@ -1,0 +1,116 @@
+# How to use this:
+#   远程文件安装: curl -fsSL 'http://iskill.site/scripts/Makefile.docker" | make -f - lanch_mysql
+# 
+# 
+# How to debug makefile:
+#   1. make -n protoc-install        - 使用 -n 参数查看将要执行的命令（不会实际执行）
+# 	2. make VERBOSE=1 proto-installc - 使用 VERBOSE=1 查看详细输出（会实际执行）
+
+.PHONY: all clean lanch_postgres lanch_mysql lanch_redis
+
+############################################################################################################################
+############################################### 通过 Docker 启动服务 #########################################################
+############################################################################################################################
+
+# check docker is running
+check_docker:
+	@if ! docker info > /dev/null 2>&1; then \
+		echo "Docker 未运行，尝试启动..."; \
+		case "$$(uname -s)" in \
+			Darwin) \
+				open -a Docker; \
+				;; \
+			Linux) \
+				if command -v systemctl > /dev/null 2>&1; then \
+					sudo systemctl start docker; \
+				else \
+					sudo service docker start; \
+				fi \
+				;; \
+			MINGW*|CYGWIN*) \
+				"/c/Program Files/Docker/Docker/Docker Desktop.exe" & \
+				;; \
+			*) \
+				echo "未知操作系统，请手动启动 Docker"; \
+				exit 1; \
+				;; \
+		esac; \
+		echo "等待 Docker 启动..."; \
+		while ! docker info > /dev/null 2>&1; do \
+			sleep 1; \
+		done; \
+		echo "Docker 已就绪！"; \
+	else \
+		echo "Docker 已在运行中"; \
+	fi
+
+# postgres
+lanch_postgres: check_docker
+	@if [ "$$(docker ps -q -f name=postgres_urls)" ]; then \
+		echo "PostgreSQL container is already running."; \
+	else \
+		if [ "$$(docker ps -aq -f status=exited -f name=postgres_urls)" ]; then \
+			echo "Starting existing PostgreSQL container..."; \
+			docker start postgres_urls; \
+		else \
+			echo "Creating new PostgreSQL container..."; \
+			docker run --name postgres_urls \
+			-e POSTGRES_USER=lang \
+			-e POSTGRES_PASSWORD=password \
+			-e POSTGRES_DB=urldb \
+			-p 5432:5432 \
+			-d postgres; \
+		fi; \
+	fi
+	@echo "Waiting for PostgreSQL to be ready..."
+	@until docker exec postgres_urls pg_isready -U lang; do \
+		sleep 1; \
+	done
+	@echo "PostgreSQL is ready!"
+
+# mysql
+lanch_mysql: check_docker
+	@if [ "$$(docker ps -q -f name=mysql)" ]; then \
+		echo "MySQL container is already running."; \
+	else \
+		if [ "$$(docker ps -aq -f status=exited -f name=mysql)" ]; then \
+			echo "Starting existing MySQL container..."; \
+			docker start mysql; \
+		else \
+			echo "Creating new MySQL container..."; \
+			docker run --name mysql \
+			-p 3306:3306 \
+			-e MYSQL_ROOT_PASSWORD='123456' \
+			-v ~/code/dockerdata/sqldata:/var/lib/mysql \
+			-d mysql:5.7.4; \
+		fi; \
+	fi
+	@echo "Waiting for MySQL to be ready..."
+	@until docker exec mysql mysqladmin ping -h localhost -u root -p'123456' --silent; do \
+		sleep 1; \
+	done
+	@echo "MySQL is ready!"
+
+# redis
+lanch_redis: check_docker
+	@if [ "$$(docker ps -q -f name=reids_urls)" ]; then \
+		echo "Redis 容器已在运行中"; \
+	else \
+		if [ "$$(docker ps -aq -f status=exited -f name=reids_urls)" ]; then \
+			echo "启动已存在的 Redis 容器..."; \
+			docker start reids_urls; \
+		else \
+			echo "创建新的 Redis 容器..."; \
+			docker run --name=reids_urls \
+			-p 6379:6379 \
+			-d redis; \
+		fi; \
+	fi
+	@echo "等待 Redis 就绪..."
+	@until docker exec reids_urls redis-cli ping | grep -q "PONG"; do \
+		sleep 1; \
+	done
+	@echo "Redis 已就绪！"
+
+# 清理
+clean:

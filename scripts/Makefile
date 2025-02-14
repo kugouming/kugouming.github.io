@@ -80,6 +80,7 @@ protoc-list:
 	sort -rV | \
 	nl
 
+# 清理
 clean:
 	sudo rm -rf $(INSTALL_DIR)
 	rm -f $(PROTOC_ZIP)
