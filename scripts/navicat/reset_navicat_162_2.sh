@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # How to:
-#    curl -fsSL 'http://iskill.site/scripts/reset_navicat_162_2.sh' | bash -C
+#    curl -fsSL 'http://iskill.site/scripts/navicat/reset_navicat_162_2.sh' | bash -C
 #
 
 rm -rf ~/Library/Preferences/com.navicat.NavicatPremium.plist

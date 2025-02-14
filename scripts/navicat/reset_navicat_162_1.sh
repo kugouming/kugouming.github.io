@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # How to:
-#    curl -fsSL 'http://iskill.site/scripts/reset_navicat_162_1.sh' | bash -C
+#    curl -fsSL 'http://iskill.site/scripts/navicat/reset_navicat_162_1.sh' | bash -C
 #
 # 代码来源 https://www.52pojie.cn/forum.php?mod=viewthread&tid=1669993
 
