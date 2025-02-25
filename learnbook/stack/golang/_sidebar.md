@@ -1,6 +1,7 @@
 <!-- ./_sidebar.md -->
 - [<< <font color="#0056fd">返回主页</font>](/)
 
+- [**<font color="#0056fd">常用 Lib</font>**](./stack/golang/common-libs.md)
 - **Go 基础**
     - [01. Defer 语句中的细节](./stack/golang/basic/Details-in-the-Defer-statement.md)
     - [02. 编译时参数传递](./stack/golang/basic/compile-time-parameter-passing.md)
