@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/softs/mac/README.md",
+                "file": "learnbook/stack/golang/README.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
@@ -172,6 +172,7 @@
   },
   "active": "7ac64a4b464437d4",
   "lastOpenFiles": [
+    "learnbook/softs/mac/README.md",
     "scripts/reset_navicat_162_1.sh",
     "scripts/reset_navicat_162.sh",
     "scripts/reset_navicat_162_2.sh",
@@ -179,7 +180,6 @@
     "scripts/reset_navicat162.sh",
     "scripts/reset_navicat2.sh",
     "scripts/reset_navicat.sh",
-    "learnbook/softs/mac/README.md",
     "learnbook/softs/mac/Zsh-installation-and-configuration.md",
     "learnbook/softs/mac/_sidebar.md",
     "learnbook/softs/mac/_assets/ae493965767ac34d296b37b2b5bfa4e7_MD5.png",
@@ -207,7 +207,6 @@
     "learnbook/README.md",
     "learnbook/softs/linux",
     "learnbook/softs/mac",
-    "learnbook/softs",
     "learnbook/stack/golang/practice/Go-database-migration-implementation-steps.md",
     "learnbook/stack/golang/_sidebar.md",
     "learnbook/stack/golang/trace/Solution-to-the-Failure-of-Multi-threaded-Read-Write-Locks-and-Birth-Death-Locks.md",
