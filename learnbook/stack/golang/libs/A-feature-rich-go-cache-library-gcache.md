@@ -6,11 +6,15 @@
 
 使用 `go get` 下载安装：
 
-go get github.com/bluele/gcache  
+```bash
+go get github.com/bluele/gcache 
+```
 
 然后在代码中导入：
 
+```go
 import "github.com/bluele/gcache"  
+```
 
 ## **主要特性**
 
