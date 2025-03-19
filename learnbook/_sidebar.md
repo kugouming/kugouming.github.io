@@ -3,7 +3,7 @@
 - **文档介绍<sup style="color:red;">NEW!</sup>**
     - [事例介绍](./sample/introduction.md)
 
-- **程序栈**
+- **[程序栈](./stack/)**
 	- [Go](./stack/golang/)
 	- [JS](./stack/javascript/)
 	- [Lua](./stack/lua/)
@@ -19,6 +19,7 @@
 	- [ELK](./stack/elasticsearch/)
 	- [Hadoop](./stack/hadoop/)
 	- [Arch](./stack/arch/)
+	- [Intelligent](./intelligent/)
 	- [Prometheus](./stack/prometheus)
 	- [Other](./stack/other/)
 

@@ -31,6 +31,7 @@
     - [01. template 用法详解](./stack/golang/stdlib/Detailed-usage-of-template.md)
     - [02. 深入剖析 template](./stack/golang/stdlib/In-depth-analysis-of-template.md)
     - [03. 高级并发用法-sync.Pool](./stack/golang/stdlib/Advanced-concurrency-usage-sync.pool.md)
+    - [04. Go泛型如何重新定义代码复用](./stack/golang/stdlib/How-Go-Generics-Redefine-Code-Reusability.md)
 
 - **常用Lib库**
     - [01. 一个强大可靠的Golang池化库 - ants](./stack/golang/libs/A-powerful-and-reliable-Golang-pooling-library.md)
