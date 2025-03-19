@@ -58,13 +58,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/intelligent/dify/Building-an-Agent-Application-with-Local-Deployment-of-DeepSeek-and-DiFy-Platform.md",
+                "file": "learnbook/_sidebar.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Building-an-Agent-Application-with-Local-Deployment-of-DeepSeek-and-DiFy-Platform"
+              "title": "_sidebar"
             }
           }
         ],
@@ -187,13 +187,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/intelligent/dify/Building-an-Agent-Application-with-Local-Deployment-of-DeepSeek-and-DiFy-Platform.md",
+                "file": "learnbook/_sidebar.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Building-an-Agent-Application-with-Local-Deployment-of-DeepSeek-and-DiFy-Platform 的大纲"
+              "title": "_sidebar 的大纲"
             }
           }
         ],
@@ -217,10 +217,10 @@
   },
   "active": "09ac7c11cd365059",
   "lastOpenFiles": [
+    "learnbook/intelligent/dify/Building-an-Agent-Application-with-Local-Deployment-of-DeepSeek-and-DiFy-Platform.md",
     "learnbook/stack/golang/libs/Efficient-memory-cache-library-bigcache.md",
     "learnbook/stack/golang/stdlib/How-Go-Generics-Redefine-Code-Reusability.md",
     "learnbook/stack/golang/_sidebar.md",
-    "learnbook/intelligent/dify/Building-an-Agent-Application-with-Local-Deployment-of-DeepSeek-and-DiFy-Platform.md",
     "learnbook/intelligent/dify/_assets/da37063aa36cec850fe6937150a217e7_MD5.png",
     "learnbook/intelligent/dify/_assets/2ef5fdec8141c26eb8ac1c5ef062d9a3_MD5.png",
     "learnbook/intelligent/dify/_assets/feb840d30a3125378edf62f2c6f96e36_MD5.png",
