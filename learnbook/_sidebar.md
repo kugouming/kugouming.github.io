@@ -1,7 +1,10 @@
 <!-- ./_sidebar.md -->
 <!-- 本文件是将业务APP中的MD文件以相对路径的方式添加到此处，具体参加下面Demo -->
+
+<!--
 - **文档介绍<sup style="color:red;">NEW!</sup>**
     - [事例介绍](./sample/introduction.md)
+-->
 
 - **[程序栈](./stack/)**
 	- [Go](./stack/golang/)
