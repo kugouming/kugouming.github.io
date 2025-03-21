@@ -1,6 +1,6 @@
 # MCP (Model Context Protocol) 介绍
 
-!> 文章来源：[MCP (Model Context Protocol)，一篇就够了](https://mp.weixin.qq.com/s/rmR8H6ocCd1E3hvbgb0__Q)
+> 文章来源：[MCP (Model Context Protocol)，一篇就够了](https://mp.weixin.qq.com/s/rmR8H6ocCd1E3hvbgb0__Q)
 
 最近 MCP 这个关键词逐渐活跃在我所浏览的一些文章及评论区中。突然发现我对它仅有粗糙的理解，我决定深入学习并记录一下。
 
