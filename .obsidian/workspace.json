@@ -73,13 +73,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/intelligent/_sidebar.md",
+                "file": "learnbook/README.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "_sidebar"
+              "title": "README"
             }
           }
         ],
@@ -202,13 +202,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/intelligent/_sidebar.md",
+                "file": "learnbook/README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "_sidebar 的大纲"
+              "title": "README 的大纲"
             }
           }
         ],
@@ -230,10 +230,12 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "09ac7c11cd365059",
+  "active": "c60ce6a1e141977d",
   "lastOpenFiles": [
-    "learnbook/intelligent/mcp/One-Article-is-Enough-for-MCP-Model-Context-Protocol.md",
+    "learnbook/intelligent/README.md",
+    "learnbook/_sidebar.md",
     "learnbook/intelligent/_sidebar.md",
+    "learnbook/intelligent/mcp/One-Article-is-Enough-for-MCP-Model-Context-Protocol.md",
     "learnbook/intelligent/mcp/_assets/3517fa531e7fcf13022dea210cdf0a51_MD5.png",
     "learnbook/intelligent/mcp/_assets/647de1dea3a4b5b2eabdfa78ca297d15_MD5.jpg",
     "learnbook/intelligent/mcp/_assets/2506e109087b01da91e78a42ef89fad8_MD5.jpg",
@@ -243,7 +245,6 @@
     "learnbook/intelligent/mcp/_assets/9c708a9be522bb34f076024b7d3f38b3_MD5.jpg",
     "learnbook/intelligent/mcp/_assets/9a1460d51964d18188776748f99be58c_MD5.jpg",
     "learnbook/intelligent/mcp/_assets",
-    "learnbook/_sidebar.md",
     "learnbook/intelligent/mcp",
     "learnbook/intelligent/dify/Building-an-Agent-Application-with-Local-Deployment-of-DeepSeek-and-DiFy-Platform.md",
     "learnbook/stack/golang/libs/Efficient-memory-cache-library-bigcache.md",
