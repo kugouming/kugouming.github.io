@@ -4,22 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "919544dc39346e1a",
+        "id": "8f8941f716c2e042",
         "type": "tabs",
         "children": [
           {
-            "id": "04efef36a8973c91",
+            "id": "7ac64a4b464437d4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/intelligent/deepseek/The-Team-of-Yu-Menglong-at-Tsinghua-University-DeepSeek-From-Beginner-to-Mastery.md",
+                "file": "learnbook/intelligent/_sidebar.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "The-Team-of-Yu-Menglong-at-Tsinghua-University-DeepSeek-From-Beginner-to-Mastery"
+              "title": "_sidebar"
             }
           }
         ]
@@ -79,7 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 463.5
+    "width": 378.5
   },
   "right": {
     "id": "565929c3bf4912da",
@@ -141,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/intelligent/deepseek/The-Team-of-Yu-Menglong-at-Tsinghua-University-DeepSeek-From-Beginner-to-Mastery.md",
+                "file": "learnbook/softs/mac/README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "The-Team-of-Yu-Menglong-at-Tsinghua-University-DeepSeek-From-Beginner-to-Mastery 的大纲"
+              "title": "README 的大纲"
             }
           }
         ],
@@ -155,7 +155,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 340.5
+    "width": 340.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -169,53 +170,52 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "c60ce6a1e141977d",
+  "active": "7ac64a4b464437d4",
   "lastOpenFiles": [
-    "learnbook/statics/books/清华大学余梦珑团队《DeepSeek从入门到精通》.pdf",
-    "learnbook/books/go-go-language-io-and-network-programming-practice.md",
-    "learnbook/books/_sidebar.md",
-    "learnbook/intelligent/deepseek/The-Team-of-Yu-Menglong-at-Tsinghua-University-DeepSeek-From-Beginner-to-Mastery.md",
-    "learnbook/intelligent/_sidebar.md",
-    "intelligent/deepseek/The-Team-of-Yu-Menglong-at-Tsinghua-University-DeepSeek-From-Beginner-to-Mastery.md",
-    "intelligent/deepseek",
-    "intelligent",
-    "learnbook/intelligent/deepseek",
-    "learnbook/stack/golang/README.md",
-    "learnbook/README.md",
-    "learnbook/intelligent/README.md",
-    "learnbook/_sidebar.md",
-    "learnbook/intelligent/mcp/One-Article-is-Enough-for-MCP-Model-Context-Protocol.md",
-    "learnbook/intelligent/mcp/_assets/3517fa531e7fcf13022dea210cdf0a51_MD5.png",
-    "learnbook/intelligent/mcp/_assets/647de1dea3a4b5b2eabdfa78ca297d15_MD5.jpg",
-    "learnbook/intelligent/mcp/_assets/2506e109087b01da91e78a42ef89fad8_MD5.jpg",
-    "learnbook/intelligent/mcp/_assets/dfb91a7a29ac4680282c42d1d81dc032_MD5.png",
-    "learnbook/intelligent/mcp/_assets/95691a712cbb34718d569d42ea8743e1_MD5.png",
-    "learnbook/intelligent/mcp/_assets/258134b8b339a73ebef44c9c1c6bea33_MD5.png",
-    "learnbook/intelligent/mcp/_assets/9c708a9be522bb34f076024b7d3f38b3_MD5.jpg",
-    "learnbook/intelligent/mcp/_assets/9a1460d51964d18188776748f99be58c_MD5.jpg",
-    "learnbook/intelligent/mcp/_assets",
-    "learnbook/intelligent/mcp",
-    "learnbook/intelligent/dify/Building-an-Agent-Application-with-Local-Deployment-of-DeepSeek-and-DiFy-Platform.md",
-    "learnbook/stack/golang/libs/Efficient-memory-cache-library-bigcache.md",
-    "learnbook/stack/golang/stdlib/How-Go-Generics-Redefine-Code-Reusability.md",
-    "learnbook/stack/golang/_sidebar.md",
-    "learnbook/intelligent/dify/_assets/da37063aa36cec850fe6937150a217e7_MD5.png",
-    "learnbook/intelligent/dify/_assets/2ef5fdec8141c26eb8ac1c5ef062d9a3_MD5.png",
-    "learnbook/intelligent/dify/_assets",
-    "learnbook/sample/_sidebar.md",
-    "learnbook/intelligent/dify",
-    "learnbook/stack/_sidebar.md",
-    "learnbook/intelligent",
-    "learnbook/stack/golang/libs/A-feature-rich-go-cache-library-gcache.md",
-    "learnbook/stack/hadoop/README.md",
-    "learnbook/stack/golang/common-libs.md",
-    "learnbook/stack/golang/php2go.md",
+    "learnbook/intelligent/dify/practice/dify-practice-16.md",
+    "learnbook/intelligent/dify/practice/_assets/9bf06dfeeab8b4afb57b6e7a9f166dd2_MD5.webp",
+    "learnbook/intelligent/dify/practice/_assets/f0969135b01cb588c7f794c6c7f6122f_MD5.webp",
+    "learnbook/intelligent/dify/practice/_assets/c41356e1330dd6d49d7e73b45f3678ef_MD5.webp",
+    "learnbook/intelligent/dify/practice/_assets/04e82a4059340e30cf6dcc078a8338c3_MD5.webp",
+    "learnbook/intelligent/dify/practice/_assets/50ff0c3952c5bcecf4ec1965529f98a2_MD5.webp",
+    "learnbook/intelligent/dify/practice/_assets/9d3993ef36d70381ea82bb1f7f444449_MD5.webp",
+    "learnbook/intelligent/dify/practice/dify-practice-15.md",
+    "learnbook/intelligent/dify/practice/_assets/6beab102dda6a786bdcf74dff60bc910_MD5.webp",
+    "learnbook/intelligent/dify/practice/_assets/aa968bc00d030ad691539b780444c1ae_MD5.webp",
+    "learnbook/intelligent/dify/practice/_assets/5faed71a6ee5a7cc781349ccdc7ab417_MD5.webp",
+    "learnbook/intelligent/dify/practice/_assets/84d506093a5b38fd45575b08769f0051_MD5.webp",
+    "learnbook/intelligent/dify/practice/dify-practice-14.md",
+    "learnbook/intelligent/dify/practice/dify-practice-13.md",
+    "learnbook/intelligent/dify/practice/dify-practice-12.md",
+    "learnbook/intelligent/dify/practice/dify-practice-11.md",
+    "learnbook/intelligent/dify/practice/dify-practice-10.md",
+    "learnbook/intelligent/dify/practice/dify-practice-9.md",
+    "learnbook/intelligent/dify/practice/dify-practice-8.md",
+    "learnbook/intelligent/dify/practice/_assets/dify-practice-7.md",
+    "learnbook/intelligent/dify/practice/_assets/_assets",
+    "learnbook/intelligent/dify/practice/dify-practice-6.md",
+    "learnbook/intelligent/dify/practice/dify-practice-5.md",
+    "learnbook/intelligent/dify/practice/dify-practice-4.md",
+    "learnbook/intelligent/dify/practice/dify-practice-3.md",
+    "learnbook/intelligent/dify/practice/dify-practice-2.md",
+    "learnbook/intelligent/dify/practice/dify-practice-1.md",
+    "learnbook/intelligent/dify/practice/_assets",
     "learnbook/softs/mac/README.md",
-    "scripts/reset_navicat_162_1.sh",
-    "scripts/reset_navicat_162.sh",
-    "learnbook/softs/mac/Zsh-installation-and-configuration.md",
-    "learnbook/softs/mac/_sidebar.md",
-    "learnbook/softs/mac/Install-Homebre-on-MAC.md",
-    "learnbook/others/ddia/_sidebar.md"
+    "learnbook/intelligent/dify/practice",
+    "scripts/navicat/reset_navicat_162_2.sh",
+    "scripts/navicat/reset_navicat_162_1.sh",
+    "scripts/navicat/install_navicat_162.sh",
+    "scripts/navicat",
+    "scripts/gitconfig.sh",
+    "scripts/Makefile.tool",
+    "scripts/Makefile.docker",
+    "learnbook/stack/golang/stdlib/How-Go-Generics-Redefine-Code-Reusability.md",
+    "learnbook/stack/golang/libs/Efficient-memory-cache-library-bigcache.md",
+    "learnbook/stack/golang/libs/A-feature-rich-go-cache-library-gcache.md",
+    "learnbook/stack/golang/common-libs.md",
+    "learnbook/intelligent/mcp/One-Article-is-Enough-for-MCP-Model-Context-Protocol.md",
+    "learnbook/intelligent/dify/Building-an-Agent-Application-with-Local-Deployment-of-DeepSeek-and-DiFy-Platform.md",
+    "learnbook/intelligent/deepseek/The-Team-of-Yu-Menglong-at-Tsinghua-University-DeepSeek-From-Beginner-to-Mastery.md",
+    "learnbook/intelligent/_sidebar.md"
   ]
 }
