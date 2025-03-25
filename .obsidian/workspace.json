@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/intelligent/_sidebar.md",
+                "file": "learnbook/intelligent/dify/practice/dify-practice-7.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "_sidebar"
+              "title": "dify-practice-7"
             }
           }
         ]
@@ -172,18 +172,19 @@
   },
   "active": "7ac64a4b464437d4",
   "lastOpenFiles": [
+    "learnbook/intelligent/dify/practice/dify-practice-6.md",
+    "learnbook/intelligent/dify/practice/dify-practice-7.md",
+    "learnbook/intelligent/dify/practice/_assets/4ad2c6c279438375749d763d6b25abdd_MD5.webp",
+    "learnbook/intelligent/dify/practice/_assets/3dd52a39485d2877eef0fe232d3b1ebf_MD5.webp",
+    "learnbook/intelligent/dify/practice/_assets/9df61e572a8c6c6acbde31bc43a0500b_MD5.webp",
+    "learnbook/intelligent/dify/practice/_assets/36deffcda2c0c6681cd48b9dae77c4b1_MD5.webp",
+    "learnbook/intelligent/dify/practice/_assets/313f6bbf4fa964d9bb9d24c600d61f7a_MD5.webp",
+    "learnbook/intelligent/dify/practice/_assets/12cc97fbb4aeee4c73088cbc7cadb6fa_MD5.webp",
+    "learnbook/intelligent/dify/practice/_assets/d2cda722b26bb3f7051316f8b833e965_MD5.webp",
+    "learnbook/intelligent/dify/practice/_assets/5ed1f78b67c3afb6f104481468d39667_MD5.webp",
+    "learnbook/intelligent/dify/practice/_assets/fa6d0d7af4733ffbf3b5e3dcc2cd6f95_MD5.webp",
     "learnbook/intelligent/dify/practice/dify-practice-16.md",
-    "learnbook/intelligent/dify/practice/_assets/9bf06dfeeab8b4afb57b6e7a9f166dd2_MD5.webp",
-    "learnbook/intelligent/dify/practice/_assets/f0969135b01cb588c7f794c6c7f6122f_MD5.webp",
-    "learnbook/intelligent/dify/practice/_assets/c41356e1330dd6d49d7e73b45f3678ef_MD5.webp",
-    "learnbook/intelligent/dify/practice/_assets/04e82a4059340e30cf6dcc078a8338c3_MD5.webp",
-    "learnbook/intelligent/dify/practice/_assets/50ff0c3952c5bcecf4ec1965529f98a2_MD5.webp",
-    "learnbook/intelligent/dify/practice/_assets/9d3993ef36d70381ea82bb1f7f444449_MD5.webp",
     "learnbook/intelligent/dify/practice/dify-practice-15.md",
-    "learnbook/intelligent/dify/practice/_assets/6beab102dda6a786bdcf74dff60bc910_MD5.webp",
-    "learnbook/intelligent/dify/practice/_assets/aa968bc00d030ad691539b780444c1ae_MD5.webp",
-    "learnbook/intelligent/dify/practice/_assets/5faed71a6ee5a7cc781349ccdc7ab417_MD5.webp",
-    "learnbook/intelligent/dify/practice/_assets/84d506093a5b38fd45575b08769f0051_MD5.webp",
     "learnbook/intelligent/dify/practice/dify-practice-14.md",
     "learnbook/intelligent/dify/practice/dify-practice-13.md",
     "learnbook/intelligent/dify/practice/dify-practice-12.md",
@@ -191,14 +192,15 @@
     "learnbook/intelligent/dify/practice/dify-practice-10.md",
     "learnbook/intelligent/dify/practice/dify-practice-9.md",
     "learnbook/intelligent/dify/practice/dify-practice-8.md",
-    "learnbook/intelligent/dify/practice/_assets/dify-practice-7.md",
-    "learnbook/intelligent/dify/practice/_assets/_assets",
-    "learnbook/intelligent/dify/practice/dify-practice-6.md",
     "learnbook/intelligent/dify/practice/dify-practice-5.md",
     "learnbook/intelligent/dify/practice/dify-practice-4.md",
     "learnbook/intelligent/dify/practice/dify-practice-3.md",
     "learnbook/intelligent/dify/practice/dify-practice-2.md",
     "learnbook/intelligent/dify/practice/dify-practice-1.md",
+    "learnbook/intelligent/_sidebar.md",
+    "learnbook/intelligent/dify/practice/_assets/9bf06dfeeab8b4afb57b6e7a9f166dd2_MD5.webp",
+    "learnbook/intelligent/dify/practice/_assets/dify-practice-7.md",
+    "learnbook/intelligent/dify/practice/_assets/_assets",
     "learnbook/intelligent/dify/practice/_assets",
     "learnbook/softs/mac/README.md",
     "learnbook/intelligent/dify/practice",
@@ -214,8 +216,6 @@
     "learnbook/stack/golang/libs/A-feature-rich-go-cache-library-gcache.md",
     "learnbook/stack/golang/common-libs.md",
     "learnbook/intelligent/mcp/One-Article-is-Enough-for-MCP-Model-Context-Protocol.md",
-    "learnbook/intelligent/dify/Building-an-Agent-Application-with-Local-Deployment-of-DeepSeek-and-DiFy-Platform.md",
-    "learnbook/intelligent/deepseek/The-Team-of-Yu-Menglong-at-Tsinghua-University-DeepSeek-From-Beginner-to-Mastery.md",
-    "learnbook/intelligent/_sidebar.md"
+    "learnbook/intelligent/dify/Building-an-Agent-Application-with-Local-Deployment-of-DeepSeek-and-DiFy-Platform.md"
   ]
 }
