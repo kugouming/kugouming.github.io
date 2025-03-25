@@ -79,7 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 378.5
+    "width": 638.5
   },
   "right": {
     "id": "565929c3bf4912da",
@@ -172,8 +172,9 @@
   },
   "active": "7ac64a4b464437d4",
   "lastOpenFiles": [
-    "learnbook/intelligent/dify/practice/dify-practice-6.md",
+    "learnbook/intelligent/dify/practice/_assets/dify-practice-7.md",
     "learnbook/intelligent/dify/practice/dify-practice-7.md",
+    "learnbook/intelligent/dify/practice/dify-practice-6.md",
     "learnbook/intelligent/dify/practice/_assets/4ad2c6c279438375749d763d6b25abdd_MD5.webp",
     "learnbook/intelligent/dify/practice/_assets/3dd52a39485d2877eef0fe232d3b1ebf_MD5.webp",
     "learnbook/intelligent/dify/practice/_assets/9df61e572a8c6c6acbde31bc43a0500b_MD5.webp",
@@ -199,7 +200,6 @@
     "learnbook/intelligent/dify/practice/dify-practice-1.md",
     "learnbook/intelligent/_sidebar.md",
     "learnbook/intelligent/dify/practice/_assets/9bf06dfeeab8b4afb57b6e7a9f166dd2_MD5.webp",
-    "learnbook/intelligent/dify/practice/_assets/dify-practice-7.md",
     "learnbook/intelligent/dify/practice/_assets/_assets",
     "learnbook/intelligent/dify/practice/_assets",
     "learnbook/softs/mac/README.md",
