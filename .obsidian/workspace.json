@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/intelligent/dify/practice/_sidebar.md",
+                "file": "learnbook/intelligent/dify/practice/README.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "_sidebar"
+              "title": "README"
             }
           }
         ]
@@ -141,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/intelligent/dify/practice/_sidebar.md",
+                "file": "learnbook/intelligent/dify/practice/README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "_sidebar 的大纲"
+              "title": "README 的大纲"
             }
           }
         ],
@@ -169,10 +169,11 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "13098a310b81c306",
+  "active": "c60ce6a1e141977d",
   "lastOpenFiles": [
-    "learnbook/intelligent/_sidebar.md",
     "learnbook/intelligent/dify/practice/_sidebar.md",
+    "learnbook/intelligent/dify/practice/README.md",
+    "learnbook/intelligent/_sidebar.md",
     "learnbook/intelligent/dify/practice/dify-practice-16.md",
     "learnbook/intelligent/dify/practice/dify-practice-15.md",
     "learnbook/intelligent/dify/practice/dify-practice-14.md",
@@ -212,7 +213,6 @@
     "learnbook/stack/golang/README.md",
     "learnbook/README.md",
     "learnbook/intelligent/README.md",
-    "learnbook/_sidebar.md",
     "learnbook/intelligent/mcp/_assets",
     "learnbook/intelligent/mcp",
     "learnbook/intelligent/dify/_assets",
