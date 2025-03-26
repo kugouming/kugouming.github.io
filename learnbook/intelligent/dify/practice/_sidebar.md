@@ -1,0 +1,20 @@
+<!-- ./_sidebar.md -->
+- [<< <font color="#0056fd">返回上页</font>](./intelligent/)
+  
+- **Dify 实战应用**
+	- [01. 知识库检索](./intelligent/dify/practice/dify-practice-1.md)
+	- [02. 联网工具](./intelligent/dify/practice/dify-practice-2.md)
+	- [03. 代码处理](./intelligent/dify/practice/dify-practice-3.md)
+	- [04. 生成语音](./intelligent/dify/practice/dify-practice-4.md)
+	- [05. 使用模版](./intelligent/dify/practice/dify-practice-5.md)
+	- [06. 图片生成（上）](./intelligent/dify/practice/dify-practice-6.md)
+	- [07. 图片生成（下）](./intelligent/dify/practice/dify-practice-7.md)
+	- [08. 对话记忆](./intelligent/dify/practice/dify-practice-8.md)
+	- [09. 问题分类](./intelligent/dify/practice/dify-practice-9.md)
+	- [10. 循环处理](./intelligent/dify/practice/dify-practice-10.md)
+	- [11. 条件分支](./intelligent/dify/practice/dify-practice-11.md)
+	- [12. 数据库查询](./intelligent/dify/practice/dify-practice-12.md)
+	- [13. 工具调用](./intelligent/dify/practice/dify-practice-13.md)
+	- [14. 结果聚合](./intelligent/dify/practice/dify-practice-14.md)
+	- [15. 对象存储](./intelligent/dify/practice/dify-practice-15.md)
+	- [16. 数据可视化](./intelligent/dify/practice/dify-practice-16.md)
