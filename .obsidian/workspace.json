@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learnbook/intelligent/_sidebar.md",
+                "file": "learnbook/books/go-network-server.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "_sidebar"
+              "title": "go-network-server"
             }
           }
         ]
@@ -141,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learnbook/intelligent/_sidebar.md",
+                "file": "learnbook/books/go-network-server.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "_sidebar 的大纲"
+              "title": "go-network-server 的大纲"
             }
           }
         ],
@@ -171,9 +171,14 @@
   },
   "active": "13098a310b81c306",
   "lastOpenFiles": [
+    "learnbook/books/go-go-language-io-and-network-programming-practice.md",
+    "learnbook/books/go-go-concurrent-programming.md",
+    "learnbook/books/go-design-code-for-better.md",
+    "learnbook/books/False-information-detection.md",
+    "learnbook/books/distributed-theory-notes.md",
+    "learnbook/intelligent/_sidebar.md",
     "intelligent/mcp/One-Article-is-Enough-for-MCP-Model-Context-Protocol.md",
     "intelligent/mcp",
-    "learnbook/intelligent/_sidebar.md",
     "learnbook/intelligent/deepractice/cdt-framework.md",
     "learnbook/intelligent/deepractice/ai-memory-fragments.md",
     "learnbook/intelligent/deepractice/ai-organization.md",
@@ -199,11 +204,6 @@
     "learnbook/intelligent/dify/practice/dify-practice-10.md",
     "learnbook/intelligent/dify/practice/dify-practice-9.md",
     "learnbook/intelligent/dify/practice/dify-practice-8.md",
-    "learnbook/intelligent/dify/practice/dify-practice-7.md",
-    "learnbook/intelligent/dify/practice/dify-practice-6.md",
-    "learnbook/intelligent/dify/practice/dify-practice-5.md",
-    "learnbook/intelligent/dify/practice/dify-practice-4.md",
-    "learnbook/intelligent/dify/practice/dify-practice-3.md",
     "learnbook/intelligent/dify/practice/_assets/feb61cd134e7c81e6cb8b8a769775d07_MD5.webp",
     "learnbook/intelligent/dify/practice/_assets/fb805527e01fbb66788a543d75a8cc34_MD5.webp",
     "learnbook/intelligent/dify/practice/_assets/fac40408487d09ae8e572f34d888a0b4_MD5.webp",

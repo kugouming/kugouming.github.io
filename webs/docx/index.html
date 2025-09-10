@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>docx-preview 在线预览器</title>
+<style>
+    #preview {
+      border: 1px solid #ccc;
+      padding: 20px;
+      height: 600px;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+<body>
+<h2>📄 Word 在线预览器（docx-preview）</h2>
+<input type="file" id="fileInput" accept=".docx" />
+<div id="preview">请上传 .docx 文件</div>
+
+<script type="module">
+    import { renderAsync } from'https://cdn.jsdelivr.net/npm/docx-preview@0.3.6/+esm';
+
+    document.getElementById('fileInput').addEventListener('change', async (event) => {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      const container = document.getElementById('preview');
+      container.innerHTML = '正在加载文档...';
+
+      try {
+        await renderAsync(file, container, null, {
+          className: 'docx',
+          inWrapper: true,
+          breakPages: true,
+          renderHeaders: true,
+          renderFooters: true,
+        });
+        console.log('✅ 文档渲染成功');
+      } catch (e) {
+        console.error('❌ 渲染失败:', e);
+        container.innerHTML = '文档加载失败，请检查文件格式';
+      }
+    });
+  </script>
+</body>
+</html>
