@@ -1,0 +1,26 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "～/Desktop"
+      ],
+      "env": {
+        
+      }
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ]
+    },
+    "promptx": {
+      "type": "streamable-http",
+      "url": "http://127.0.0.1:5203/mcp"
+    }
+  }
+}
