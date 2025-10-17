@@ -5,7 +5,7 @@
       "args": [
         "-y",
         "@modelcontextprotocol/server-filesystem",
-        "～/Desktop"
+        "~/Desktop"
       ],
       "env": {
         
@@ -21,6 +21,52 @@
     "promptx": {
       "type": "streamable-http",
       "url": "http://127.0.0.1:5203/mcp"
+    },
+    "chrome-devtools": {
+      "command": "npx chrome-devtools-mcp@latest",
+      "env": {
+        
+      },
+      "args": [
+        
+      ]
+    },
+    "iterm-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "iterm-mcp"
+      ]
+    },
+    "deepwiki": {
+      "type": "streamable-http",
+      "url": "https://mcp.deepwiki.com/mcp"
+    },
+    "prompt-house": {
+      "command": "npx",
+      "args": [
+        "prompthouse-mcp"
+      ],
+      "env": {
+        "PROMPTHOUSE_ACCESS_LINK": "c08785c3_67d9a34394bcc9c09f037a48562143cb",
+        "PROMPTHOUSE_DEBUG": "true"
+      }
+    },
+    "order-es": {
+      "type": "sse",
+      "url": "https://app-gray.xesv5.com/tm/mcp/sse",
+      "headers": {
+        "ES_URL": "http://es.platform.xesv5.com",
+        "ES_AUTHTOKEN": ""
+      }
+    },
+    "gateway-es": {
+      "type": "sse",
+      "url": "http://app-gray.xesv5.com/tm/mcp/sse",
+      "headers": {
+        "ES_URL": "http://es-gw-tck3-cm.tal.com:80",
+        "ES_AUTHTOKEN": "dl93YW5nbWluZzY6TWluZ3ppMTIxNC5A"
+      }
     }
   }
 }
