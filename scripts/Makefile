@@ -2,7 +2,7 @@
 # 	1. 查看版本列表: make protoc-list
 # 	2. 安装最新版本: make protoc-install
 #   3. 安装指定版本: make protoc-install VERSION=v29.0-rc3
-#   3. 远程文件安装: curl -fsSL 'http://iskill.site/scripts/Makefile" | make -f - protoc-install
+#   3. 远程文件安装: curl -fsSL 'http://iskill.site/scripts/Makefile' | make -f - protoc-install
 # 
 # 
 # How to debug makefile:

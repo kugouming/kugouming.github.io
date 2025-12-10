@@ -1,5 +1,5 @@
 # How to use this:
-#   远程文件安装: curl -fsSL 'http://iskill.site/scripts/Makefile.docker" | make -f - lanch_mysql
+#   远程文件安装: curl -fsSL 'http://iskill.site/scripts/Makefile.docker' | make -f - lanch_mysql
 # 
 # 
 # How to debug makefile:
