@@ -4,8 +4,8 @@
 # 使用方法: 
 #    本地: ./becrafter-installer.sh <软件包名> [版本号]
 #    远程: 
-#       REPO_NAME=prompt-manager USE_PROXY=true curl -fsSL 'http://iskill.site/scripts/becrafter-installer.sh' | bash
-#       REPO_NAME=prompt-manager VERSION=0.1.5 USE_PROXY=true curl -fsSL 'http://iskill.site/scripts/becrafter-installer.sh' | bash
+#       curl -fsSL 'http://iskill.site/scripts/becrafter-installer.sh' | bash prompt-manager 0.1.6 true
+#       curl -fsSL 'http://iskill.site/scripts/becrafter-installer.sh' | bash prompt-manager 0.1.6 false
 
 # 检查依赖
 check_dependencies() {
@@ -83,7 +83,7 @@ if [ $# -lt 1 ] && [ -z "$REPO_NAME" ]; then
     echo "       $0 prompt-manager 0.1.5 true"
     echo ""
     echo "或使用环境变量:"
-    echo "REPO_NAME=prompt-manager VERSION=0.1.5 USE_PROXY=true curl -fsSL 'http://iskill.site/scripts/becrafter-installer.sh' | bash"
+    echo "curl -fsSL 'http://iskill.site/scripts/becrafter-installer.sh' | bash prompt-manager 0.1.6 true"
     exit 1
 fi
 
