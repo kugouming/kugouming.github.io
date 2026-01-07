@@ -4,8 +4,8 @@
 # 使用方法: 
 #    本地: ./becrafter-installer.sh <软件包名> [版本号]
 #    远程: 
-#       curl -fsSL 'http://iskill.site/scripts/becrafter-installer.sh' | bash prompt-manager 0.1.6 true
-#       curl -fsSL 'http://iskill.site/scripts/becrafter-installer.sh' | bash prompt-manager 0.1.6 false
+#       curl -fsSL 'http://iskill.site/scripts/becrafter-installer.sh' | bash -s prompt-manager 0.1.6 true
+#       curl -fsSL 'http://iskill.site/scripts/becrafter-installer.sh' | bash -s prompt-manager 0.1.6 false
 
 # 检查依赖
 check_dependencies() {
@@ -80,10 +80,10 @@ check_dependencies() {
 if [ $# -lt 1 ] && [ -z "$REPO_NAME" ]; then
     echo "使用方法: $0 <软件包名> [版本号] [是否启用加速]"
     echo "示例: $0 prompt-manager 0.1.5 false"
-    echo "       $0 prompt-manager 0.1.5 true"
+    echo "     $0 prompt-manager 0.1.5 true"
     echo ""
     echo "或使用环境变量:"
-    echo "curl -fsSL 'http://iskill.site/scripts/becrafter-installer.sh' | bash prompt-manager 0.1.6 true"
+    echo "curl -fsSL 'http://iskill.site/scripts/becrafter-installer.sh' | bash -s prompt-manager 0.1.6 true"
     exit 1
 fi
 
