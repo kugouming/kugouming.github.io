@@ -117,7 +117,8 @@ apply_accelerator() {
     
     if [ "$USE_PROXY" = "true" ]; then
         # 将 https://github.com 替换为 https://gitclone.com/github.com
-        echo "$url" | sed 's|https://github.com|https://gitclone.com/github.com|'
+        #echo "$url" | sed 's|https://github.com|https://gitclone.com/github.com|'
+        echo "https://gh-proxy.com/${url}"
     else
         echo "$url"
     fi

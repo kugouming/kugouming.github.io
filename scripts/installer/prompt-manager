@@ -1,6 +1,37 @@
 #!/usr/bin/env bash
-# How to: curl -fsSL 'http://iskill.site/scripts/installer/prompt-manager' | bash
+
+# How to: 
+#  1. 默认执行（启用加速，默认版本 latest）：
+#     curl -fsSL 'http://iskill.site/scripts/installer/prompt-manager' | bash
+#  2. 自定义参数（指定加速状态+版本号）：
+#     curl -fsSL 'http://iskill.site/scripts/installer/prompt-manager' | bash -s false v1.0.0
+#  3. 仅指定版本号（保留加速默认 true）：
+#     curl -fsSL 'http://iskill.site/scripts/installer/prompt-manager' | bash -s '' v2.1.0
 
 set -euo pipefail
-SUB_SCRIPT_ARGS=("prompt-manager" "true")
+
+# 步骤1：定义参数（核心：软件包名固定，后两个参数支持用户覆盖，设置合理默认值）
+PACKAGE_NAME="prompt-manager"  # 固定软件包名，无需用户修改
+DEFAULT_ACCELERATE="true"      # 默认启用加速
+DEFAULT_VERSION="latest"       # 默认版本（可根据内层脚本要求修改，如空字符串 ''）
+
+# 步骤2：接收用户可选传入的参数（覆盖默认值）
+# $1：用户传入的 [是否启用加速]（可选），$2：用户传入的 [版本号]（可选）
+USER_ACCELERATE="${1:-${DEFAULT_ACCELERATE}}"  # 无传入则用默认加速状态
+USER_VERSION="${2:-${DEFAULT_VERSION}}"        # 无传入则用默认版本
+
+# 步骤3：整理传递给内层脚本的完整参数（严格遵循内层脚本参数顺序）
+# 格式：<软件包名> [是否启用加速] [版本号]
+SUB_SCRIPT_ARGS=("${PACKAGE_NAME}" "${USER_ACCELERATE}" "${USER_VERSION}")
+
+# 步骤4：下载并执行内层脚本，传递完整参数
+echo "即将执行内层脚本，参数详情："
+echo "  软件包名：${SUB_SCRIPT_ARGS[0]}"
+echo "  是否启用加速：${SUB_SCRIPT_ARGS[1]}"
+echo "  版本号：${SUB_SCRIPT_ARGS[2]}"
+echo "----------------------------------------"
+
 curl -fsSL "http://kugouming.github.io/scripts/becrafter-installer.sh" | bash -s "${SUB_SCRIPT_ARGS[@]}"
+
+echo "----------------------------------------"
+echo "内层脚本执行完成（软件包：${PACKAGE_NAME}，版本：${USER_VERSION}）"
