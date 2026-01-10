@@ -2,10 +2,10 @@
 
 # 下载BeCrafter仓库软件安装包的脚本
 # 使用方法: 
-#    本地: ./becrafter-installer.sh <软件包名> [版本号]
+#    本地: ./becrafter-installer.sh <软件包名> [是否启用加速] [版本号]
 #    远程: 
-#       curl -fsSL 'http://iskill.site/scripts/becrafter-installer.sh' | bash -s prompt-manager 0.1.6 true
-#       curl -fsSL 'http://iskill.site/scripts/becrafter-installer.sh' | bash -s prompt-manager 0.1.6 false
+#       curl -fsSL 'http://iskill.site/scripts/becrafter-installer.sh' | bash -s prompt-manager true 0.1.6
+#       curl -fsSL 'http://iskill.site/scripts/becrafter-installer.sh' | bash -s prompt-manager false 0.1.6
 
 # 检查依赖
 check_dependencies() {
@@ -78,12 +78,12 @@ check_dependencies() {
 
 # 检查是否提供了软件包名参数
 if [ $# -lt 1 ] && [ -z "$REPO_NAME" ]; then
-    echo "使用方法: $0 <软件包名> [版本号] [是否启用加速]"
-    echo "示例: $0 prompt-manager 0.1.5 false"
-    echo "     $0 prompt-manager 0.1.5 true"
+    echo "使用方法: $0 <软件包名> [是否启用加速] [版本号]"
+    echo "示例: $0 prompt-manager false 0.1.5"
+    echo "     $0 prompt-manager true 0.1.5"
     echo ""
     echo "或使用环境变量:"
-    echo "curl -fsSL 'http://iskill.site/scripts/becrafter-installer.sh' | bash -s prompt-manager 0.1.6 true"
+    echo "curl -fsSL 'http://iskill.site/scripts/installer/becrafter-installer.sh' | bash -s prompt-manager true 0.1.6"
     exit 1
 fi
 
@@ -91,8 +91,8 @@ check_dependencies
 
 # 优先使用命令行参数，否则使用环境变量
 REPO_NAME="${1:-$REPO_NAME}"
-VERSION="${2:-${VERSION:-latest}}"  # 版本号，默认为最新版本
-USE_PROXY="${3:-${USE_PROXY:-false}}"  # 是否使用加速地址，默认为false
+USE_PROXY="${2:-${USE_PROXY:-false}}"  # 是否使用加速地址，默认为false
+VERSION="${3:-${VERSION:-latest}}"  # 版本号，默认为最新版本
 
 # 确定系统架构和对应的安装包后缀
 get_arch_suffix() {

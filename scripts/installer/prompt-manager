@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# How to: curl -fsSL 'http://iskill.site/scripts/installer/prompt-manager' | bash
+
+set -euo pipefail
+SUB_SCRIPT_ARGS=("prompt-manager" "true")
+curl -fsSL "http://kugouming.github.io/scripts/becrafter-installer.sh" | bash -s "${SUB_SCRIPT_ARGS[@]}"
