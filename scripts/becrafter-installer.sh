@@ -186,7 +186,7 @@ get_download_url() {
     
     # 优先匹配带架构后缀的DMG文件
     local matched_url
-	if [[ ${arch_suffix} -eq "" ]]; then
+	if [[ -z ${arch_suffix} ]]; then
 		matched_url=$(echo "$download_urls" | grep -E "${version#v}\.dmg$" | head -n 1)
 	else
 		matched_url=$(echo "$download_urls" | grep -E "${version#v}-${arch_suffix}\.dmg$" | head -n 1)
