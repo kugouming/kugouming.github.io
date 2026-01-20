@@ -4,15 +4,15 @@
 #  1. 默认执行（启用加速，默认版本 latest）：
 #     curl -fsSL 'http://iskill.site/scripts/installer/prompt-manager' | bash
 #  2. 自定义参数（指定加速状态+版本号）：
-#     curl -fsSL 'http://iskill.site/scripts/installer/prompt-manager' | bash -s false v1.0.0
-#  3. 仅指定版本号（保留加速默认 true）：
+#     curl -fsSL 'http://iskill.site/scripts/installer/prompt-manager' | bash -s true v1.0.0
+#  3. 仅指定版本号（保留加速默认 false）：
 #     curl -fsSL 'http://iskill.site/scripts/installer/prompt-manager' | bash -s '' v2.1.0
 
 set -euo pipefail
 
 # 步骤1：定义参数（核心：软件包名固定，后两个参数支持用户覆盖，设置合理默认值）
 PACKAGE_NAME="prompt-manager"  # 固定软件包名，无需用户修改
-DEFAULT_ACCELERATE="true"      # 默认启用加速
+DEFAULT_ACCELERATE="false"      # 默认启用加速
 DEFAULT_VERSION="latest"       # 默认版本（可根据内层脚本要求修改，如空字符串 ''）
 
 # 步骤2：接收用户可选传入的参数（覆盖默认值）
