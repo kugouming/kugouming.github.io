@@ -1,0 +1,602 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favicon 生成器</title>
+    <!-- 引入 JSZip 用于打包下载 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <style>
+        :root {
+            --color-bg: #f0f8ff;
+            --color-primary: #FF6B6B; /* Coral Red */
+            --color-secondary: #4ECDC4; /* Turquoise */
+            --color-accent: #FFE66D; /* Yellow */
+            --color-text: #2c3e50;
+            --color-white: #ffffff;
+            --shadow: 0 10px 20px rgba(0,0,0,0.1);
+            --radius: 16px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #FF9A9E 0%, #FECFEF 99%, #FECFEF 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            color: var(--color-text);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--color-white);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 30px;
+            flex: 1;
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--color-primary);
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 0px var(--color-accent);
+        }
+
+        p.subtitle {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .upload-section {
+            background: #f8f9fa;
+            border: 3px dashed var(--color-secondary);
+            border-radius: var(--radius);
+            padding: 40px 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .upload-section:hover {
+            background: #eafaf9;
+            border-color: var(--color-primary);
+        }
+
+        .upload-btn {
+            background: var(--color-primary);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            border: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+            transition: transform 0.2s;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        .upload-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        #fileInput {
+            display: none;
+        }
+
+        .preview-section {
+            display: none; /* Hidden by default */
+        }
+
+        .preview-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .download-all-btn {
+            background: var(--color-secondary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(78, 205, 196, 0.4);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-color: var(--color-accent);
+        }
+
+        .icon-preview {
+            margin-bottom: 10px;
+            object-fit: contain;
+            background-image: linear-gradient(45deg, #eee 25%, transparent 25%), linear-gradient(-45deg, #eee 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #eee 75%), linear-gradient(-45deg, transparent 75%, #eee 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .size-label {
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+        }
+
+        .download-link {
+            color: var(--color-secondary);
+            text-decoration: none;
+            font-size: 0.85rem;
+            border: 1px solid var(--color-secondary);
+            padding: 4px 12px;
+            border-radius: 20px;
+            transition: all 0.2s;
+            margin-top: auto;
+        }
+
+        .download-link:hover {
+            background: var(--color-secondary);
+            color: white;
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            font-size: 0.9rem;
+            padding: 10px;
+        }
+
+        .code-section {
+            margin-top: 30px;
+            background: #f4f6f8;
+            border-radius: 8px;
+            padding: 20px;
+            position: relative;
+        }
+
+        .code-section h3 {
+            margin-bottom: 15px;
+            color: var(--color-text);
+        }
+
+        pre {
+            background: #282c34;
+            color: #abb2bf;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .copy-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--color-primary);
+            color: white;
+            border: none;
+            padding: 5px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            transition: opacity 0.2s;
+        }
+
+        .copy-btn:hover {
+            opacity: 0.9;
+        }
+
+        .info-section {
+            margin-top: 40px;
+            background: #fff;
+            border-radius: var(--radius);
+            padding: 30px;
+            box-shadow: var(--shadow);
+            width: 100%;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .info-section h2 {
+            color: var(--color-primary);
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .info-card {
+            background: #f9f9f9;
+            border-left: 5px solid var(--color-secondary);
+            padding: 20px;
+            border-radius: 0 12px 12px 0;
+            transition: transform 0.2s;
+        }
+
+        .info-card:hover {
+            transform: translateX(5px);
+            background: #fff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .info-card h3 {
+            color: var(--color-text);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .info-card p {
+            color: #666;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            .container { padding: 20px; }
+            .grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Favicon 生成器</h1>
+        <p class="subtitle">一键生成多巴胺风格网站图标</p>
+    </header>
+
+    <div class="upload-section" id="dropZone">
+        <div style="font-size: 3rem; margin-bottom: 10px;">🎨</div>
+        <p>点击或拖拽图片到这里</p>
+        <p style="font-size: 0.8rem; color: #999; margin-top: 5px;">支持 PNG, JPG, SVG 格式</p>
+        <button class="upload-btn">选择图片</button>
+        <input type="file" id="fileInput" accept="image/*">
+    </div>
+
+    <div class="preview-section" id="previewSection">
+        <div class="preview-header">
+            <h2>生成的图标</h2>
+            <button class="download-all-btn" id="downloadAllBtn">
+                📦 打包下载所有
+            </button>
+        </div>
+        <div class="grid" id="iconGrid">
+            <!-- Items will be injected here -->
+        </div>
+
+        <div class="code-section">
+            <h3>HTML 引用代码</h3>
+            <button class="copy-btn" id="copyBtn">复制全部</button>
+            <pre id="codeBlock">&lt;!-- 请先生成图标 --&gt;</pre>
+        </div>
+    </div>
+</div>
+<div class="info-section">
+    <h2>💡 关于 Favicon 的小知识</h2>
+    
+    <div class="info-grid">
+        <div class="info-card">
+            <h3>🤔 什么是 Favicon？</h3>
+            <p>Favicon 是 "Favorites Icon" 的缩写，即网站图标。它显示在浏览器标签页、书签栏、历史记录以及手机的主屏幕快捷方式上。它是品牌识别的重要组成部分。</p>
+        </div>
+
+        <div class="info-card" style="border-left-color: var(--color-accent);">
+            <h3>📏 常见尺寸指南</h3>
+            <p>
+                <strong>16x16</strong>: 浏览器标签页、地址栏<br>
+                <strong>32x32</strong>: 任务栏快捷方式、高分屏<br>
+                <strong>180x180</strong>: iOS 主屏幕图标<br>
+                <strong>192/512</strong>: Android PWA 应用图标
+            </p>
+        </div>
+
+        <div class="info-card" style="border-left-color: var(--color-primary);">
+            <h3>💾 格式选择</h3>
+            <p><strong>ICO</strong>: 兼容性之王，支持多尺寸封装。<br>
+            <strong>PNG</strong>: 现代标准，支持透明，体积小。<br>
+            <strong>SVG</strong>: 矢量格式，无限缩放，未来的主流。</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    © Favicon 生成器
+</footer>
+
+<script>
+    const fileInput = document.getElementById('fileInput');
+    const uploadBtn = document.querySelector('.upload-btn');
+    const dropZone = document.getElementById('dropZone');
+    const previewSection = document.getElementById('previewSection');
+    const iconGrid = document.getElementById('iconGrid');
+    const downloadAllBtn = document.getElementById('downloadAllBtn');
+    const codeBlock = document.getElementById('codeBlock');
+    const copyBtn = document.getElementById('copyBtn');
+
+    // Configuration for favicon sizes
+    const sizes = [
+        { width: 32, height: 32, name: 'favicon.ico', type: 'ico' }, // Added ICO
+        { width: 16, height: 16, name: 'favicon-16x16.png' },
+        { width: 32, height: 32, name: 'favicon-32x32.png' },
+        { width: 48, height: 48, name: 'favicon-48x48.png' }, // Common
+        { width: 64, height: 64, name: 'favicon-64x64.png' }, // Windows
+        { width: 128, height: 128, name: 'favicon-128x128.png' },
+        { width: 180, height: 180, name: 'apple-touch-icon.png' }, // iOS
+        { width: 192, height: 192, name: 'android-chrome-192x192.png' }, // Android
+        { width: 512, height: 512, name: 'android-chrome-512x512.png' }  // Android Large
+    ];
+
+    let generatedImages = {}; // Store blob data for zip download
+
+    // Helper function to create ICO blob from PNG blob (single image 32x32)
+    async function pngToIco(pngBlob) {
+        const pngBuffer = await pngBlob.arrayBuffer();
+        const pngData = new Uint8Array(pngBuffer);
+        const pngSize = pngData.length;
+        
+        // ICO Header (6 bytes)
+        // Reserved (2), Type (2) -> 1 for icon, Count (2) -> 1 image
+        const header = new Uint8Array([0, 0, 1, 0, 1, 0]);
+        
+        // Directory Entry (16 bytes)
+        const entry = new Uint8Array(16);
+        const view = new DataView(entry.buffer);
+        
+        view.setUint8(0, 32); // Width
+        view.setUint8(1, 32); // Height
+        view.setUint8(2, 0);  // Color count (0 for >= 256 colors)
+        view.setUint8(3, 0);  // Reserved
+        view.setUint16(4, 1, true); // Planes (1) - Little Endian
+        view.setUint16(6, 32, true); // BitCount (32) - Little Endian
+        view.setUint32(8, pngSize, true); // SizeInBytes - Little Endian
+        view.setUint32(12, 22, true); // ImageOffset (6 + 16 = 22) - Little Endian
+        
+        // Combine all parts
+        const icoData = new Uint8Array(22 + pngSize);
+        icoData.set(header, 0);
+        icoData.set(entry, 6);
+        icoData.set(pngData, 22);
+        
+        return new Blob([icoData], { type: 'image/x-icon' });
+    }
+
+    // Event Listeners
+    uploadBtn.addEventListener('click', () => fileInput.click());
+    
+    fileInput.addEventListener('change', handleFileSelect);
+
+    dropZone.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        dropZone.style.borderColor = 'var(--color-primary)';
+        dropZone.style.background = '#eafaf9';
+    });
+
+    dropZone.addEventListener('dragleave', (e) => {
+        e.preventDefault();
+        dropZone.style.borderColor = 'var(--color-secondary)';
+        dropZone.style.background = '#f8f9fa';
+    });
+
+    dropZone.addEventListener('drop', (e) => {
+        e.preventDefault();
+        dropZone.style.borderColor = 'var(--color-secondary)';
+        dropZone.style.background = '#f8f9fa';
+        
+        if (e.dataTransfer.files.length > 0) {
+            handleFile(e.dataTransfer.files[0]);
+        }
+    });
+
+    downloadAllBtn.addEventListener('click', downloadAll);
+
+    copyBtn.addEventListener('click', () => {
+        const code = codeBlock.innerText;
+        navigator.clipboard.writeText(code).then(() => {
+            const originalText = copyBtn.innerText;
+            copyBtn.innerText = '已复制!';
+            setTimeout(() => {
+                copyBtn.innerText = originalText;
+            }, 2000);
+        });
+    });
+
+    function handleFileSelect(e) {
+        if (e.target.files.length > 0) {
+            handleFile(e.target.files[0]);
+        }
+    }
+
+    function handleFile(file) {
+        if (!file.type.startsWith('image/')) {
+            alert('请上传图片文件！');
+            return;
+        }
+
+        const reader = new FileReader();
+        reader.onload = (e) => {
+            const img = new Image();
+            img.onload = () => {
+                generateIcons(img);
+            };
+            img.src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+    }
+
+    async function generateIcons(sourceImage) {
+        iconGrid.innerHTML = ''; // Clear previous
+        generatedImages = {}; // Reset storage
+        previewSection.style.display = 'block';
+
+        // Scroll to preview
+        previewSection.scrollIntoView({ behavior: 'smooth' });
+
+        for (const size of sizes) {
+            await createIcon(sourceImage, size);
+        }
+        
+        generateHtmlCode();
+    }
+
+    function generateHtmlCode() {
+        let code = `<!-- Favicon for various devices -->\n`;
+        
+        // 1. ICO (Legacy)
+        code += `<link rel="icon" href="/favicon.ico" sizes="any">\n`;
+        
+        // 2. SVG (if source was svg, but we are generating pngs mostly, so let's stick to standard pngs)
+        // If we want to support SVG favicon, we need to keep the original file if it is SVG. 
+        // For this generator, we are converting to PNG/ICO.
+
+        // 3. Apple Touch Icon
+        code += `<link rel="apple-touch-icon" href="/apple-touch-icon.png">\n`;
+
+        // 4. Android Chrome
+        code += `<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">\n`;
+        code += `<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">\n`;
+
+        // 5. Standard PNGs
+        code += `<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">\n`;
+        code += `<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">\n`;
+
+        // Update code block
+        codeBlock.innerText = code;
+    }
+
+    function createIcon(image, size) {
+        return new Promise((resolve) => {
+            const canvas = document.createElement('canvas');
+            canvas.width = size.width;
+            canvas.height = size.height;
+            const ctx = canvas.getContext('2d');
+            
+            // High quality scaling
+            ctx.imageSmoothingEnabled = true;
+            ctx.imageSmoothingQuality = 'high';
+            
+            ctx.drawImage(image, 0, 0, size.width, size.height);
+
+            canvas.toBlob(async (blob) => {
+                if (!blob) return resolve();
+
+                let finalBlob = blob;
+
+                if (size.type === 'ico') {
+                    finalBlob = await pngToIco(blob);
+                }
+
+                const url = URL.createObjectURL(finalBlob);
+                generatedImages[size.name] = finalBlob;
+
+                // Create UI Element
+                const card = document.createElement('div');
+                card.className = 'card';
+                
+                // Determine display size for CSS (don't make 16px look tiny in preview)
+                const displaySize = size.width < 64 ? size.width * 2 : (size.width > 128 ? 128 : size.width);
+
+                card.innerHTML = `
+                    <div class="size-label">${size.name}</div>
+                    <img src="${url}" class="icon-preview" style="width: ${displaySize}px; height: ${displaySize}px" alt="${size.name}">
+                    <div style="font-size: 0.8rem; color: #888; margin-bottom: 5px;">${size.width}x${size.height}</div>
+                    <a href="${url}" download="${size.name}" class="download-link">下载</a>
+                `;
+
+                iconGrid.appendChild(card);
+                resolve();
+            }, 'image/png');
+        });
+    }
+
+    function downloadAll() {
+        if (Object.keys(generatedImages).length === 0) return;
+
+        const zip = new JSZip();
+        
+        for (const [name, blob] of Object.entries(generatedImages)) {
+            zip.file(name, blob);
+        }
+
+        zip.generateAsync({type:"blob"})
+        .then(function(content) {
+            // Force download
+            const url = URL.createObjectURL(content);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = "favicons.zip";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        });
+    }
+</script>
+
+</body>
+</html>
